@@ -31,6 +31,10 @@
   background-color: var(--ac-header-color, var(--md-primary-fg-color));
 }
 
+.md-main {
+  background: linear-gradient(to bottom, #ffbe33 0%, #b60f62 100%);
+ }
+
 .md-header {
   background-color: var(--ac-header-color, var(--md-primary-fg-color));
 }
