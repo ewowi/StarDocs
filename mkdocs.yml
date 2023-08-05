@@ -11,7 +11,7 @@ theme:
   custom_dir: docs/assets/overrides
   language: en
   favicon: assets/images/ui/aircoookie/blurple.png
-  # logo: assets/images/ui/akemi/001_cheerful.png
+  logo: assets/images/ui/starmod/moonmodules.png
   icon: 
     repo: fontawesome/brands/github
   features: 
