@@ -1,0 +1,201 @@
+site_name: WLED MoonModules Project
+site_author: Ewoud Wijma (ewowi)
+#site_url: https://wled.app
+repo_name: WLED
+repo_url: https://github.com/ewowi/StarMod
+repo_title: WLED Repository
+#copyright: Copyright &copy; 2016-2021 Christian Schwinne, Contributors
+edit_uri: https://github.com/ewowi/StarDocs/edit/main/docs
+theme:
+  name: material
+  custom_dir: docs/assets/overrides
+  language: en
+  favicon: assets/images/ui/aircoookie/blurple.png
+  logo: assets/images/ui/akemi/001_cheerful.png
+  icon: 
+    repo: fontawesome/brands/github
+  features: 
+    - navigation.top
+    # - navigation.expand
+    - navigation.instant
+    - navigation.tabs
+    - content.action.edit
+    # - toc.integrate
+  palette:
+    - scheme: wled
+      primary: cyan #mostly overriden in extra.css
+      accent: orange
+      toggle: 
+        icon: material/weather-sunny
+        name: Light Mode
+    - scheme: default
+      primary: orange
+      accent: orange
+      toggle: 
+        icon: material/weather-night
+        name: Dark Mode
+plugins: 
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tilde
+extra:
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/K9JBvgNG
+      name: Discord SR
+    - icon: fontawesome/brands/discourse
+      link: https://wled.discourse.group/
+      name: Forum
+    - icon: fontawesome/solid/code
+      link: https://gitpod.io/#https://github.com/MoonModules/WLED
+      name: Gitpod
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/wled_project/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/results?search_query=WLED
+    - icon: fontawesome/solid/shirt
+      link: https://wled.teemill.com/
+    - icon: fontawesome/solid/heart
+      link: https://paypal.me/aircoookie/
+extra_css:
+  - assets/stylesheets/global.css
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - assets/js/newtab.js
+nav:
+  - Welcome: index.md
+  - Basics:
+    - Getting Started: basics/getting-started.md
+    - Compatibility:
+      - LED strips: basics/compatible-led-strips.md
+      - Controllers: basics/compatible-controllers.md
+      - Other Hardware: basics/compatible-hardware.md
+      - Software: basics/compatible-software.md
+    - Installation:
+      - Install WLED Binary: basics/install-binary.md
+      - Install using ESP GUI: basics/install-gui.md
+      - Compiling WLED: advanced/compiling-wled.md
+    - Tutorials: basics/tutorials.md
+    - FAQ: basics/faq.md
+  - Features:
+    - Effects: features/effects.md
+    - Palettes: features/palettes.md
+    - Macros: features/macros.md
+    - Presets: features/presets.md
+    - Segments: features/segments.md
+    - Settings: features/settings.md
+    - Multi-strip Support: features/multi-strip.md
+    - Relay Control: features/relay-control.md
+    - Web GUI Sitemap: features/subpages.md
+    - White handling: features/cct.md
+    - Pixel Art Converter: features/pixel-art-converter.md
+  - Interfaces: 
+    - Blynk: interfaces/blynk.md
+    - DMX: interfaces/dmx-output.md
+    - E1.31 (DMX) / Art-Net: interfaces/e1.31-dmx.md
+    - HTTP Request API: interfaces/http-api.md
+    - Remote Control: interfaces/infrared.md
+    - JSON API: interfaces/json-api.md
+    - MQTT: interfaces/mqtt.md
+    - Philips Hue: interfaces/philips-hue.md
+    - Serial: interfaces/serial.md
+    - WLED UDP Sync: interfaces/udp-notifier.md
+    - UDP Realtime / tpm2.net: interfaces/udp-realtime.md
+    - Websocket: interfaces/websocket.md
+  - Advanced:
+    - Audio Reactive WLED: advanced/audio-reactive.md
+    - Home Automation: advanced/home-automation.md
+    - Remote Access / IFTTT: advanced/remote-access-ifttt.md
+    - Security: advanced/security.md
+    - Wiring Protips: advanced/wiring.md
+    - Long Data Lines: advanced/longdata.md
+    - Compiling WLED: advanced/compiling-wled.md
+    - WLED Build Flags: advanced/buildflags.md
+    - Custom Features: advanced/custom-features.md
+    - ESP32 Recovery: advanced/esp32-recovery.md
+    - Mapping: advanced/mapping.md
+    - Virtual LEDs: advanced/ddp.md
+    - Custom Access Point Configuration: advanced/custom-ap.md
+    - Net debug: advanced/net-debug.md
+  - About: 
+    - Contributors & Credits: about/contributors.md
+    - Privacy Policy: about/privacy-policy.md
+    - Upcoming Features: about/roadmap.md
+  - Usermods: 
+      - Four Line Display: usermods/4LineDisplay.md
+      - Autosave: usermods/Autosave.md
+      - Battery: usermods/Battery.md
+      - BH1750: usermods/BH1750.md
+      - BME280: usermods/BME280.md
+      - MPU6050: usermods/mpu6050-IMU.md
+      - Rotary Encoder: usermods/Rotary-Encoder.md
+      - Animated staircase: usermods/staircase.md
+      - Temperature: usermods/Temperature.md
+      - MultiRelay: usermods/MultiRelay.md
+      - PIRsensorSwitch: usermods/PIRsensorSwitch.md
+      - Weather: usermods/Weather.md
+      - Pin Manager: usermods/pinmanager.md
+  - MoonModules: 
+    - What is MoonModules: moonmodules/what-is-moonmodules.md
+    - Release notes v0.14.0-b3-daily: moonmodules/release-notes-v0.14.0-b3-daily.md
+    - Release notes v0.14.0-b25: moonmodules/release-notes-v0.14.0-b25.md
+    - Release notes v0.14.0-b15: moonmodules/release-notes-v0.14.0-b15.md
+    - Release notes v0.14.0-b1: moonmodules/release-notes-v0.14.0-b1.md
+    - Release notes v0.14.0-b0: moonmodules/release-notes-v0.14.0-b0.md
+    - Fork comparison: moonmodules/fork-comparison.md
+    - Installing and Compiling: moonmodules/Installing-and-Compiling.md
+    - Mappings: moonmodules/mappings.md
+    - ARTI-FX: moonmodules/arti-fx.md
+    - Platformio entries: moonmodules/platformio-entries.md
+    - Preset API commands: moonmodules/preset-api-commands.md
+    - Contribute to docs: moonmodules/contribute-docs.md
+    - Contribute to development: moonmodules/contribute-dev.md
+  - 2D: 
+    - WIP: 2D/wip.md
+  - Sound Reactive: 
+    - Introduction: soundreactive/introduction.md
+    - Sound Settings: soundreactive/Sound-Settings.md
+    - Digital Microphone Hookup: WLEDSR/Digital-Microphone-Hookup.md
+    - Line Input: soundreactive/Line-Input.md
+    - Audio Sync: soundreactive/sync.md
+    - Sound Reactive Palettes: soundreactive/Sound-Reactive-Palettes.md
+  - WLED SR 0.13:
+    - Basics:
+      - Introduction: WLEDSR/Home.md
+      - Installing and Compiling: WLEDSR/Installing-and-Compiling.md
+      - First Time Setup: WLEDSR/First-Time-Setup.md
+      - Running Sound Reactive WLED: WLEDSR/Running-Sound-Reactive-WLED.md
+      - 2D Support: WLEDSR/2D-Support.md
+
+      - 2D LED Preferences: WLEDSR/LED-Preferences.md
+      - UDP Sound Sync: WLEDSR/UDP-Sound-Sync.md
+      - Sound Reactive Animations: WLEDSR/Reactive-Animations.md
+      - Non-Reactive Animations: WLEDSR/Non-Reactive-Animations.md
+
+      - Digital Microphone Hookup: WLEDSR/Digital-Microphone-Hookup.md
+      - Analog Audio Input Options: WLEDSR/Analog-Audio-Input-Options.md
+      - Using my PC for the Sound: WLEDSR/Using-my-PC-for-the-Sound.md
+      - News: WLEDSR/News.md
+
+    - Technicals:
+      - It's Not Working: WLEDSR/My--device--is-not-working.md
+      - Noise and Spikes: WLEDSR/Noise-and-Spikes.md
+      - Connectivity Issues: WLEDSR/Connectivity-Issues.md
+
+    - Coding and Testing:
+      - WLED Programming Notes: WLEDSR/WLED-Programming-Notes.md
+      - Modifying Sound Reactive WLED: WLEDSR/Modifying-Sound-Reactive-WLED.md
+      - Future Directions: WLEDSR/Future-Directions.md
+      - Adding a new Settings Page: WLEDSR/Adding-a-Sound-Settings-page-to-the-UI.md
+      - On Lossy Colours: WLEDSR/On-Lossy-Colours.md
+      - Sliders in WLED: WLEDSR/Adding-Sliders.md
+      - Testing: WLEDSR/Testing.md
+
+    - Links:
+      - FastLED Wiki: https://github.com/FastLED/FastLED/wiki/Basic-usage
+      - Other: WLEDSR/Other-Links.md
