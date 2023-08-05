@@ -1,9 +1,9 @@
-site_name: WLED MoonModules Project
+site_name: StarMod Project
 site_author: Ewoud Wijma (ewowi)
 #site_url: https://wled.app
 repo_name: WLED
 repo_url: https://github.com/ewowi/StarMod
-repo_title: WLED Repository
+repo_title: StarMod Repository
 #copyright: Copyright &copy; 2016-2021 Christian Schwinne, Contributors
 edit_uri: https://github.com/ewowi/StarDocs/edit/main/docs
 theme:

@@ -3,13 +3,13 @@
 
 [data-md-color-scheme="wled"] {
   --md-hue: 232; /* [0, 360] */
-  --md-primary-fg-color: #FFA000; /*WLED Orange*/
+  --md-primary-fg-color: #b60f62; /*WLED Orange*/
   /*--md-primary-fg-color: #7289DA; /*Blurple*/
   --md-primary-fg-color--light: #555;
   --md-primary-fg-color--dark:  #999;
   --md-default-fg-color:           hsla(var(--md-hue),75%,95%,1); /*text*/
   --md-typeset-color: var(--md-default-fg-color); /*text*/
-  --md-default-fg-color--light:   #FFA000; /* hsla(var(--md-hue),5%,70%,1); /*heading WLEDMM this makes H1 red*/
+  --md-default-fg-color--light:   #b60f62; /* hsla(var(--md-hue),5%,70%,1); /*heading WLEDMM this makes H1 red*/
   --md-default-fg-color--lighter:  hsla(var(--md-hue),75%,90%,0.32); /*edit pen*/
   --md-default-fg-color--lightest: hsla(var(--md-hue),75%,90%,0.12); /*?*/
   --md-default-bg-color: #2c2f33; /* discord */
@@ -20,7 +20,7 @@
   --md-admonition-bg-color: #35383d;
   --md-admonition-fg-color: var(--md-default-fg-color);
   --md-typeset-table-color: #42464c;
-  --md-typeset-a-color: #FFA000;
+  --md-typeset-a-color: #b60f62;
   --md-code-hl-keyword-color: #a5d6ff;
   --md-code-hl-number-color: #79c0ff;
   --md-code-hl-name-color: #79c0ff;
@@ -37,9 +37,9 @@
 
 /* MoonModules */
 h2,h3,h4 { /*H1 not working here, see above*/
-  color: #FFA000;
+  color: #b60f62;
 }
 .md-nav__link--active, .md-tabs__link--active {
-  color: #FFA000;
+  color: #b60f62;
 }
 /* , .md-nav__item--active */
