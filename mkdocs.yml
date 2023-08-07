@@ -49,19 +49,19 @@ extra:
       link: https://discord.gg/K9JBvgNG
       name: Discord SR
     - icon: fontawesome/brands/discourse
-      link: https://wled.discourse.group/
+      link: https://starmod.discourse.group/
       name: Forum
     - icon: fontawesome/solid/code
       link: https://gitpod.io/#https://github.com/MoonModules/WLED
       name: Gitpod
     - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/wled_project/
+      link: https://www.instagram.com/starmod_project/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/results?search_query=WLED
     - icon: fontawesome/solid/shirt
-      link: https://wled.teemill.com/
+      link: https://starmod.teemill.com/
     - icon: fontawesome/solid/heart
-      link: https://paypal.me/aircoookie/
+      link: https://paypal.me/moonmodules/
 extra_css:
   - assets/stylesheets/global.css
   - assets/stylesheets/extra.css
