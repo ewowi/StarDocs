@@ -69,19 +69,7 @@ extra_javascript:
   - assets/js/newtab.js
 nav:
   - Welcome: index.md
-  - Basics:
-    - Getting Started: basics/getting-started.md
-    - Compatibility:
-      - LED strips: basics/compatible-led-strips.md
-      - Controllers: basics/compatible-controllers.md
-      - Other Hardware: basics/compatible-hardware.md
-      - Software: basics/compatible-software.md
-    - Installation:
-      - Install WLED Binary: basics/install-binary.md
-      - Install using ESP GUI: basics/install-gui.md
-      - Compiling WLED: advanced/compiling-wled.md
-    - Tutorials: basics/tutorials.md
-    - FAQ: basics/faq.md
+  - Basics: basics.md
   - System Modules:
     - Print Module: Sys/SysModPrint.md
     - Files Module: Sys/SysModFiles.md
@@ -95,6 +83,19 @@ nav:
     - Privacy Policy: about/privacy-policy.md
     - Upcoming Features: about/roadmap.md
   - Archive:
+    - Basics:
+      - Getting Started: archive/basics/getting-started.md
+      - Compatibility:
+        - LED strips: archive/basics/compatible-led-strips.md
+        - Controllers: archive/basics/compatible-controllers.md
+        - Other Hardware: archive/basics/compatible-hardware.md
+        - Software: archive/basics/compatible-software.md
+      - Installation:
+        - Install WLED Binary: archive/basics/install-binary.md
+        - Install using ESP GUI: archive/basics/install-gui.md
+        - Compiling WLED: archive/advanced/compiling-wled.md
+      - Tutorials: archive/basics/tutorials.md
+      - FAQ: archive/basics/faq.md
     - Features:
       - Effects: archive/features/effects.md
       - Palettes: archive/features/palettes.md

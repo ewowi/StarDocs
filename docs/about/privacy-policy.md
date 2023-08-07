@@ -5,10 +5,10 @@ hide:
   - toc
 ---
 
-By using the WLED embedded system code, the WLED iOS mobile application, the WLED Android mobile application, web client, or associated Services, no personally identifiable data is collected, transmitted and/or stored on external servers.
+By using the StarMod embedded system code, the StarMod iOS mobile application, the StarMod Android mobile application, web client, or associated Services, no personally identifiable data is collected, transmitted and/or stored on external servers.
 No data is processed in any way not absolutely required for the operation of the Service.
 
-This https://mm.kno.wled.ge page is hosted using GitHub Pages. While the author of this page does not collect any personally identifiable data, the service provider GitHub "may collect User Personal Information from visitors to [the] GitHub Pages website, including logs of visitor IP addresses, to comply with legal obligations, and to maintain the security and integrity of the Website and the Service." (https://docs.github.com/en/github/site-policy/github-privacy-statement#github-pages)  
+This https://ewowi.github.io/StarDocs/ page is hosted using GitHub Pages. While the author of this page does not collect any personally identifiable data, the service provider GitHub "may collect User Personal Information from visitors to [the] GitHub Pages website, including logs of visitor IP addresses, to comply with legal obligations, and to maintain the security and integrity of the Website and the Service." (https://docs.github.com/en/github/site-policy/github-privacy-statement#github-pages)  
 This is outside the influence of the author.
 
 ### Overview of collected data
@@ -20,7 +20,7 @@ The mobile apps internally store data regarding connected devices, including, bu
 
 Using the provided Support services (including, but not limited to GitHub, Discord and E-mail), only the information you choose to disclose will be processed. Privacy policies and Terms of Service of service providers apply.
 
-In accordance with the Service MIT license, THE SOFTWARE IS PROVIDED "AS IS",
+In accordance with the Service GPL V3 license, THE SOFTWARE IS PROVIDED "AS IS",
 WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -29,4 +29,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-If you have inquiries regarding this Policy please feel free to contact me at: dev.aircoookie@gmail,com
+If you have inquiries regarding this Policy please feel free to contact me at: moonmodules@icloud,com
