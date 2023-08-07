@@ -82,6 +82,14 @@ nav:
       - Compiling WLED: advanced/compiling-wled.md
     - Tutorials: basics/tutorials.md
     - FAQ: basics/faq.md
+  - System Modules:
+    - Print Module: Sys/SysModPrint.md
+    - Files Module: Sys/SysModFiles.md
+    - System Module: Sys/SysModSystem.md
+  - Application Modules:
+    - Print Module: App/AppModLeds.md
+  - User Modules:
+    - E131 Module: User/UserModE131.md
   - About: 
     - Contributors & Credits: about/contributors.md
     - Privacy Policy: about/privacy-policy.md

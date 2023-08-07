@@ -33,7 +33,7 @@
 
 .md-main {
   background: linear-gradient(to bottom, #ffbe33 0%, #b60f62 100%);
-  color: #b60f62;
+  /* color: #b60f62; */
  }
 
 .md-header {
@@ -41,10 +41,10 @@
 }
 
 /* MoonModules */
-h2,h3,h4 { /*H1 not working here, see above*/
-  color: #b60f62;
-}
-.md-nav__link--active, .md-tabs__link--active {
-  color: #b60f62;
-}
+/* h2,h3,h4 { /*H1 not working here, see above*/
+  /* color: #b60f62; */
+/* } */
+/* .md-nav__link--active, .md-tabs__link--active { */
+  /* color: #b60f62; */
+/* } */ 
 /* , .md-nav__item--active */
