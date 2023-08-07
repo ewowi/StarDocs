@@ -158,7 +158,7 @@ nav:
       - Contribute to development: archive/moonmodules/contribute-dev.md
     - 2D:
       - WIP: archive/2D/wip.md
-    - Sound Reactive: archive/
+    - Sound Reactive:
       - Introduction: archive/soundreactive/introduction.md
       - Sound Settings: archive/soundreactive/Sound-Settings.md
       - Digital Microphone Hookup: archive/WLEDSR/Digital-Microphone-Hookup.md
