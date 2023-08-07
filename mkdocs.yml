@@ -75,7 +75,7 @@ nav:
     - Files Module: Sys/SysModFiles.md
     - System Module: Sys/SysModSystem.md
   - Application Modules:
-    - Print Module: App/AppModLeds.md
+    - Leds Module: App/AppModLeds.md
   - User Modules:
     - E131 Module: User/UserModE131.md
   - About: 

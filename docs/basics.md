@@ -1,9 +1,8 @@
-
 ---
 title: Basics
 hide:
-  # - navigation
-  # - toc
+  - navigation
+  - toc
 ---
 
 ## Heading 2
