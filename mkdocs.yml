@@ -71,13 +71,27 @@ nav:
   - Welcome: index.md
   - Basics: basics.md
   - System Modules:
-    - Print Module: Sys/SysModPrint.md
-    - Files Module: Sys/SysModFiles.md
-    - System Module: Sys/SysModSystem.md
+    - SysMod Overview: SysMod/SysModOverview.md
+    - Print Module: SysMod/SysModPrint.md
+    - Files Module: SysMod/SysModFiles.md
+    - System Module: SysMod/SysModSystem.md
+    - Instances Module: SysMod/SysModInstances.md
+    - Model Module: SysMod/SysModModel.md
+    - Modules Module: SysMod/SysModModules.md
+    - Network Module: SysMod/SysModNetwork.md
+    - Pins Module: SysMod/SysModPins.md
+    - UI Module: SysMod/SysModUI.md
+    - Web Module: SysMod/SysModWeb.md
   - Application Modules:
-    - Leds Module: App/AppModLeds.md
+    - AppMod Overview: AppMod/AppModOverview.md
+    - Preview Module: AppMod/AppModPreview.md
+    - Leds Module: AppMod/AppModLeds.md
   - User Modules:
-    - E131 Module: User/UserModE131.md
+    - UserMod overview: UserMod/UserModOverview.md
+    - Fixture Generator Module: UserMod/UserModFixture Generator.md
+    - E131-sACN Module: UserMod/UserModE131-sACN.md
+    - Artnet Module: UserMod/UserModArtNet.md
+    - DDP Module: UserMod/UserModDDP.md
   - About: 
     - Contributors & Credits: about/contributors.md
     - Privacy Policy: about/privacy-policy.md

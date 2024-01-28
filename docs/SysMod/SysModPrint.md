@@ -1,5 +1,5 @@
 ---
-title: SysModSystem
+title: SysMod Print
 hide:
   # - navigation
   # - toc
