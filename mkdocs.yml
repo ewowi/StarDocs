@@ -84,7 +84,7 @@ nav:
     - Web Module: SysMod/SysModWeb.md
   - Application Modules:
     - AppMod Overview: AppMod/AppModOverview.md
-    - Preview Module: AppMod/AppModPreview.md
+    - Fixture Module: AppMod/AppModFixture.md
     - Leds Module: AppMod/AppModLeds.md
   - User Modules:
     - UserMod overview: UserMod/UserModOverview.md

@@ -1,5 +1,5 @@
 ---
-title: AppModPreview
+title: AppModFixture
 hide:
   # - navigation
   # - toc
