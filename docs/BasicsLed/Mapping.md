@@ -47,3 +47,5 @@ projectAndMap P:18x18x1 -> 241
 ```
 std::vector<std::vector<unsigned16>> mappingTable;
 ```
+
+https://github.com/ewowi/StarDocs/assets/1737159/637588d2-0f38-46ba-b765-a37acf5fd385
