@@ -13,6 +13,7 @@ Text
 
 Example mapping 1D effect to Rings441 with centre point at (0,0)
 
+```
 Leds pre [0] f:15 p:0 s:1
 ledV 0 mapping: #ledsP (1): 0
 ledV 1 mapping: #ledsP (1): 0
@@ -37,5 +38,5 @@ ledV 19 mapping: #ledsP (12): 183 184 185 186 187 188 189 190 191 192 193 194
 projectAndMap [0] V:24 x 1 x 1 = 20 (v:20 - p:252)
 leds[0].size = 56 + 20
 projectAndMap P:18x18x1 -> 241
-
+```
 
