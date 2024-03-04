@@ -69,7 +69,7 @@ extra_javascript:
   - assets/js/newtab.js
 nav:
   - Welcome: index.md
-  - StarMod Basics: basics.md
+  - StarMod Basics:
     - Modules: BasicsStarMod/Modules.md
   - Led Basics:
     - Mapping: BasicsLed/Mapping.md
