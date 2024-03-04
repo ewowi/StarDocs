@@ -11,10 +11,9 @@ Text
 
 ### Mapping table
 
-Example mapping 1D effect to Rings441 with centre point at (0,0)
+Example mapping 1D effect to Rings241 (in2out, 9 rings) with distance from point (0,0)
 
 ```
-Leds pre [0] f:15 p:0 s:1
 ledV 0 mapping: #ledsP (1): 0
 ledV 1 mapping: #ledsP (1): 0
 ledV 2 mapping: #ledsP (1): 0
@@ -36,7 +35,15 @@ ledV 17 mapping: #ledsP (18): 94 95 96 97 98 99 100 101 102 133 134 145 146 180 
 ledV 18 mapping: #ledsP (16): 135 136 137 138 139 140 141 142 143 144 181 182 195 196 197 240
 ledV 19 mapping: #ledsP (12): 183 184 185 186 187 188 189 190 191 192 193 194
 projectAndMap [0] V:24 x 1 x 1 = 20 (v:20 - p:252)
-leds[0].size = 56 + 20
+
 projectAndMap P:18x18x1 -> 241
 ```
 
+* 1D effect will have a led count of 20 (0..19): virtual leds
+* each virtual led is mapped to a number of physical leds. See above: some have 0 phyisical leds, some have more: this results in circles. In total physical 241 leds are mapped
+* temporary: virtual leds without a mapping to physical leds are mapped here to led 0. This is a temporary workaround (and as a consequence 252 instead of 241 leds are mapped)
+* the mapping table is implemented as: 
+
+```
+std::vector<std::vector<unsigned16>> mappingTable;
+```
