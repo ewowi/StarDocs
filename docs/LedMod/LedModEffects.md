@@ -11,6 +11,6 @@ Text
 
 ### Other info
 
-[BasicsLed/Mapping][Mappings](BasicsLed/Mapping.md)
+[Mappings](BasicsLed/Mapping.md)
 
 
