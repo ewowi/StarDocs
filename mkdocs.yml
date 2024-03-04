@@ -69,7 +69,10 @@ extra_javascript:
   - assets/js/newtab.js
 nav:
   - Welcome: index.md
-  - Basics: basics.md
+  - StarMod Basics: basics.md
+    - Modules: BasicsStarMod/Modules.md
+  - Led Basics:
+    - Mapping: BasicsLed/Mapping.md
   - System Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md
