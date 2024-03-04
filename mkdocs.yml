@@ -85,7 +85,7 @@ nav:
   - Application Modules:
     - AppMod Overview: AppMod/AppModOverview.md
     - Fixture Module: AppMod/AppModFixture.md
-    - Leds Module: AppMod/AppModLeds.md
+    - Effects Module: AppMod/AppModEffects.md
   - User Modules:
     - UserMod overview: UserMod/UserModOverview.md
     - Fixture Generator Module: UserMod/UserModFixture Generator.md
