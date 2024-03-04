@@ -1,5 +1,5 @@
 ---
-title: AppModEffects
+title: LedModEffects
 hide:
   # - navigation
   # - toc

@@ -82,13 +82,13 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
-  - Application Modules:
-    - AppMod Overview: AppMod/AppModOverview.md
-    - Fixture Module: AppMod/AppModFixture.md
-    - Effects Module: AppMod/AppModEffects.md
+  - Led Modules:
+    - LedMod Overview: LedMod/LedModOverview.md
+    - Fixture Module: LedMod/LedModFixture.md
+    - Effects Module: LedMod/LedModEffects.md
+    - Fixture Generator Module: UserMod/UserModFixture Generator.md
   - User Modules:
     - UserMod overview: UserMod/UserModOverview.md
-    - Fixture Generator Module: UserMod/UserModFixture Generator.md
     - E131-sACN Module: UserMod/UserModE131-sACN.md
     - Artnet Module: UserMod/UserModArtNet.md
     - DDP Module: UserMod/UserModDDP.md

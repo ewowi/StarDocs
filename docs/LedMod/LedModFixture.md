@@ -1,5 +1,5 @@
 ---
-title: AppModLeds
+title: LedModFixture
 hide:
   # - navigation
   # - toc
