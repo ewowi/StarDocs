@@ -995,8 +995,26 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Heading 2">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effects">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#other-info" class="md-nav__link">
@@ -4278,8 +4296,26 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Heading 2">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effects">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#other-info" class="md-nav__link">
@@ -4322,6 +4358,24 @@
 
 <h2 id="heading-2">Heading 2</h2>
 <p>Text</p>
+<h2 id="effects">Effects</h2>
+<p><img width="158" alt="Screenshot 2024-03-05 at 11 03 46" src="https://github.com/ewowi/StarDocs/assets/1737159/c2fac19d-3417-4aeb-b809-816850195957"></p>
+<p>An effect can have multiple tags, tags are shown in the drop down. Any tag is possible, not necessarily limited to 1D, 2D, sound, etc</p>
+<p>Current tags</p>
+<p>♪ Audio Volume </p>
+<p>♫ Audio Frequency</p>
+<p>┊1D</p>
+<p>▦ 2D</p>
+<p>🧊3D</p>
+<p>💫StarMod </p>
+<p>⚡FastLed origin</p>
+<p>💡WLED origin</p>
+<h3 id="dev">Dev</h3>
+<p>Defined in Effect class as follows:</p>
+<div class="highlight"><pre><span></span><code>  const char * name() {return &quot;GEQ&quot;;}
+  unsigned8 dim() {return _2D;}
+  const char * tags() {return &quot;💡♫&quot;;}
+</code></pre></div>
 <h3 id="other-info">Other info</h3>
 <p><a href="BasicsLed/Mapping.md">Mappings</a></p>
 
