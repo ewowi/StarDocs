@@ -5,7 +5,7 @@ hide:
   # - toc
 ---
 
-## Heading 2
+## Mapping
 
 Text
 
