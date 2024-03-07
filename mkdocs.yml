@@ -73,6 +73,7 @@ nav:
     - Modules: BasicsStarMod/Modules.md
   - Led Basics:
     - Mapping: BasicsLed/Mapping.md
+    - Projections: BasicsLed/Projections.md
   - System Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md

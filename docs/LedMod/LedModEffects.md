@@ -45,6 +45,7 @@ Defined in Effect class as follows:
 
 ### Other info
 
-[Mappings](/BasicsLed/Mappings.md)
-[Projections](/BasicsLed/Projections.md)
+* [Mappings](/StarDocs/BasicsLed/Mappings.md)
+
+* [Projections](/StarDocs/BasicsLed/Projections.md)
 
