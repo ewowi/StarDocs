@@ -9,34 +9,37 @@ hide:
 
 Text
 
+## Dev
+
 ### Mapping table
+(LedFixture.cpp - projectAndMap)
 
 Example mapping 1D effect to Rings241 (in2out, 9 rings) with distance from point (0,0)
 
 ```
-ledV 0 mapping: #ledsP (1): 0
-ledV 1 mapping: #ledsP (1): 0
-ledV 2 mapping: #ledsP (1): 0
-ledV 3 mapping: #ledsP (5): 0 217 218 219 220
-ledV 4 mapping: #ledsP (10): 0 161 162 163 164 165 215 216 221 222
-ledV 5 mapping: #ledsP (10): 0 116 117 118 119 120 160 166 214 223
-ledV 6 mapping: #ledsP (10): 0 80 81 82 115 121 159 167 213 224
-ledV 7 mapping: #ledsP (14): 0 51 52 53 78 79 83 84 114 122 158 168 212 225
-ledV 8 mapping: #ledsP (14): 0 30 31 32 50 54 77 85 113 123 157 169 211 226
-ledV 9 mapping: #ledsP (15): 0 16 17 29 33 49 55 76 86 112 124 156 170 210 227
-ledV 10 mapping: #ledsP (20): 0 5 6 7 15 18 28 34 48 56 75 87 111 125 155 171 208 209 228 229
-ledV 11 mapping: #ledsP (15): 0 4 8 14 19 47 57 74 88 110 126 154 172 207 230
-ledV 12 mapping: #ledsP (18): 1 3 13 20 27 35 46 58 73 89 109 127 152 153 173 174 206 231
-ledV 13 mapping: #ledsP (19): 2 9 10 11 12 26 36 45 59 72 90 108 128 151 175 204 205 232 233
-ledV 14 mapping: #ledsP (17): 21 22 23 24 25 44 60 71 91 106 107 129 130 150 176 203 234
-ledV 15 mapping: #ledsP (21): 37 38 39 40 41 42 43 61 69 70 92 105 131 148 149 177 178 201 202 235 236
-ledV 16 mapping: #ledsP (15): 62 63 64 65 66 67 68 93 103 104 132 147 179 200 237
-ledV 17 mapping: #ledsP (18): 94 95 96 97 98 99 100 101 102 133 134 145 146 180 198 199 238 239
-ledV 18 mapping: #ledsP (16): 135 136 137 138 139 140 141 142 143 144 181 182 195 196 197 240
-ledV 19 mapping: #ledsP (12): 183 184 185 186 187 188 189 190 191 192 193 194
-projectAndMap [0] V:24 x 1 x 1 = 20 (v:20 - p:252)
+ledV 2 mapping: #ledsP (2): 218 219
+ledV 3 mapping: #ledsP (3): 162 164 217 220
+ledV 4 mapping: #ledsP (4): 118 161 163 165 215 216 221 222
+ledV 5 mapping: #ledsP (5): 80 81 82 116 117 119 120 160 166 214 223
+ledV 6 mapping: #ledsP (6): 79 83 115 121 159 167 213 224
+ledV 7 mapping: #ledsP (7): 31 51 52 53 78 84 114 122 158 168 212 225
+ledV 8 mapping: #ledsP (8): 30 32 49 50 54 55 77 85 113 123 157 169 211 226
+ledV 9 mapping: #ledsP (9): 6 16 17 29 33 48 56 76 86 112 124 156 170 210 227
+ledV 10 mapping: #ledsP (10): 5 7 14 15 18 19 28 34 47 57 75 87 111 125 155 171 208 209 228 229
+ledV 11 mapping: #ledsP (11): 0 4 8 27 35 74 88 110 126 153 154 172 173 207 230
+ledV 12 mapping: #ledsP (12): 1 2 3 9 12 13 20 46 58 73 89 108 109 127 128 152 174 206 231
+ledV 13 mapping: #ledsP (13): 10 11 21 25 26 36 44 45 59 60 72 90 106 107 129 130 151 175 204 205 232 233
+ledV 14 mapping: #ledsP (14): 22 23 24 37 43 70 71 91 92 149 150 176 177 203 234
+ledV 15 mapping: #ledsP (15): 38 39 40 41 42 61 62 68 69 104 105 131 132 148 178 200 201 202 235 236 237
+ledV 16 mapping: #ledsP (16): 63 64 65 66 67 93 94 98 102 103 146 147 179 180 199 238
+ledV 17 mapping: #ledsP (17): 95 96 97 99 100 101 133 134 137 141 144 145 181 196 197 198 239 240
+ledV 18 mapping: #ledsP (18): 135 136 138 139 140 142 143 182 183 184 185 192 193 194 195
+ledV 19 mapping: #ledsP (19): 186 187 188 189 190 191
+
+projectAndMap [0] V:25 x 1 x 1 -> 20 (v:20 - p:241)
 
 projectAndMap P:18x18x1 -> 241
+
 ```
 
 * 1D effect will have a led count of 20 (0..19): virtual leds

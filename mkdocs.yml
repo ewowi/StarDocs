@@ -71,9 +71,6 @@ nav:
   - Welcome: index.md
   - StarMod Basics:
     - Modules: BasicsStarMod/Modules.md
-  - Led Basics:
-    - Mapping: BasicsLed/Mapping.md
-    - Projections: BasicsLed/Projections.md
   - System Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md
@@ -86,6 +83,9 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
+  - Led Basics:
+    - Mapping: BasicsLed/Mapping.md
+    - Projections: BasicsLed/Projections.md
   - Led Modules:
     - LedMod Overview: LedMod/LedModOverview.md
     - Fixture Module: LedMod/LedModFixture.md
