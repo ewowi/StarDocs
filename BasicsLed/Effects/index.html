@@ -1716,9 +1716,9 @@
 <h2 id="dev">Dev</h2>
 <div class="highlight"><pre><span></span><code>class ExampleEffect: public Effect {
 public:
-  const char * name() {return &quot;Octopus&quot;;}
+  const char * name() {return &quot;ExampleEffect&quot;;}
   unsigned8 dim() {return _2D;}
-  const char * tags() {return &quot;💡&quot;;}
+  const char * tags() {return &quot;💫💡⚡♪♫&quot;;}
 
   void loop(Leds &amp;leds) {
 
@@ -1741,7 +1741,6 @@ public:
   }
   void controls(JsonObject parentVar) {
     addPalette(parentVar, 4);
-
     ui-&gt;initSlider(parentVar, &quot;speed&quot;, 128, 1, 255);
     ui-&gt;initSlider(parentVar, &quot;Legs&quot;, 4, 1, 8);
   }
