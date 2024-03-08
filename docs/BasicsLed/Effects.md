@@ -54,6 +54,10 @@ public:
 
 * leds[pos] = color gives a virtual pixel a value
 
+Notes:
+
+* Effect class may not contain vars, use return functions instead to minimize memory foodprint
+
 ### See also
 
 * [Projections And Mappings](/StarDocs/BasicsLed/ProjectionsAndMappings) : virtual to physical mapping of an effect
