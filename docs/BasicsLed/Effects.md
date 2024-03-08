@@ -14,9 +14,9 @@ Text
 ```
 class ExampleEffect: public Effect {
 public:
-  const char * name() {return "Octopus";}
+  const char * name() {return "ExampleEffect";}
   unsigned8 dim() {return _2D;}
-  const char * tags() {return "💡";}
+  const char * tags() {return "💫💡⚡♪♫";}
 
   void loop(Leds &leds) {
 
@@ -39,7 +39,6 @@ public:
   }
   void controls(JsonObject parentVar) {
     addPalette(parentVar, 4);
-
     ui->initSlider(parentVar, "speed", 128, 1, 255);
     ui->initSlider(parentVar, "Legs", 4, 1, 8);
   }
