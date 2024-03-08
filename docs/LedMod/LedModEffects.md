@@ -35,16 +35,8 @@ Current tags
 
 ### Dev
 
-Defined in Effect class as follows:
+### See also
 
-```
-  const char * name() {return "GEQ";}
-  unsigned8 dim() {return _2D;}
-  const char * tags() {return "💡♫";}
-```
+* [Effects](/StarDocs/BasicsLed/Effects)
 
-### Other info
-
-* [Mappings](/StarDocs/BasicsLed/Mapping)
-
-* [Projections](/StarDocs/BasicsLed/Projections)
+* [Projections And Mappings](/StarDocs/BasicsLed/ProjectionsAndMappings) : virtual to physical mapping of an effect
