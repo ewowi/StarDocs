@@ -1718,13 +1718,16 @@
 public:
   const char * name() {return &quot;ExampleEffect&quot;;}
   unsigned8 dim() {return _2D;}
-  const char * tags() {return &quot;💫💡⚡♪♫&quot;;}
+  const char * tags() {return &quot;♪♫⚡💡💫&quot;;}
+
+  void setup() {
+  }
 
   void loop(Leds &amp;leds) {
 
     CRGBPalette16 pal = getPalette();
     stackUnsigned8 speed = mdl-&gt;getValue(&quot;speed&quot;);
-    stackUnsigned8 legs = mdl-&gt;getValue(&quot;Legs&quot;);
+    stackUnsigned8 legs = mdl-&gt;getValue(&quot;legs&quot;);
 
     map_t    *rMap = leds.sharedData.bind(rMap, leds.size.x * leds.size.y); //array
     uint8_t *offsX = leds.sharedData.bind(offsX);
@@ -1734,15 +1737,16 @@ public:
 
     for (pos.x = 0; pos.x &lt; leds.size.x; pos.x++) {
       for (pos.y = 0; pos.y &lt; leds.size.y; pos.y++) {
-        CRGB color = ColorFromPalette(pal, *step / 2 - radius, intensity);
-        leds[pos] = color;
+        CRGB color = ColorFromPalette(pal, radius, intensity);
+        leds[pos] = color; // or setPixelColor(pos, color);
       }
     }
   }
+
   void controls(JsonObject parentVar) {
     addPalette(parentVar, 4);
     ui-&gt;initSlider(parentVar, &quot;speed&quot;, 128, 1, 255);
-    ui-&gt;initSlider(parentVar, &quot;Legs&quot;, 4, 1, 8);
+    ui-&gt;initSlider(parentVar, &quot;legs&quot;, 4, 1, 8);
   }
 }; // ExampleEffect
 </code></pre></div>
@@ -1758,6 +1762,12 @@ public:
 </li>
 <li>
 <p>leds[pos] = color gives a virtual pixel a value</p>
+</li>
+<li>
+<p>leds[pos] = color is identical to leds.setPixelColor(pos, color);</p>
+</li>
+<li>
+<p>color = leds[pos] is identical to color = leds.getPixelColor(pos);</p>
 </li>
 </ul>
 <p>Notes:</p>
