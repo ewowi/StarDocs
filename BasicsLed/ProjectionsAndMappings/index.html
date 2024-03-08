@@ -844,7 +844,7 @@
           
   
   <span class="md-ellipsis">
-    Projections
+    Projections and Mappings
   </span>
   
 
@@ -855,7 +855,7 @@
         
   
   <span class="md-ellipsis">
-    Projections
+    Projections and Mappings
   </span>
   
 
@@ -1745,7 +1745,7 @@
   
 
 
-  <h1>Projections</h1>
+  <h1>Projections and Mappings</h1>
 
 <h2 id="projections">Projections</h2>
 <p>Text</p>
@@ -1827,12 +1827,24 @@ projectAndMap P:18x18x1 -&gt; 241
 </code></pre></div>
 <ul>
 <li>1D effect will have a led count of 20 (0..19): virtual leds</li>
-<li>each virtual led is mapped to a number of physical leds. See above: some have 0 phyisical leds, some have more: this results in circles. In total physical 241 leds are mapped</li>
-<li>temporary: virtual leds without a mapping to physical leds are mapped here to led 0. This is a temporary workaround (and as a consequence 252 instead of 241 leds are mapped)</li>
+<li>Each virtual led is mapped to a number of physical leds. In above example this results in circles. In total physical 241 leds are mapped</li>
 <li>the mapping table is implemented as: </li>
 </ul>
-<div class="highlight"><pre><span></span><code>std::vector&lt;std::vector&lt;unsigned16&gt;&gt; mappingTable;
+<div class="highlight"><pre><span></span><code>struct PhysMap {
+  // bool isPhys = false; // 1 byte
+  // union {
+    std::vector&lt;unsigned16&gt; * indexes;
+    CRGB color;
+  // }; // 4 bytes
+}; // expected to be 5 bytes but is 8 bytes!!!
+
+std::vector&lt;PhysMap&gt; mappingTable;
 </code></pre></div>
+<p>Each PhysMap can be a color OR and array of physical pixels. For projections where a logical pixel is not mapped to a physical pixel (like LedV 0 and 1 in above example) the color variable is used to store (setPixelColor) and retreive (getPixelColor) the color.</p>
+<ul>
+<li>To do: make union work so sizeof(PhysMap is less then 8)</li>
+</ul>
+<p>Example preview:</p>
 <video width="248" autoplay><source src="https://github.com/ewowi/StarDocs/assets/1737159/637588d2-0f38-46ba-b765-a37acf5fd385" type="video/mp4"></video>
 
 
