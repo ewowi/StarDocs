@@ -12,7 +12,7 @@ Text
 ## Dev
 
 ```
-class Exampleeffect: public Effect {
+class ExampleEffect: public Effect {
 public:
   const char * name() {return "Octopus";}
   unsigned8 dim() {return _2D;}
@@ -43,7 +43,7 @@ public:
     ui->initSlider(parentVar, "speed", 128, 1, 255);
     ui->initSlider(parentVar, "Legs", 4, 1, 8);
   }
-}; // Exampleeffect
+}; // ExampleEffect
 ```
 
 * name(), dim() and tags() provide effect metadata

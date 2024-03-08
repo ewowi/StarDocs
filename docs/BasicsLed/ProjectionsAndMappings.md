@@ -94,12 +94,25 @@ projectAndMap P:18x18x1 -> 241
 ```
 
 * 1D effect will have a led count of 20 (0..19): virtual leds
-* each virtual led is mapped to a number of physical leds. See above: some have 0 phyisical leds, some have more: this results in circles. In total physical 241 leds are mapped
-* temporary: virtual leds without a mapping to physical leds are mapped here to led 0. This is a temporary workaround (and as a consequence 252 instead of 241 leds are mapped)
+* Each virtual led is mapped to a number of physical leds. In above example this results in circles. In total physical 241 leds are mapped
 * the mapping table is implemented as: 
 
 ```
-std::vector<std::vector<unsigned16>> mappingTable;
+struct PhysMap {
+  // bool isPhys = false; // 1 byte
+  // union {
+    std::vector<unsigned16> * indexes;
+    CRGB color;
+  // }; // 4 bytes
+}; // expected to be 5 bytes but is 8 bytes!!!
+
+std::vector<PhysMap> mappingTable;
 ```
+
+Each PhysMap can be a color OR and array of physical pixels. For projections where a logical pixel is not mapped to a physical pixel (like LedV 0 and 1 in above example) the color variable is used to store (setPixelColor) and retreive (getPixelColor) the color.
+
+* To do: make union work so sizeof(PhysMap is less then 8)
+
+Example preview:
 
 <video width="248" autoplay><source src="https://github.com/ewowi/StarDocs/assets/1737159/637588d2-0f38-46ba-b765-a37acf5fd385" type="video/mp4"></video>

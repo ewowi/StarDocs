@@ -85,7 +85,7 @@ nav:
     - Web Module: SysMod/SysModWeb.md
   - Led Basics:
     - Effects: BasicsLed/Effects.md
-    - Projections: BasicsLed/ProjectionsAndMappings.md
+    - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
   - Led Modules:
     - LedMod Overview: LedMod/LedModOverview.md
     - Fixture Module: LedMod/LedModFixture.md
