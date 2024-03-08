@@ -11,15 +11,11 @@ Text
 
 ## Effects
 
-<img width="158" alt="Screenshot 2024-03-05 at 11 03 46" src="https://github.com/ewowi/StarDocs/assets/1737159/c2fac19d-3417-4aeb-b809-816850195957">
+<img width="154" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/ae0704f5-ca90-4148-87b3-8d5712210970">
 
 An effect can have multiple tags, tags are shown in the drop down. Any tag is possible, not necessarily limited to 1D, 2D, sound, etc
 
 Current tags
-
-♪ Audio Volume 
-
-♫ Audio Frequency
 
 ┊1D
 
@@ -27,7 +23,11 @@ Current tags
 
 🧊3D
 
-💫StarMod 
+♪ Audio Volume 
+
+♫ Audio Frequency
+
+💫StarMod origin or enhanced
 
 ⚡FastLed origin
 
