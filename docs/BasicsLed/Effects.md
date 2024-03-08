@@ -16,13 +16,16 @@ class ExampleEffect: public Effect {
 public:
   const char * name() {return "ExampleEffect";}
   unsigned8 dim() {return _2D;}
-  const char * tags() {return "💫💡⚡♪♫";}
+  const char * tags() {return "♪♫⚡💡💫";}
+
+  void setup() {
+  }
 
   void loop(Leds &leds) {
 
     CRGBPalette16 pal = getPalette();
     stackUnsigned8 speed = mdl->getValue("speed");
-    stackUnsigned8 legs = mdl->getValue("Legs");
+    stackUnsigned8 legs = mdl->getValue("legs");
 
     map_t    *rMap = leds.sharedData.bind(rMap, leds.size.x * leds.size.y); //array
     uint8_t *offsX = leds.sharedData.bind(offsX);
@@ -32,15 +35,16 @@ public:
 
     for (pos.x = 0; pos.x < leds.size.x; pos.x++) {
       for (pos.y = 0; pos.y < leds.size.y; pos.y++) {
-        CRGB color = ColorFromPalette(pal, *step / 2 - radius, intensity);
-        leds[pos] = color;
+        CRGB color = ColorFromPalette(pal, radius, intensity);
+        leds[pos] = color; // or setPixelColor(pos, color);
       }
     }
   }
+
   void controls(JsonObject parentVar) {
     addPalette(parentVar, 4);
     ui->initSlider(parentVar, "speed", 128, 1, 255);
-    ui->initSlider(parentVar, "Legs", 4, 1, 8);
+    ui->initSlider(parentVar, "legs", 4, 1, 8);
   }
 }; // ExampleEffect
 ```
@@ -52,6 +56,10 @@ public:
 * leds.size is the virtual size of the effect
 
 * leds[pos] = color gives a virtual pixel a value
+
+* leds[pos] = color is identical to leds.setPixelColor(pos, color);
+
+* color = leds[pos] is identical to color = leds.getPixelColor(pos);
 
 Notes:
 
