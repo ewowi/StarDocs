@@ -27,11 +27,13 @@ Current tags
 
 ♫ Audio Frequency
 
-💫StarMod origin or enhanced
+💫StarMod origin
 
 ⚡FastLed origin
 
 💡WLED origin
+
+💡💫 WLED origin, StarMod enhanced
 
 ### Dev
 
