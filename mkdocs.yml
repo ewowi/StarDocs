@@ -71,6 +71,7 @@ nav:
   - Welcome: index.md
   - StarMod Basics:
     - Modules: BasicsStarMod/Modules.md
+    - Standards and Guidelines: BasicsStarMod/StandardsAndGuidelines.md
   - System Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md
