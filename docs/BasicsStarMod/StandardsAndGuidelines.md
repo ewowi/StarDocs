@@ -11,5 +11,5 @@ Everything is a module
 
 ## Dev
 
-* Minimize the use of static / global variables (unstructured , decreases heap space), use Class where possible, there are still static variables which need to be investigated to make non static
+* Minimize the use of static / global variables in Classes, there are still static class variables which need to be investigated to make non static
 
