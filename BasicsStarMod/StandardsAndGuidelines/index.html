@@ -1708,7 +1708,7 @@
 <ul>
 <li>
 <p>Orthogonality: concepts are independent or irrelevant to eachother. Examples:</p>
-</li>
+<ul>
 <li>
 <p>StarMod Core has no notion of applications build on top of it e.g. StarMod Leds</p>
 </li>
@@ -1721,20 +1721,24 @@
 <li>
 <p>Modules are as independent from each other as possible (but they can call each other)</p>
 </li>
+</ul>
+</li>
 <li>
 <p>Minimize on heap and stack use</p>
-</li>
+<ul>
 <li>
 <p>Effect class don't have local variables</p>
 </li>
 <li>
 <p>initVar: functions, not classes</p>
 </li>
-<li>
-<p>Minimize model json size</p>
+</ul>
 </li>
 <li>
-<p>UiFun: send labels and comments and select options instead of storing in model</p>
+<p>Minimize model json size</p>
+<ul>
+<li>UiFun: send labels and comments and select options instead of storing in model</li>
+</ul>
 </li>
 <li>
 <p>Minimize the use of static / global variables in Classes, there are still static class variables which need to be investigated to make non static</p>
