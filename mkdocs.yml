@@ -88,6 +88,7 @@ nav:
   - Led Basics:
     - Effects: BasicsLed/Effects.md
     - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
+    - Gallery: BasicsLed/Gallery.md
   - Led Modules:
     - LedMod Overview: LedMod/LedModOverview.md
     - Fixture Module: LedMod/LedModFixture.md
