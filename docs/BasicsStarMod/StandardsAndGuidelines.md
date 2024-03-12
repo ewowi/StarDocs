@@ -18,6 +18,7 @@ Everything is a module
     * No notion of HTML in c(++) code
 
     * Effects have no notion of the type of projection or fixture it is applied to
+    * Any projection can be applied to any effect in any fixture, 1D to 3D in any combination
 
     * Modules are as independent from each other as possible (but they can call each other)
 
