@@ -70,6 +70,7 @@ extra_javascript:
 nav:
   - Welcome: index.md
   - StarMod Basics:
+    - Getting started: BasicsStarMod/GettingStarted.md
     - Modules: BasicsStarMod/Modules.md
     - Standards and Guidelines: BasicsStarMod/StandardsAndGuidelines.md
   - System Modules:
