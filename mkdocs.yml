@@ -90,6 +90,7 @@ nav:
     - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
     - Gallery: BasicsLed/Gallery.md
   - Led Modules:
+    - Getting started: LedMod/GettingStarted.md
     - LedMod Overview: LedMod/LedModOverview.md
     - Fixture Module: LedMod/LedModFixture.md
     - Effects Module: LedMod/LedModEffects.md
