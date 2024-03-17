@@ -15,7 +15,7 @@ At the moment of writing some functionality still 🚧 (Installer, Captive porta
 
 * Flash it to an ESP32 module
     * Compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCcode](https://code.visualstudio.com) / [PIO](https://platformio.org)
-    * Flash a [binary](https://github.com/ewowi/StarMod/actions) using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
+    * Flash a [binary](https://github.com/ewowi/StarMod/actions) (Click on a workflow run, scroll down to Artifacts, download the bin) using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
 
 * Find StarMod AP network and connect using password star1234
 
