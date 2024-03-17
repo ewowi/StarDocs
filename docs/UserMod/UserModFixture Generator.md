@@ -5,26 +5,29 @@ hide:
   # - toc
 ---
 
-## Heading 2
+<img width="526" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/82fff9b5-2459-4706-9f5b-7125e4bc7717">
 
-Text
+## Fixture Generator
 
-### Heading 3
+The fixture generator generetes predefined fixtures, specific parameters can be added e.g. size of panels etc:
 
-Text
+<img width="129" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/d7b89a67-2c2c-449f-86ca-c4f5b4a54c5d">
 
-Video:
+* Fixture: matrix, panels rings etc.
+* For each fixture:
+    * IP: will be used for super-sync (WIP)
+    * pin: the pin this fixture is connected to
+    * custom parameters like number of leds, coordinates
+ * A fixture can be made out of multiple panels. Panels can be matrices but also rings etc. If the panel checkbox is checked, each panel can be specified in a table
+ * If Panel is selected, presets can be selected, e.g. for fixture Matrix, 16x16, 4*16x16, cube etc can be selected
+ * In the panel table, each panel can be give a seperate (or same) pin
+ * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles)
 
-<video width="248" autoplay><source src="https://user-images.githubusercontent.com/1737159/192528357-3cda343c-de1c-4820-adb6-fb71fdfdd1f2.mov" type="video/mp4"></video>
+##Manually creating a fixture file
 
-* bullet 
-* bullet 
-* bullet 
-* bullet 
-
-Image:
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/91616163/189164956-9f5cf51c-d725-4691-94d3-8ab60d8e384c.png">
-
-#### heading 4
-
-* bullet
+```
+{"name":"F_4x16x16","nrOfLeds":1024,"width":32,"height":32,"depth":1,"outputs":
+      [{"pin":2,"leds":[[0,0,0],[0,10,0] ...[310,150,0]]},
+       {"pin":2,"leds":[[0,160,0],[0,170,0] ...[310,310,0]]}]
+}
+```
