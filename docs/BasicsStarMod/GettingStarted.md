@@ -12,10 +12,12 @@ hide:
 * Download a StarMod Binary
 
 * Flash it to an ESP32 module
+    * Compile and upload [source code](https://github.com/ewowi/StarMod) via vscode / PIO
+    * Flash a binary using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
 
-* Connect leds to the ESP32 module
+* Connect leds to the GPIO pins ESP32 module
 
-* Find StarMod AP network and connect
+* Find StarMod AP network and connect using password star1234
 
 * Go to 4.3.2.1
 
@@ -31,7 +33,7 @@ hide:
 * Setup Application
     * [Setup Leds](/StarDocs/LedMod/GettingStarted)
 
-## Updating
+## Update StarMod binary
 
 New versions of StarMod can be flashed to an already flashed esp32 using:
 
