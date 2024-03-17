@@ -1793,6 +1793,8 @@
 <li>nrOfLeds, the total number of physical leds</li>
 <li>width, heigth, depth: the physical size of the fixture, in cm ! (note width<em>height</em>depth is not necessary equal to nr of leds)</li>
 <li>outputs: multuple lists of pin and a nr of leds, for each led, the coordinate in mm !</li>
+<li>Files need to have a name starting with F_ and extension.json</li>
+<li>Files can be uploaded to the esp32 board using the command curl -F 'data=@<FileName>' <ip>/upload where <FileName> and <ip> must be replaced by relevant values</li>
 </ul>
 
 
