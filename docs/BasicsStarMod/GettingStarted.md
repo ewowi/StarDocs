@@ -9,10 +9,12 @@ hide:
 
 ## Getting Started
 
+At the moment of writing some functionality still 🚧 (Installer, Captive portal, OTA flash in UI). Manual steps are provided here.
+
 * Download a StarMod Binary
 
 * Flash it to an ESP32 module
-    * Compile and upload [source code](https://github.com/ewowi/StarMod) via vscode / PIO
+    * Compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCcode](https://code.visualstudio.com) / [PIO](https://platformio.org)
     * Flash a binary using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
 
 * Connect leds to the GPIO pins ESP32 module
