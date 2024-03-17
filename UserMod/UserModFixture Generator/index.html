@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#heading-2" class="md-skip">
+        <a href="#fixture-generator" class="md-skip">
           Skip to content
         </a>
       
@@ -1088,41 +1088,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heading-2" class="md-nav__link">
+  <a href="#fixture-generator" class="md-nav__link">
     <span class="md-ellipsis">
-      Heading 2
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Heading 2">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#heading-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Heading 3
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Heading 3">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#heading-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      heading 4
+      Fixture Generator
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#manually-creating-a-fixture-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manually creating a fixture file
+    </span>
+  </a>
   
 </li>
       
@@ -1744,41 +1723,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heading-2" class="md-nav__link">
+  <a href="#fixture-generator" class="md-nav__link">
     <span class="md-ellipsis">
-      Heading 2
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Heading 2">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#heading-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Heading 3
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Heading 3">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#heading-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      heading 4
+      Fixture Generator
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#manually-creating-a-fixture-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manually creating a fixture file
+    </span>
+  </a>
   
 </li>
       
@@ -1807,25 +1765,29 @@
 
   <h1>Fixture Generator Module</h1>
 
-<h2 id="heading-2">Heading 2</h2>
-<p>Text</p>
-<h3 id="heading-3">Heading 3</h3>
-<p>Text</p>
-<p>Video:</p>
-<video width="248" autoplay><source src="https://user-images.githubusercontent.com/1737159/192528357-3cda343c-de1c-4820-adb6-fb71fdfdd1f2.mov" type="video/mp4"></video>
-
+<p><img width="526" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/82fff9b5-2459-4706-9f5b-7125e4bc7717"></p>
+<h2 id="fixture-generator">Fixture Generator</h2>
+<p>The fixture generator generetes predefined fixtures, specific parameters can be added e.g. size of panels etc:</p>
+<p><img width="129" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/d7b89a67-2c2c-449f-86ca-c4f5b4a54c5d"></p>
 <ul>
-<li>bullet </li>
-<li>bullet </li>
-<li>bullet </li>
-<li>bullet </li>
+<li>Fixture: matrix, panels rings etc.</li>
+<li>For each fixture:<ul>
+<li>IP: will be used for super-sync (WIP)</li>
+<li>pin: the pin this fixture is connected to</li>
+<li>custom parameters like number of leds, coordinates</li>
 </ul>
-<p>Image:
-<img width="400" alt="image" src="https://user-images.githubusercontent.com/91616163/189164956-9f5cf51c-d725-4691-94d3-8ab60d8e384c.png"></p>
-<h4 id="heading-4">heading 4</h4>
-<ul>
-<li>bullet</li>
+</li>
+<li>A fixture can be made out of multiple panels. Panels can be matrices but also rings etc. If the panel checkbox is checked, each panel can be specified in a table</li>
+<li>If Panel is selected, presets can be selected, e.g. for fixture Matrix, 16x16, 4*16x16, cube etc can be selected</li>
+<li>In the panel table, each panel can be give a seperate (or same) pin</li>
+<li>After pressing generate, a fixture file will be generated, see <a href="/StarDocs/SysMod/SysModFiles">Files</a></li>
 </ul>
+<h2 id="manually-creating-a-fixture-file">Manually creating a fixture file</h2>
+<div class="highlight"><pre><span></span><code>{&quot;name&quot;:&quot;F_4x16x16&quot;,&quot;nrOfLeds&quot;:1024,&quot;width&quot;:32,&quot;height&quot;:32,&quot;depth&quot;:1,&quot;outputs&quot;:
+      [{&quot;pin&quot;:2,&quot;leds&quot;:[[0,0,0],[0,10,0] ...[310,150,0]]},
+       {&quot;pin&quot;:2,&quot;leds&quot;:[[0,160,0],[0,170,0] ...[310,310,0]]}]
+}
+</code></pre></div>
 
 
 
