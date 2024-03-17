@@ -24,11 +24,14 @@ hide:
 * Give the instance a name
     * [System](/StarDocs/SysMod/SysModSystem)
 
-* Enter your Wifi cridentials
+* Enter your Wifi credentials
     * [Network](/StarDocs/SysMod/SysModNetwork)
+    * Note: first Save Model, then connect 
 
 * Save Model
     * [Model](/StarDocs/SysMod/SysModModel)
+
+* Reboot or press Connect
 
 * Setup Application
     * [Setup Leds](/StarDocs/LedMod/GettingStarted)
