@@ -521,9 +521,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating" class="md-nav__link">
+  <a href="#update-starmod-binary" class="md-nav__link">
     <span class="md-ellipsis">
-      Updating
+      Update StarMod binary
     </span>
   </a>
   
@@ -1732,9 +1732,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#updating" class="md-nav__link">
+  <a href="#update-starmod-binary" class="md-nav__link">
     <span class="md-ellipsis">
-      Updating
+      Update StarMod binary
     </span>
   </a>
   
@@ -1773,12 +1773,16 @@
 </li>
 <li>
 <p>Flash it to an ESP32 module</p>
+<ul>
+<li>Compile and upload <a href="https://github.com/ewowi/StarMod">source code</a> via vscode / PIO</li>
+<li>Flash a binary using <a href="https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher">ESP Flasher</a></li>
+</ul>
 </li>
 <li>
-<p>Connect leds to the ESP32 module</p>
+<p>Connect leds to the GPIO pins ESP32 module</p>
 </li>
 <li>
-<p>Find StarMod AP network and connect</p>
+<p>Find StarMod AP network and connect using password star1234</p>
 </li>
 <li>
 <p>Go to 4.3.2.1</p>
@@ -1808,7 +1812,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="updating">Updating</h2>
+<h2 id="update-starmod-binary">Update StarMod binary</h2>
 <p>New versions of StarMod can be flashed to an already flashed esp32 using:</p>
 <div class="highlight"><pre><span></span><code>curl -s -F &quot;update=@&lt;path/firmware.bin&gt;&quot; &lt;ip&gt;/update
 </code></pre></div>
