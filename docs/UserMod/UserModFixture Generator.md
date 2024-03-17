@@ -38,4 +38,4 @@ The fixture generator generates predefined fixtures, specific parameters can be 
 * width, heigth, depth: the physical size of the fixture, in cm ! (note width*height*depth is not necessary equal to nr of leds)
 * outputs: multuple lists of pin and a nr of leds, for each led, the coordinate in mm !
 * Files need to have a name starting with F_ and extension.json
-* Files can be uploaded to the esp32 board using the command curl -F 'data=@<FileName>' <ip>/upload where <FileName> and <ip> must be replaced by relevant values
+* Files can be uploaded to the esp32 board using the command ```curl -F 'data=@<FileName>' <ip>/upload``` where ```<FileName>``` and ```<ip>``` must be replaced by relevant values
