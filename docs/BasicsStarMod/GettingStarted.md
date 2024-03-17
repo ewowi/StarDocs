@@ -31,5 +31,13 @@ hide:
 * Setup Application
     * [Setup Leds](/StarDocs/LedMod/GettingStarted)
 
-### Heading 3
+## Updating
+
+New versions of StarMod can be flashed to an already flashed esp32 using:
+
+```
+curl -s -F "update=@<path/firmware.bin>" <ip>/update
+```
+
+replace ```<path/firmware.bin>``` and ```<ip>``` with the relevant values.
 
