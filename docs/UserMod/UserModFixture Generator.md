@@ -9,6 +9,8 @@ hide:
 
 ## Fixture Generator
 
+Fixtures can be generated (predefined) or manually created, see below.
+
 The fixture generator generetes predefined fixtures, specific parameters can be added e.g. size of panels etc:
 
 <img width="129" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/d7b89a67-2c2c-449f-86ca-c4f5b4a54c5d">
@@ -31,3 +33,7 @@ The fixture generator generetes predefined fixtures, specific parameters can be 
        {"pin":2,"leds":[[0,160,0],[0,170,0] ...[310,310,0]]}]
 }
 ```
+
+* nrOfLeds, the total number of physical leds
+* width, heigth, depth: the physical size of the fixture, in cm ! (note width*height*depth is not necessary equal to nr of leds)
+* outputs: multuple lists of pin and a nr of leds, for each led, the coordinate in mm !
