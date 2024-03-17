@@ -11,7 +11,7 @@ hide:
 
 Fixtures can be generated (predefined) or manually created, see below.
 
-The fixture generator generetes predefined fixtures, specific parameters can be added e.g. size of panels etc:
+The fixture generator generates predefined fixtures, specific parameters can be added e.g. size of panels etc:
 
 <img width="129" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/d7b89a67-2c2c-449f-86ca-c4f5b4a54c5d">
 
@@ -23,7 +23,7 @@ The fixture generator generetes predefined fixtures, specific parameters can be 
  * A fixture can be made out of multiple panels. Panels can be matrices but also rings etc. If the panel checkbox is checked, each panel can be specified in a table
  * If Panel is selected, presets can be selected, e.g. for fixture Matrix, 16x16, 4*16x16, cube etc can be selected
  * In the panel table, each panel can be give a seperate (or same) pin
- * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles)
+ * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles) and can be selected, see [Fixtures](/StarDocs/LedMod/LedModFixture)
 
 ## Manually creating a fixture file
 
