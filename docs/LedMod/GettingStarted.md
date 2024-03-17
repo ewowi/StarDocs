@@ -12,8 +12,10 @@ hide:
 * Setup StarMod
     * [StarMod](/StarDocs/BasicsStarMod/GettingStarted)
 
-* Create a fixture
+* Define a fixture
     * [Fixture Generator](/StarDocs/UserMod/UserModFixture Generator)
+
+* Connect leds to the ESP32 GPIO pins as defined in the fixture.json file
 
 * Select the fixture
     * [Fixture](/StarDocs/LedMod/LedModFixture)
