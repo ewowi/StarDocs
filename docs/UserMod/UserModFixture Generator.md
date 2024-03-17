@@ -23,7 +23,7 @@ The fixture generator generetes predefined fixtures, specific parameters can be 
  * In the panel table, each panel can be give a seperate (or same) pin
  * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles)
 
-##Manually creating a fixture file
+## Manually creating a fixture file
 
 ```
 {"name":"F_4x16x16","nrOfLeds":1024,"width":32,"height":32,"depth":1,"outputs":
