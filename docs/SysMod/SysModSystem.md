@@ -12,4 +12,17 @@ hide:
 
 * OTA Update: select a bin file and it will directly upload to the board. Red or green ball will show failure or success. Update will be effective after reboot !!
 
+## Curl update / upload
+
+Alternetively to OTA Update in the UI, New versions of StarMod can be flashed to an already flashed esp32 using:
+
+```
+curl -s -F "update=@<path/firmware.bin>" <ip>/update
+```
+
+* replace ```<path/firmware.bin>``` and ```<ip>``` with the relevant values.
+* above command will report if the update was succesful
+* After sucessful update you need to reboot the device to make the update effective
+
+
 🚧
