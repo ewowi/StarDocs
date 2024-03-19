@@ -9,7 +9,7 @@ hide:
 
 ## Getting Started
 
-At the moment of writing some functionality still 🚧 (Installer, Captive portal, OTA flash in UI). Manual steps are provided here.
+At the moment of writing some functionality still 🚧 (Installer, Captive portal). Manual steps are provided here.
 
 * Download a StarMod Binary
 
