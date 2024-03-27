@@ -33,18 +33,21 @@ System modules:
 * System: Show and manage ESP32 system
 
 User Modules
+
 * E131/DMX support
 * Home Assistant (planned)
 * LEDs
 * ...
 
 Build apps on top of this
+
 * Led apps
 * IO control apps
 * IOT apps 
 * Any app
 
 By [MoonModules](https://github.com/MoonModules)
+
 LED module inspired by [WLED MM](https://github.com/MoonModules/WLED)
 
 Disclaimer:
