@@ -37,6 +37,8 @@ For each panel:
     * Odd nr of columns: if the column end matches the First led then the leds are layed out in serpentine 
     * Even nr of columns: if the column end matches the Row End then the leds are layed out in serpentine 
 
+Note: panels can be defined in a 2D space but also in a 3D space !!
+
 <img width="326" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/2288dfa6-e063-4d8e-88c6-9bd53c196b12">
 
 ## Examples
