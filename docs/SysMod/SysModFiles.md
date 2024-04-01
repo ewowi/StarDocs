@@ -5,7 +5,7 @@ hide:
   # - toc
 ---
 
-<img width="394" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/7addfe30-cded-4847-bde0-2c7d9a945775">
+<img width="280" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/2d5d6e0f-eb04-424d-a3f5-075977d2a512">
 
 ## Files
 
