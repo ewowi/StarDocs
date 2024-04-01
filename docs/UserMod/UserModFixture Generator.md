@@ -46,6 +46,7 @@ For each panel:
 <img width="340" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/62073790-5365-4cee-be0e-78488d285b2a">
 <img width="329" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/b6909720-4a8e-4661-9381-4336aeed1283">
 <img width="317" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/4a343d06-8fa3-4ea6-a521-0cc9e5d2bfb2">
+<img width="307" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/5d4f0051-0e38-4d16-b81a-31fc8d2f7e1e">
 
 ## Manually creating a fixture file
 
