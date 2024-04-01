@@ -27,6 +27,8 @@ The fixture generator generates predefined fixtures, specific parameters can be 
 
 ### Matrix fixtures
 
+<img width="361" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/1f276d52-f19a-45a7-93a9-854214af9a99">
+
 For each panel:
 
 * First Led: the position of the first led
@@ -34,6 +36,16 @@ For each panel:
 * Column End: The position of the last column of the panel.
     * Odd nr of columns: if the column end matches the First led then the leds are layed out in serpentine 
     * Even nr of columns: if the column end matches the Row End then the leds are layed out in serpentine 
+
+<img width="326" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/2288dfa6-e063-4d8e-88c6-9bd53c196b12">
+
+## Examples
+
+<img width="316" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/d48679eb-efbe-4133-b43d-e3f33587530a">
+<img width="336" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/58530e7d-0606-4928-a4ae-233103f88e34">
+<img width="340" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/62073790-5365-4cee-be0e-78488d285b2a">
+<img width="329" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/b6909720-4a8e-4661-9381-4336aeed1283">
+<img width="317" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/4a343d06-8fa3-4ea6-a521-0cc9e5d2bfb2">
 
 ## Manually creating a fixture file
 
