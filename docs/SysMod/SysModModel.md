@@ -6,6 +6,8 @@ hide:
   # - toc
 ---
 
+<img width="413" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/84cc7457-a710-4fa9-8757-8cad094fd942">
+
 ## SysMod Model
 
 All StarMod variables are stored in model.json
