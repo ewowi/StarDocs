@@ -17,13 +17,23 @@ The fixture generator generates predefined fixtures, specific parameters can be 
 
 * Fixture: matrix, panels rings etc.
 * For each fixture:
-    * IP: will be used for super-sync (WIP)
+    * IP: will be used for super-sync (Not implemented yet)
     * pin: the pin this fixture is connected to
     * custom parameters like number of leds, coordinates
  * A fixture can be made out of multiple panels. Panels can be matrices but also rings etc. If the panel checkbox is checked, each panel can be specified in a table
  * If Panel is selected, presets can be selected, e.g. for fixture Matrix, 16x16, 4*16x16, cube etc can be selected
  * In the panel table, each panel can be give a seperate (or same) pin
  * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles) and can be selected, see [Fixtures](/StarDocs/LedMod/LedModFixture)
+
+### Matrix fixtures
+
+For each panel:
+
+* First Led: the position of the first led
+* Row End: the position of the last led in the first row
+* Column End: The position of the last column of the panel.
+    * Odd nr of columns: if the column end matches the First led then the leds are layed out in serpentine 
+    * Even nr of columns: if the column end matches the Row End then the leds are layed out in serpentine 
 
 ## Manually creating a fixture file
 
@@ -38,4 +48,4 @@ The fixture generator generates predefined fixtures, specific parameters can be 
 * width, heigth, depth: the physical size of the fixture, in cm ! (note width*height*depth is not necessary equal to nr of leds)
 * outputs: multuple lists of pin and a nr of leds, for each led, the coordinate in mm !
 * Files need to have a name starting with F_ and extension.json
-* Files can be uploaded to the esp32 board using the command ```curl -F 'data=@<FileName>' <ip>/upload``` where ```<FileName>``` and ```<ip>``` must be replaced by relevant values
+* Files can be uploaded to the esp32 board in the [Files](/StarDocs/SysMod/SysModFiles) or using the command ```curl -F 'data=@<FileName>' <ip>/upload``` where ```<FileName>``` and ```<ip>``` must be replaced by relevant values
