@@ -1094,6 +1094,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Fixture Generator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matrix-fixtures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix fixtures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1729,6 +1744,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Fixture Generator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#matrix-fixtures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Matrix fixtures
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1773,7 +1803,7 @@
 <ul>
 <li>Fixture: matrix, panels rings etc.</li>
 <li>For each fixture:<ul>
-<li>IP: will be used for super-sync (WIP)</li>
+<li>IP: will be used for super-sync (Not implemented yet)</li>
 <li>pin: the pin this fixture is connected to</li>
 <li>custom parameters like number of leds, coordinates</li>
 </ul>
@@ -1782,6 +1812,17 @@
 <li>If Panel is selected, presets can be selected, e.g. for fixture Matrix, 16x16, 4*16x16, cube etc can be selected</li>
 <li>In the panel table, each panel can be give a seperate (or same) pin</li>
 <li>After pressing generate, a fixture file will be generated, see <a href="/StarDocs/SysMod/SysModFiles">Files</a> and can be selected, see <a href="/StarDocs/LedMod/LedModFixture">Fixtures</a></li>
+</ul>
+<h3 id="matrix-fixtures">Matrix fixtures</h3>
+<p>For each panel:</p>
+<ul>
+<li>First Led: the position of the first led</li>
+<li>Row End: the position of the last led in the first row</li>
+<li>Column End: The position of the last column of the panel.<ul>
+<li>Odd nr of columns: if the column end matches the First led then the leds are layed out in serpentine </li>
+<li>Even nr of columns: if the column end matches the Row End then the leds are layed out in serpentine </li>
+</ul>
+</li>
 </ul>
 <h2 id="manually-creating-a-fixture-file">Manually creating a fixture file</h2>
 <div class="highlight"><pre><span></span><code>{&quot;name&quot;:&quot;F_4x16x16&quot;,&quot;nrOfLeds&quot;:1024,&quot;width&quot;:32,&quot;height&quot;:32,&quot;depth&quot;:1,&quot;outputs&quot;:
@@ -1794,7 +1835,7 @@
 <li>width, heigth, depth: the physical size of the fixture, in cm ! (note width<em>height</em>depth is not necessary equal to nr of leds)</li>
 <li>outputs: multuple lists of pin and a nr of leds, for each led, the coordinate in mm !</li>
 <li>Files need to have a name starting with F_ and extension.json</li>
-<li>Files can be uploaded to the esp32 board using the command <code>curl -F 'data=@&lt;FileName&gt;' &lt;ip&gt;/upload</code> where <code>&lt;FileName&gt;</code> and <code>&lt;ip&gt;</code> must be replaced by relevant values</li>
+<li>Files can be uploaded to the esp32 board in the <a href="/StarDocs/SysMod/SysModFiles">Files</a> or using the command <code>curl -F 'data=@&lt;FileName&gt;' &lt;ip&gt;/upload</code> where <code>&lt;FileName&gt;</code> and <code>&lt;ip&gt;</code> must be replaced by relevant values</li>
 </ul>
 
 
