@@ -85,7 +85,8 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
-  - Led Basics:
+  - StarMod Leds:
+    - Overview: BasicsLed/Overview.md 
     - Effects: BasicsLed/Effects.md
     - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
     - Gallery: BasicsLed/Gallery.md
