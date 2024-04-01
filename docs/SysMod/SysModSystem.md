@@ -10,6 +10,8 @@ hide:
 
 ## System
 
+* Name: name of this instance, default StarMod. Will be used as hostname, AP name etc.
+* Reboot: restart this instance.
 * OTA Update: select a bin file and it will directly upload to the board. Red or green ball will show failure or success. Update will be effective after reboot !!
 
 ## Curl update / upload

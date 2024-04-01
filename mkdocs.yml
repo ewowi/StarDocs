@@ -85,7 +85,6 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
-    - Workflow Module: SysMod/SysModWorkflow.md
   - Led Basics:
     - Effects: BasicsLed/Effects.md
     - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
