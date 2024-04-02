@@ -46,6 +46,9 @@ Build apps on top of this
 * IOT apps 
 * Any app
 
+See this for more info on StarMod:
+[Starmod 💫.pdf](https://github.com/ewowi/StarDocs/files/14837446/Starmod.pdf)
+
 By [MoonModules](https://github.com/MoonModules)
 
 LED module inspired by [WLED MM](https://github.com/MoonModules/WLED)
