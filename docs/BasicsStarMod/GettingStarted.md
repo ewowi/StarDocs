@@ -11,8 +11,11 @@ hide:
     * Click on the latest workflow run, scroll down to Artifacts, download the bin
     * Currently only esp32 build can be found here. Contact us on discord to provide other builds
 * Flash it to an ESP32 module using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
+
 <img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
-    * Alternatively compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCode](https://code.visualstudio.com) / [PIO](https://platformio.org). Following builds are available using VSCode
+
+    * Alternatively compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCode](https://code.visualstudio.com) / [PIO](https://platformio.org). 
+    * Following builds are available using VSCode:
 
 <img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82">
 
