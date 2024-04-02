@@ -30,8 +30,9 @@ hide:
     * [Model](/StarDocs/SysMod/SysModModel)
 * Reboot or press Connect
 * Connect to the WiFi network
+* Optionally choose a Theme
 * Setup Application
-    * [Setup Leds](/StarDocs/LedMod/GettingStarted)
+    * [Setup StarMod Leds](/StarDocs/LedMod/GettingStarted)
 
 ## Update StarMod binary
 
