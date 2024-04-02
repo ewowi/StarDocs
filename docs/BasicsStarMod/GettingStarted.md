@@ -14,8 +14,8 @@ hide:
 
 <img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
 
-    * Alternatively compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCode](https://code.visualstudio.com) / [PIO](https://platformio.org). 
-    * Following builds are available using VSCode:
+* Alternatively compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCode](https://code.visualstudio.com) / [PIO](https://platformio.org). 
+* Following builds are available using VSCode:
 
 <img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82">
 
