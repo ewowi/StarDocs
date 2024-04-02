@@ -20,6 +20,7 @@ hide:
 * Every module is a class
 * Minimize the use of static / global variables
 * "functional locality": code of a feature is in one place, not in different files etc.
+* Code of a module is in the module class
 * Minimize on heap and stack use
     * Effect class don't have local variables
     * initVar: functions, not classes
@@ -33,3 +34,4 @@ hide:
     * f_LoopFun: executed in loop e.g. preview
     * f_AddRow: called if a row is added (Variable is in table)
     * f_DelRow: called if a row is deleted (Variable is in table)
+* Pragmatic use of Design Patterns (e.g. Singleton) and OO concepts - aiming at maximal efficiency in ESP32 environment
