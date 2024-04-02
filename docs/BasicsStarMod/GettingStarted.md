@@ -29,6 +29,7 @@ hide:
 * Save Model
     * [Model](/StarDocs/SysMod/SysModModel)
 * Reboot or press Connect
+* Connect to the WiFi network
 * Setup Application
     * [Setup Leds](/StarDocs/LedMod/GettingStarted)
 
