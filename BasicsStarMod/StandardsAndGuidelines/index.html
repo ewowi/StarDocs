@@ -1801,20 +1801,15 @@
 </ul>
 </li>
 <li>Every module is a class</li>
-<li>Minimize the use of static / global variables</li>
+<li>Minimize the use of static / global variables, use modules classes to define variables</li>
 <li>"functional locality": code of a feature is in one place, not in different files etc.</li>
 <li>Code of a module is in the module class</li>
-<li>Minimize on heap and stack use<ul>
-<li>Effect class don't have local variables</li>
-<li>initVar: functions, not classes</li>
-</ul>
-</li>
 <li>Model.json for variables and UI generation</li>
 <li>Minimize model json size<ul>
 <li>UiFun: send labels and comments and select options instead of storing in model</li>
 </ul>
 </li>
-<li>Variables are defined using init<Type> functions containing code for:<ul>
+<li>Variables are defined using init<Type> functions containing a function paramater for:<ul>
 <li>f_ValueFun: assigning and updating values</li>
 <li>f_UIFun: called by the UI to get extra info (label, comment, options)</li>
 <li>f_ChangeFun: called if the value of a variable changes</li>
@@ -1823,7 +1818,14 @@
 <li>f_DelRow: called if a row is deleted (Variable is in table)</li>
 </ul>
 </li>
+<li>Minimize on heap and stack use<ul>
+<li>Effect class don't have local variables</li>
+<li>init Variable: functions, not classes</li>
+</ul>
+</li>
 <li>Pragmatic use of Design Patterns (e.g. Singleton) and OO concepts - aiming at maximal efficiency in ESP32 environment</li>
+<li>Code should be as readable as possible</li>
+<li>Other standards and guidelines yet to be written down 🤭</li>
 </ul>
 
 
