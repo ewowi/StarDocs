@@ -71,6 +71,7 @@ nav:
   - Welcome: index.md
   - StarMod Basics:
     - Getting started: BasicsStarMod/GettingStarted.md
+    - Testing: BasicsStarMod/Testing.md
     - Modules: BasicsStarMod/Modules.md
     - Standards and Guidelines: BasicsStarMod/StandardsAndGuidelines.md
   - System Modules:
