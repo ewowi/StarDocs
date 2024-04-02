@@ -15,6 +15,7 @@ StarMod is in user test phase. Test scenarios are currently developed. See below
     * Include the test scenario
 * Report success also as a [Github issues](https://github.com/ewowi/StarMod/issues) and include suggestions for improvement, new test scenarios etc.
 * Improve this documentation by forking [StarDocs](https://github.com/ewowi/StarDocs), edit and submit a pull request
+* See [Starmod 💫.pdf](https://github.com/ewowi/StarDocs/files/14837446/Starmod.pdf) for the story of StarMod in bullet points
 
 ## Current test scenarios
 
