@@ -14,7 +14,10 @@ hide:
  
 <img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
 
-* Find StarMod AP network and connect (no password needed)
+* Find StarMod network and connect (no password needed)
+
+<img width="293" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/e7b1e16a-8014-42dc-9e07-f4e0cbf04efd">
+
 * The Captive portal will show the setup tab, alternatively go to [4.3.2.1](http://4.3.2.1)
 
 <img width="1214" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/61f5a2a5-3a58-47ec-92d8-7de48f0176e1">
