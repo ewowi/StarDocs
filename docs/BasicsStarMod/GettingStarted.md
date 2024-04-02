@@ -9,7 +9,7 @@ hide:
 
 * Download a StarMod [binary](https://github.com/ewowi/StarMod/actions)
     * Click on the latest workflow run, scroll down to Artifacts, download the bin
-    * Currently only esp32 build can be found here. Contact us on discord to provide other builds
+    * Currently only esp32 build can be found here. Contact us to provide other builds e.g. c3, S2, S3
 * Flash it to an ESP32 module using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
 
 <img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
