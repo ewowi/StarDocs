@@ -7,7 +7,7 @@ hide:
 
 ## Testing StarMod
 
-StarMod is in user test phase. Test scenarios are currently developed. See below for current available test scenarios. If you want to participate in testing:
+[StarMod](/StarDocs) is in user test phase. Test scenarios are currently developed. See below for current available test scenarios. If you want to participate in testing:
 
 * Follow a test scenario
 * Please report issues in [Github issues](https://github.com/ewowi/StarMod/issues)
