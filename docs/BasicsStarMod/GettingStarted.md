@@ -32,7 +32,7 @@ hide:
 * Connect to the WiFi network
 * Optionally choose a Theme
 * Setup Application
-    * [Setup StarMod Leds](/StarDocs/LedMod/GettingStarted)
+    * Continue here ! : [Setup StarMod Leds](/StarDocs/LedMod/GettingStarted)
 
 ## Update StarMod binary
 
