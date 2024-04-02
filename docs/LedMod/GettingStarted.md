@@ -15,7 +15,7 @@ hide:
 * Generate a fixture
     * [Fixture Generator](/StarDocs/UserMod/UserModFixture Generator)
     * Select the pin the leds will be connected to (multiple pins possible)
-    * Example of 2x2 16x16 panels:
+    * Example of 2x2 16x16 panels where all panels are daisy chained to pin 2:
 
 <img width="365" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/fa166ecb-5f00-4b21-8433-8625cceef5b0">
 
