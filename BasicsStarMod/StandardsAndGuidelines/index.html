@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#heading-2" class="md-skip">
+        <a href="#user" class="md-skip">
           Skip to content
         </a>
       
@@ -554,9 +554,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heading-2" class="md-nav__link">
+  <a href="#user" class="md-nav__link">
     <span class="md-ellipsis">
-      Heading 2
+      User
     </span>
   </a>
   
@@ -1744,9 +1744,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#heading-2" class="md-nav__link">
+  <a href="#user" class="md-nav__link">
     <span class="md-ellipsis">
-      Heading 2
+      User
     </span>
   </a>
   
@@ -1786,49 +1786,41 @@
 
   <h1>Standards and Guidelines</h1>
 
-<h2 id="heading-2">Heading 2</h2>
-<p>Everything is a module</p>
+<h2 id="user">User</h2>
+<ul>
+<li>Everything is a module</li>
+</ul>
 <h2 id="dev">Dev</h2>
 <ul>
-<li>
-<p>Orthogonality: concepts are independent or irrelevant to eachother. Examples:</p>
-<ul>
-<li>
-<p>StarMod Core has no notion of applications build on top of it e.g. StarMod Leds</p>
-</li>
-<li>
-<p>No notion of HTML in c(++) code</p>
-</li>
-<li>
-<p>Effects have no notion of the type of projection or fixture it is applied to</p>
-</li>
-<li>
-<p>Any projection can be applied to any effect in any fixture, 1D to 3D in any combination</p>
-</li>
-<li>
-<p>Modules are as independent from each other as possible (but they can call each other)</p>
-</li>
+<li>Orthogonality: concepts are independent or irrelevant to eachother. Examples:<ul>
+<li>StarMod Core has no notion of applications build on top of it e.g. StarMod Leds</li>
+<li>No notion of HTML in c(++) code</li>
+<li>Effects have no notion of the type of projection or fixture it is applied to</li>
+<li>Any projection can be applied to any effect in any fixture, 1D to 3D in any combination</li>
+<li>Modules are as independent from each other as possible (but they can call each other)</li>
 </ul>
 </li>
-<li>
-<p>Minimize on heap and stack use</p>
-<ul>
-<li>
-<p>Effect class don't have local variables</p>
-</li>
-<li>
-<p>initVar: functions, not classes</p>
-</li>
+<li>Every module is a class</li>
+<li>Minimize the use of static / global variables</li>
+<li>"functional locality": code of a feature is in one place, not in different files etc.</li>
+<li>Minimize on heap and stack use<ul>
+<li>Effect class don't have local variables</li>
+<li>initVar: functions, not classes</li>
 </ul>
 </li>
-<li>
-<p>Minimize model json size</p>
-<ul>
+<li>Model.json for variables and UI generation</li>
+<li>Minimize model json size<ul>
 <li>UiFun: send labels and comments and select options instead of storing in model</li>
 </ul>
 </li>
-<li>
-<p>Minimize the use of static / global variables in Classes, there are still static class variables which need to be investigated to make non static</p>
+<li>Variables are defined using init<Type> functions containing code for:<ul>
+<li>f_ValueFun: assigning and updating values</li>
+<li>f_UIFun: called by the UI to get extra info (label, comment, options)</li>
+<li>f_ChangeFun: called if the value of a variable changes</li>
+<li>f_LoopFun: executed in loop e.g. preview</li>
+<li>f_AddRow: called if a row is added (Variable is in table)</li>
+<li>f_DelRow: called if a row is deleted (Variable is in table)</li>
+</ul>
 </li>
 </ul>
 
