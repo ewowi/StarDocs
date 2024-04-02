@@ -11,6 +11,9 @@ hide:
 * Flash it to an ESP32 module
     * Compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCcode](https://code.visualstudio.com) / [PIO](https://platformio.org)
     * Flash a binary using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
+ 
+<img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
+
 * Find StarMod AP network and connect (no password needed)
 * The Captive portal will show the setup tab, alternatively go to [4.3.2.1](http://4.3.2.1)
 
