@@ -20,7 +20,7 @@ hide:
 
 * The Captive portal will show the setup tab, alternatively go to [4.3.2.1](http://4.3.2.1)
 
-<img width="1214" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/61f5a2a5-3a58-47ec-92d8-7de48f0176e1">
+<img width="896" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cd8bd820-0a40-4ead-a0d2-14e0d0aa4ac3">
 
 * Give the instance a name
     * [System](/StarDocs/SysMod/SysModSystem)
