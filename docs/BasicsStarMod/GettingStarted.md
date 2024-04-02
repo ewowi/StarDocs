@@ -5,34 +5,25 @@ hide:
   # - toc
 ---
 
-![image](https://github.com/ewowi/StarDocs/assets/1737159/1971587b-372f-4427-8600-92f9071ba82d)
-
 ## Getting Started
 
-At the moment of writing some functionality still 🚧 (Installer, Captive portal). Manual steps are provided here.
-
-* Download a StarMod Binary
-
+* Download a StarMod [binary](https://github.com/ewowi/StarMod/actions) (Click on the latest workflow run, scroll down to Artifacts, download the bin)
 * Flash it to an ESP32 module
     * Compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCcode](https://code.visualstudio.com) / [PIO](https://platformio.org)
-    * Flash a [binary](https://github.com/ewowi/StarMod/actions) (Click on a workflow run, scroll down to Artifacts, download the bin) using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
+    * Flash a binary using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
+* Find StarMod AP network and connect (no password needed)
+* The Captive portal will show the setup tab, alternatively go to [4.3.2.1](http://4.3.2.1)
 
-* Find StarMod AP network and connect using password star1234
-
-* Go to 4.3.2.1
+<img width="1214" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/61f5a2a5-3a58-47ec-92d8-7de48f0176e1">
 
 * Give the instance a name
     * [System](/StarDocs/SysMod/SysModSystem)
-
 * Enter your Wifi credentials
     * [Network](/StarDocs/SysMod/SysModNetwork)
     * Note: first Save Model, then connect 
-
 * Save Model
     * [Model](/StarDocs/SysMod/SysModModel)
-
 * Reboot or press Connect
-
 * Setup Application
     * [Setup Leds](/StarDocs/LedMod/GettingStarted)
 
