@@ -8,19 +8,20 @@ hide:
 ## Getting Started
 
 * Download a StarMod [binary](https://github.com/ewowi/StarMod/actions)
-    * Click on the latest workflow run, scroll down to Artifacts, download the bin
-    * Currently only esp32 build can be found here. Contact us to provide other builds e.g. c3, S2, S3
-* Flash it to an ESP32 module using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
+    * Click on the latest workflow run, scroll down to Artifacts, then download the bin file
+    * Currently only ESP32 builds can be found here. Contact us to provide other builds e.g. c3, S2, S3
+* Flash the unzipped "firmware.bin" to an ESP32 module using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
+    * Unzip/extract the "firmware.bin" from the downloaded folder, then flash it to your connected ESP32 module
 
 <img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
 
-* Alternatively compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
+* Alternatively, you can compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
 
-* Following builds are available using VSCode:
+* The following builds are available using VSCode:
 
 <img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82">
 
-* Find StarMod network and connect (no password needed)
+* Find the "StarMod" WiFi network and connect (no password needed)
 
 <img width="293" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/e7b1e16a-8014-42dc-9e07-f4e0cbf04efd">
 
