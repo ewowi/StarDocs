@@ -7,7 +7,7 @@ hide:
 
 ## Getting Started
 
-* Download a StarMod [binary](https://github.com/ewowi/StarMod/actions)
+* Download a [StarMod binary](https://github.com/ewowi/StarMod/actions) or [StarMod Leds binary](https://github.com/MoonModules/StarModLeds/actions)
     * Click on the latest workflow run, scroll down to Artifacts, then download the bin file
     * Currently only ESP32 builds can be found here. Contact us to provide other builds e.g. c3, S2, S3
 * Flash the unzipped "firmware.bin" to an ESP32 module using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
