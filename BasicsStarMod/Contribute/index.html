@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../Modules/">
+        <link rel="prev" href="../StandardsAndGuidelines/">
       
       
-        <link rel="next" href="../Contribute/">
+        <link rel="next" href="../../SysMod/SysModOverview/">
       
       
       <link rel="icon" href="../../assets/images/ui/aircoookie/blurple.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Standards and Guidelines - StarMod Project</title>
+        <title>Contribute - StarMod Project</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user" class="md-skip">
+        <a href="#contribute" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Standards and Guidelines
+              Contribute
             
           </span>
         </div>
@@ -530,6 +530,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../StandardsAndGuidelines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standards and Guidelines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -544,7 +565,7 @@
           
   
   <span class="md-ellipsis">
-    Standards and Guidelines
+    Contribute
   </span>
   
 
@@ -555,7 +576,7 @@
         
   
   <span class="md-ellipsis">
-    Standards and Guidelines
+    Contribute
   </span>
   
 
@@ -575,18 +596,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
+  <a href="#contribute" class="md-nav__link">
     <span class="md-ellipsis">
-      User
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dev
+      Contribute
     </span>
   </a>
   
@@ -596,27 +608,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Contribute/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Contribute
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1786,18 +1777,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#user" class="md-nav__link">
+  <a href="#contribute" class="md-nav__link">
     <span class="md-ellipsis">
-      User
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
-    <span class="md-ellipsis">
-      Dev
+      Contribute
     </span>
   </a>
   
@@ -1818,7 +1800,7 @@
                   
 
   
-    <a href="https://github.com/ewowi/StarDocs/edit/main/docs/BasicsStarMod/StandardsAndGuidelines.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/ewowi/StarDocs/edit/main/docs/BasicsStarMod/Contribute.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1826,49 +1808,19 @@
   
 
 
-  <h1>Standards and Guidelines</h1>
+  <h1>Contribute</h1>
 
-<h2 id="user">User</h2>
+<h2 id="contribute">Contribute</h2>
+<p>If you want to help with StarMod, the following needs helping hands:</p>
 <ul>
-<li>Everything is a module</li>
+<li>Custom bin name - Small</li>
+<li>Generate your fixture - Medium</li>
+<li>Improve UI - big</li>
+<li>Setup StarMod.org - medium</li>
+<li>Documention</li>
+<li>🚧</li>
 </ul>
-<h2 id="dev">Dev</h2>
-<ul>
-<li>Orthogonality: concepts are independent or irrelevant to eachother. Examples:<ul>
-<li>StarMod Core has no notion of applications build on top of it e.g. StarMod Leds</li>
-<li>No notion of HTML in c(++) code</li>
-<li>Effects have no notion of the type of projection or fixture it is applied to</li>
-<li>Any projection can be applied to any effect in any fixture, 1D to 3D in any combination</li>
-<li>Modules are as independent from each other as possible (but they can call each other)</li>
-</ul>
-</li>
-<li>Every module is a class</li>
-<li>Minimize the use of static / global variables, use modules classes to define variables</li>
-<li>"functional locality": code of a feature is in one place, not in different files etc.</li>
-<li>Code of a module is in the module class</li>
-<li>Model.json for variables and UI generation</li>
-<li>Minimize model json size<ul>
-<li>UiFun: send labels and comments and select options instead of storing in model</li>
-</ul>
-</li>
-<li>Variables are defined using init<Type> functions containing a function paramater for:<ul>
-<li>f_ValueFun: assigning and updating values</li>
-<li>f_UIFun: called by the UI to get extra info (label, comment, options)</li>
-<li>f_ChangeFun: called if the value of a variable changes</li>
-<li>f_LoopFun: executed in loop e.g. preview</li>
-<li>f_AddRow: called if a row is added (Variable is in table)</li>
-<li>f_DelRow: called if a row is deleted (Variable is in table)</li>
-</ul>
-</li>
-<li>Minimize on heap and stack use<ul>
-<li>Effect class don't have local variables</li>
-<li>init Variable: functions, not classes</li>
-</ul>
-</li>
-<li>Pragmatic use of Design Patterns (e.g. Singleton) and OO concepts - aiming at maximal efficiency in ESP32 environment</li>
-<li>Code should be as readable as possible</li>
-<li>Other standards and guidelines yet to be written down 🤭</li>
-</ul>
+<p>Contact us on <a href="https://discord.gg/VGDGGX8qvQ">Discord</a>.</p>
 
 
 
