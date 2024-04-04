@@ -1801,6 +1801,27 @@
 </p>
 
 <h1 id="welcome-to-starmod">Welcome to StarMod</h1>
+<p>Update April, 2024: </p>
+<p>The LEDs part of <a href="https://github.com/ewowi/StarMod">ewowi/StarMod</a> has been moved to <a href="https://github.com/MoonModules/StarModLeds">MoonModules/StarModLeds</a>. From now on:</p>
+<ul>
+<li>StarMod (Core) is a generic ESP32 platfom without any notion of LEDs</li>
+<li>StarMod LEDS is a fork of StarMod (Core) which adds LED functionality on top of it.</li>
+<li>StarMod (Core) can be forked by anyone who wants to build an ESP32 application</li>
+<li>Forks of StarMod (Core) should not change System functionality, changes on that should be done on StarMod (Core):<ul>
+<li>Sys Modules </li>
+<li>Generic User Modules</li>
+<li>index.js / html / css</li>
+<li>platformio.ini</li>
+</ul>
+</li>
+<li>The following should be changed on forks:<ul>
+<li>App Modules</li>
+<li>main.cpp</li>
+<li>app.js </li>
+</ul>
+</li>
+<li>Use Github issues for <a href="https://github.com/ewowi/StarMod/issues">StarMod (Core)</a> or <a href="https://github.com/MoonModules/StarModLeds/issues">StarMod Leds</a> respectively.</li>
+</ul>
 <p>Headstart for building ESP32 applications: printing, file management, persistent data, Wifi, Web, UI and system management works out of the box.
 StarMod will integrate with major IOT/network devices and applications.</p>
 <p>Everything is a module.</p>
