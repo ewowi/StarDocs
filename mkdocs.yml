@@ -74,6 +74,7 @@ nav:
     - Testing: BasicsStarMod/Testing.md
     - Modules: BasicsStarMod/Modules.md
     - Standards and Guidelines: BasicsStarMod/StandardsAndGuidelines.md
+    - Contribute: BasicsStarMod/Contribute.md
   - System Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md
