@@ -16,11 +16,12 @@ Core:
 * Setup StarMod.org - medium
 * Print to different targets (Serial, file, net) - medium
 * Promote StarMod to other communities eg Fastled community
-* Improve pins viewer, see [gpio viewer](https://github.com/thelastoutpostworkshop/gpio_viewer/issues/110)
+* Improve pins viewer, see [gpio viewer](https://github.com/thelastoutpostworkshop/gpio_viewer/issues/110) - big
 * ...
 
 Leds
 
+* create new effects - Medium
 * Generate your fixture - Medium
 
 Both
