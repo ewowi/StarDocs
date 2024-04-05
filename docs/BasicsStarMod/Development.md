@@ -21,7 +21,7 @@ Process
 
 ![image](https://github.com/ewowi/StarDocs/assets/138451817/31c591df-9241-49b6-aa71-1a7cd6282a89)
 
-* In case of a StarMod (Core) change, propagate the change downstream to StarModLeds. Git tree will typically look like( green is downstream, blue is uostream):
+* In case of a StarMod (Core) change, propagate the change downstream to StarModLeds. Git tree will typically look like (green is downstream, blue is upstream):
 
 ![image](https://github.com/ewowi/StarDocs/assets/138451817/562978ff-1d97-4246-938f-501a19dfadec)
 
