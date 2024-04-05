@@ -17,6 +17,7 @@ hide:
   
 # Welcome to StarMod
 
+**********************************************************
 Update April, 2024: 
 
 The LEDs part of [ewowi/StarMod](https://github.com/ewowi/StarMod) has been moved to [MoonModules/StarModLeds](https://github.com/MoonModules/StarModLeds). From now on:
@@ -34,6 +35,11 @@ The LEDs part of [ewowi/StarMod](https://github.com/ewowi/StarMod) has been move
     * main.cpp
     * app.js 
 * Use Github issues for [StarMod (Core)](https://github.com/ewowi/StarMod/issues) or [StarMod Leds](https://github.com/MoonModules/StarModLeds/issues) respectively.
+
+End of update
+**********************************************************
+
+
 
 
 Headstart for building ESP32 applications: printing, file management, persistent data, Wifi, Web, UI and system management works out of the box.
