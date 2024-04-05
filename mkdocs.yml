@@ -103,6 +103,7 @@ nav:
     - E131-sACN Module: UserMod/UserModE131-sACN.md
     - Artnet Module: UserMod/UserModArtNet.md
     - DDP Module: UserMod/UserModDDP.md
+    - MDNS Module: UserMod/UserModMDNS.md
   - About: 
     - Contributors & Credits: about/contributors.md
     - Privacy Policy: about/privacy-policy.md
