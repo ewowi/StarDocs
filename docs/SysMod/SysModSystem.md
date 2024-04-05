@@ -11,7 +11,7 @@ hide:
 ## System
 
 * Name: name of this instance, default StarMod.
-    * 2024040511: The name will be stripped from non standard characters so it can be used for Wifi / AP HostName and MDNS name. If name is changed, MDNS will be restarted with the new name, see [UserModMDNS](/StarDocs/UserMod/UserModMDNS)
+    * [2024040511](https://github.com/ewowi/StarMod/commit/4f12da235bcee958b74f6d932b20a5ffcf9c449c): The name will be stripped from non standard characters so it can be used for Wifi / AP HostName and MDNS name. If name is changed, MDNS will be restarted with the new name, see [UserModMDNS](/StarDocs/UserMod/UserModMDNS)
 * Reboot: restart this instance.
 * OTA Update: select a bin file and it will directly upload to the board. Red or green ball will show failure or success. Update will be effective after reboot !!
 
