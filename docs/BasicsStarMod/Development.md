@@ -13,6 +13,7 @@ Process
 * Decide if it is a StarMod (Core) or StarMod Leds change
 * For Medium to big changes: create a github issue to document the design of the change
 * Fork one of the repos (StarMod Core or Leds)
+* Create a branch (more text needed here)
 * Implement change
 * Follow the [Standards and guidelines](https://ewowi.github.io/StarDocs/BasicsStarMod/StandardsAndGuidelines/)
 * Create a pull request
