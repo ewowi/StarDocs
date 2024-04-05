@@ -16,14 +16,14 @@ Process
 * Implement change
 * Follow the [Standards and guidelines](https://ewowi.github.io/StarDocs/BasicsStarMod/StandardsAndGuidelines/)
 * Create a pull request
-* Update StarDocs to describe the impact of the change
+* Update StarDocs to describe the impact of the change. You can use a link to the commit implementing the change as follows (2024040511 is the version nr of the change):
 
-pic 
+![image](https://github.com/ewowi/StarDocs/assets/138451817/31c591df-9241-49b6-aa71-1a7cd6282a89)
 
 * In case of a StarMod (Core) change, propagate the change downstream to StarModLeds. Git tree will typically look like:
 
-pic
+![image](https://github.com/ewowi/StarDocs/assets/138451817/562978ff-1d97-4246-938f-501a19dfadec)
 
-    * Check if post merge steps are needed in StarMod Leds (e.g. rerun npm run dev to update html_ui.h)
+* Check if post merge steps are needed in StarMod Leds (e.g. rerun npm run dev to update html_ui.h)
 
 🚧
