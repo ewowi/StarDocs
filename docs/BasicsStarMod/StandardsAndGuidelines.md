@@ -32,7 +32,7 @@ hide:
     * f_AddRow: called if a row is added (Variable is in table)
     * f_DelRow: called if a row is deleted (Variable is in table)
 * Minimize on heap and stack use
-    * Effect class don't have local variables
+    * Effect class doesn't have local variables
     * init Variable: functions, not classes
 * Pragmatic use of Design Patterns (e.g. Singleton) and OO concepts - aiming at maximal efficiency in ESP32 environment
 * Code should be as readable as possible
