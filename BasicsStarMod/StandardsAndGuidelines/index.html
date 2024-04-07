@@ -1884,10 +1884,10 @@
 <li>Modules are as independent from each other as possible (but they can call each other)</li>
 </ul>
 </li>
-<li>Every module is a class</li>
-<li>Minimize the use of static / global variables, use modules classes to define variables</li>
-<li>"functional locality": code of a feature is in one place, not in different files etc.</li>
+<li>Everything is a module, every module is a class</li>
 <li>Code of a module is in the module class</li>
+<li>Minimize the use of static / global variables. Use modules classes to define variables</li>
+<li>"functional locality": code of a feature is in one place, not in different files etc.</li>
 <li>Model.json for variables and UI generation</li>
 <li>Minimize model json size<ul>
 <li>UiFun: send labels and comments and select options instead of storing in model</li>
@@ -1908,7 +1908,12 @@
 </ul>
 </li>
 <li>Pragmatic use of Design Patterns (e.g. Singleton) and OO concepts - aiming at maximal efficiency in ESP32 environment</li>
-<li>Code should be as readable as possible</li>
+<li>Code should be as readable as possible<ul>
+<li>Minimal code lines</li>
+<li>Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain</li>
+<li>No get/set like function wrappers around variables</li>
+</ul>
+</li>
 <li>Other standards and guidelines yet to be written down 🤭</li>
 </ul>
 
