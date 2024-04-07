@@ -25,6 +25,7 @@ Leds
 * create new effects - Medium
 * create new projections - Medium
 * Generate your fixture - Medium
+    * bike fixture - ewowi
 
 Both
 
