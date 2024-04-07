@@ -40,3 +40,4 @@ hide:
     * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
     * No get/set like function wrappers around variables
 * Other standards and guidelines yet to be written down 🤭
+* These standards and guidelines are not unchangeable and can be disputed. but its just the way things are done now
