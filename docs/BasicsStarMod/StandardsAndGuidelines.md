@@ -17,7 +17,7 @@ hide:
     * Effects have no notion of the type of projection or fixture it is applied to
     * Any projection can be applied to any effect in any fixture, 1D to 3D in any combination
     * Modules are as independent from each other as possible (but they can call each other)
-* Everything is a module, every module is a class
+* Everything is a module, every module is a (singleton) class
 * Code of a module is in the module class
 * Minimize the use of static / global variables. Use modules classes to define variables
 * "functional locality": code of a feature is in one place, not in different files etc.
@@ -40,4 +40,4 @@ hide:
     * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
     * No get/set like function wrappers around variables
 * Other standards and guidelines yet to be written down 🤭
-* These standards and guidelines are not unchangeable and can be disputed. but its just the way things are done now
+* These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues
