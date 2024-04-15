@@ -1117,6 +1117,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mappings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1827,6 +1845,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mappings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dev
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1859,6 +1895,22 @@
 <p>Fixture:</p>
 <p><img width="390" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/59dc199c-6697-43f4-9a1b-f8413005aa5f"></p>
 <h2 id="starmod-leds-overview">StarMod Leds overview</h2>
+<p>De Leds modules of StarMod define a fixture (Fixture generator module), Set Effects and projections (Effects module) and displays it (Fixture module).</p>
+<p>All Modulus support 1D, 2D and 3D effects and fixtures and all combinations of it. Effects are unaware of the fixtures it is displayed on (e.g. a 1D effect can be projected on a 3D fixture or a 3D effect on a 1D fixture (strip))</p>
+<h2 id="mappings">Mappings</h2>
+<p>In the world of Led software mapping is a word causing lots of discussion and confusion. StarMod LEDS is designed to make it simpler and more flexible, by having a clear separation of physical and logical and a clear distinction of fixtures, effects and projections (see Orthogonality). Below is an attempt to explain it.</p>
+<ul>
+<li>F_ixture.json contains a definition of the fixture. It specifies the name, nrOfLeds and the width, height and depth of the fixture in cm. Note that nrOfLeds is not equal to the product of width, height and depth as in a lot of fixtures there is not a pixel on every cm. Panels and strips do have a pixel on each cm but rings or hexagons or wheels etc not. Furthermore it specifies for each pin (or ip addres - WIP) the physical coordinate of the pixels which are connected to the pin, in order of pixels connected in the daisy chain.</li>
+<li>An effect specifies in a virtual width, height and depth what the effect does. It uses a FASTLED compatible syntax including leds[i] assignments. Also setPixelColor and getPixelColor can be used. Effect can be 1D, 2D or 3D.</li>
+<li>A projection maps the virtual effect to the physical fixture. The Default projection maps the effect width, height and depth to the fixture width, height and depth. E.g. if a 2D effect is mapped to a matrix there will be a 1:1 correspondence. If a 2D effect is mapped to a 3D fixture (e.g. humanSizedCube) it will smear the 2D image over 3D (hope this is correct English ;-) ). Other projections can multiply effects, rotate effects etc. Projections are still in its infancy and only some basic projections have been defined.</li>
+</ul>
+<h2 id="dev">Dev</h2>
+<ul>
+<li>Fixtures are generated in LedModFixtureGen.h</li>
+<li>Effects are defined in LedEffects.h</li>
+<li>Projections are defined in LedFixture.cpp</li>
+<li>Fixtures are controlled in LedModFixture.h</li>
+</ul>
 <p>🚧</p>
 
 
