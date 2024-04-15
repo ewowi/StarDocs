@@ -5,9 +5,7 @@ hide:
   # - toc
 ---
 
-## Heading 2
-
-Text
+<img width="486" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/1b6b6f51-5a3a-4044-af58-70780f731863">
 
 ## Effects
 
