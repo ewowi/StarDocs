@@ -5,9 +5,9 @@ hide:
   # - toc
 ---
 
-https://github.com/ewowi/StarDocs/assets/138451817/20676c3c-ae0d-4e23-bbef-7982104b2a8c
+<video width="248" autoplay><source src="https://github.com/ewowi/StarDocs/assets/138451817/20676c3c-ae0d-4e23-bbef-7982104b2a8c" type="video/mp4"></video>
 
-https://github.com/ewowi/StarDocs/assets/138451817/96400ef5-67d9-407b-bf39-df6d45491e93
+<img width="300" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/96400ef5-67d9-407b-bf39-df6d45491e93">
 
 ## SysMod Pins
 
