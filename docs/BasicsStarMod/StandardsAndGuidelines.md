@@ -5,11 +5,7 @@ hide:
   # - toc
 ---
 
-## User
-
-* Everything is a module
-
-## Dev
+## Standards and Guidelines
 
 * Orthogonality: concepts are independent or irrelevant to eachother. Examples:
     * StarMod Core has no notion of applications build on top of it e.g. StarMod Leds
@@ -25,12 +21,14 @@ hide:
 * Minimize model json size
     * UiFun: send labels and comments and select options instead of storing in model
 * Variables are defined using init<Type> functions containing a function paramater for:
-    * f_ValueFun: assigning and updating values
+    * f_ValueFun: assigning default values
     * f_UIFun: called by the UI to get extra info (label, comment, options)
-    * f_ChangeFun: called if the value of a variable changes
+    * f_ChangeFun: called if the value of a variable changes, use old and new value
     * f_LoopFun: executed in loop e.g. preview
     * f_AddRow: called if a row is added (Variable is in table)
     * f_DelRow: called if a row is deleted (Variable is in table)
+    * At the moment of writing, var names need to be unique along the whole project!
+* UI is 100% generated from model and UIFun, only app.js can be used to implement specific functionality. UI can be single elements or tables with elements and can be hierarchical just like html is hierarchical. UI elements may only be created using init<Var> calls. If another UI construct is needed or specific node hierarchy is not implemented yet, please log a github issue.
 * Minimize on heap and stack use
     * Effect class doesn't have local variables
     * init Variable: functions, not classes
@@ -43,5 +41,6 @@ hide:
         * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
         * No get/set like function wrappers around variables
     * Like Apple, not like Android (😳)
-* Other standards and guidelines yet to be written down 🤭
+* Other standards and guidelines yet to be written down ;-)
+* These standards and guidelines should result in the posibility to create a complete new service by creating one module in one .h file allowing it to use all functionality available in StarMod. Including UI, pins, files, print, model persistent storage, enabling and disabling, loop injection etc. If you feel it's not possible, log a github issue.
 * These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues
