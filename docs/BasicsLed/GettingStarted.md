@@ -13,7 +13,7 @@ hide:
 * Select the Leds tab in the UI
 
 * Generate a fixture
-    * [Fixture Generator](/StarDocs/UserMod/UserModFixture Generator)
+    * [Fixture Generator](/StarDocs/LedMod/LedModFixture Generator)
     * Select the pin the leds will be connected to (multiple pins possible)
     * The default setting is one 8x8 panel connected to pin 2:
 

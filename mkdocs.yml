@@ -71,7 +71,6 @@ nav:
   - Welcome: index.md
   - StarMod Basics:
     - Getting started: BasicsStarMod/GettingStarted.md
-    - Modules: BasicsStarMod/Modules.md
     - Contribute: BasicsStarMod/Contribute.md
     - Testing: BasicsStarMod/Testing.md
     - Development: BasicsStarMod/Development.md
@@ -90,15 +89,15 @@ nav:
     - Web Module: SysMod/SysModWeb.md
   - StarMod Leds:
     - Overview: BasicsLed/Overview.md 
+    - Getting started: BasicsLed/GettingStarted.md
     - Effects: BasicsLed/Effects.md
     - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
     - Gallery: BasicsLed/Gallery.md
   - Led Modules:
-    - Getting started: LedMod/GettingStarted.md
     - LedMod Overview: LedMod/LedModOverview.md
     - Fixture Module: LedMod/LedModFixture.md
     - Effects Module: LedMod/LedModEffects.md
-    - Fixture Generator Module: UserMod/UserModFixture Generator.md
+    - Fixture Generator Module: LedMod/LedModFixture Generator.md
   - User Modules:
     - UserMod overview: UserMod/UserModOverview.md
     - E131-sACN Module: UserMod/UserModE131-sACN.md

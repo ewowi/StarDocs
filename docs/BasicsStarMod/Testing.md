@@ -23,5 +23,5 @@ hide:
 * [Getting Started](/StarDocs/BasicsStarMod/GettingStarted/)
     * Follow the instructions until StarMod Leds is up and running now !
     * Optionally add a led panel or ring to a gpio port of the esp32 and check leds are burning
-    * Report a custom fixture you would like to have supported in [Github issues](https://github.com/ewowi/StarMod/issues). To get an idea of current predefined fixtures check  [Fixture Generator / examples](https://ewowi.github.io/StarDocs/UserMod/UserModFixture%20Generator/#examples)
+    * Report a custom fixture you would like to have supported in [Github issues](https://github.com/ewowi/StarMod/issues). To get an idea of current predefined fixtures check  [Fixture Generator / examples](https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/#examples)
 * 🚧

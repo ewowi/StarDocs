@@ -5,13 +5,38 @@ hide:
   # - toc
 ---
 
-<img width="316" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/d48679eb-efbe-4133-b43d-e3f33587530a">
-<img width="336" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/58530e7d-0606-4928-a4ae-233103f88e34">
-<img width="340" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/62073790-5365-4cee-be0e-78488d285b2a">
-<img width="329" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/b6909720-4a8e-4661-9381-4336aeed1283">
-<img width="317" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/4a343d06-8fa3-4ea6-a521-0cc9e5d2bfb2">
-<img width="307" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/5d4f0051-0e38-4d16-b81a-31fc8d2f7e1e">
-<img width="344" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/dff1090a-7af0-4cbb-83e1-7108021976e8">
+Fixture generator:
 
-## StarMod Leds Overview
+<img width="481" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/06cc1d89-ce54-4feb-8023-581bfce16fbd">
+
+Effects:
+
+<img width="486" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/7a4637e5-383a-4935-8057-9cd7ba64b427">
+
+Fixture:
+
+<img width="390" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/59dc199c-6697-43f4-9a1b-f8413005aa5f">
+
+## StarMod Leds overview
+
+De Leds modules of StarMod define a fixture ([Fixture generator module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/)), Set Effects and projections ([Effects module](https://ewowi.github.io/StarDocs/LedMod/LedModEffects/)) and displays it ([Fixture module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture/)).
+
+All Modulus support 1D, 2D and 3D effects and fixtures and all combinations of it. Effects are unaware of the fixtures it is displayed on (e.g. a 1D effect can be projected on a 3D fixture or a 3D effect on a 1D fixture (strip))
+
+## Mappings
+
+In the world of Led software mapping is a word causing lots of discussion and confusion. StarMod LEDS is designed to make it simpler and more flexible, by having a clear separation of physical and logical and a clear distinction of fixtures, effects and projections (see [Orthogonality](https://ewowi.github.io/StarDocs/BasicsStarMod/StandardsAndGuidelines/)). Below is an attempt to explain it. Feel free to improve the text / add pictures (fork and PR).
+
+* F_ixture.json contains a definition of the fixture. It specifies the name, nrOfLeds and the width, height and depth of the fixture in cm. Note that nrOfLeds is not equal to the product of width, height and depth as in a lot of fixtures there is not a pixel on every cm. Panels and strips do have a pixel on each cm but rings or hexagons or wheels etc not. Furthermore it specifies for each pin (or ip addres - WIP) the physical coordinate of the pixels (in mm as circular fixtures requires mm accuracy !!) which are connected to the pin, in order of pixels connected in the daisy chain.
+* An effect specifies in a virtual width, height and depth what the effect does. It uses a FASTLED compatible syntax including leds[i] assignments. Also setPixelColor and getPixelColor can be used. Effect can be 1D, 2D or 3D.
+* A projection maps the virtual effect to the physical fixture. The Default projection maps the effect width, height and depth to the fixture width, height and depth. E.g. if a 2D effect is mapped to a matrix there will be a 1:1 correspondence. If a 2D effect is mapped to a 3D fixture (e.g. humanSizedCube) it will smear the 2D image over 3D. Other projections can multiply effects, rotate effects etc. Projections are still in its infancy and only some basic projections have been defined.
+
+## Dev
+
+* Fixtures are generated in LedModFixtureGen.h
+* Effects are defined in LedEffects.h
+* Projections are defined in LedFixture.cpp
+* Fixtures are controlled in LedModFixture.h
+
+🚧
 
