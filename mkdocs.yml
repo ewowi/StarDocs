@@ -94,10 +94,9 @@ nav:
     - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
     - Gallery: BasicsLed/Gallery.md
   - Led Modules:
-    - LedMod Overview: LedMod/LedModOverview.md
-    - Fixture Module: LedMod/LedModFixture.md
-    - Effects Module: LedMod/LedModEffects.md
     - Fixture Generator Module: LedMod/LedModFixture Generator.md
+    - Effects Module: LedMod/LedModEffects.md
+    - Fixture Module: LedMod/LedModFixture.md
   - User Modules:
     - UserMod overview: UserMod/UserModOverview.md
     - E131-sACN Module: UserMod/UserModE131-sACN.md
