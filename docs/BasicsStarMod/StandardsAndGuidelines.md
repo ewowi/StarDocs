@@ -35,9 +35,13 @@ hide:
     * Effect class doesn't have local variables
     * init Variable: functions, not classes
 * Pragmatic use of Design Patterns (e.g. Singleton) and OO concepts - aiming at maximal efficiency in ESP32 environment
-* Code should be as readable as possible
-    * Minimal code lines
-    * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
-    * No get/set like function wrappers around variables
+* Keep it simple to start with, build from there
+    * [MVP (Minimum Viable Product)](https://en.wikipedia.org/wiki/Minimum_viable_product) concept
+    * Copy - refactor - paste: copy code from the internet -> apply mvp -> apply standards and guidelines - paste in StarMod
+    * Code should be as readable as possible
+        * Minimal code lines
+        * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
+        * No get/set like function wrappers around variables
+    * Like Apple, not like Android (😳)
 * Other standards and guidelines yet to be written down 🤭
 * These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues
