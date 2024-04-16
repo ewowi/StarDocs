@@ -18,7 +18,8 @@ public:
   unsigned8 dim() {return _2D;}
   const char * tags() {return "♪♫⚡💡💫";}
 
-  void setup() {
+  void setup(Leds &leds) {
+    leds.fill_solid(CRGB::Black);
   }
 
   void loop(Leds &leds) {
@@ -50,16 +51,12 @@ public:
 ```
 
 * name(), dim() and tags() provide effect metadata
-
-* leds.sharedData.bind() preserves data over multiple loops
-
+* leds.sharedData.bind() preserves data over multiple loops, in case of array add the number of elements. .bind is the only command needed, data allocation and management will be done transparent from the effect code.
 * leds.size is the virtual size of the effect
-
 * leds[pos] = color gives a virtual pixel a value
-
 * leds[pos] = color is identical to leds.setPixelColor(pos, color);
-
 * color = leds[pos] is identical to color = leds.getPixelColor(pos);
+* FastLed library commands can be used. e.g. leds.fill_solid(CRGB::Black); operations will be executed in the virtual leds context
 
 Notes:
 
