@@ -1867,7 +1867,8 @@ public:
   unsigned8 dim() {return _2D;}
   const char * tags() {return &quot;♪♫⚡💡💫&quot;;}
 
-  void setup() {
+  void setup(Leds &amp;leds) {
+    leds.fill_solid(CRGB::Black);
   }
 
   void loop(Leds &amp;leds) {
@@ -1898,24 +1899,13 @@ public:
 }; // ExampleEffect
 </code></pre></div>
 <ul>
-<li>
-<p>name(), dim() and tags() provide effect metadata</p>
-</li>
-<li>
-<p>leds.sharedData.bind() preserves data over multiple loops</p>
-</li>
-<li>
-<p>leds.size is the virtual size of the effect</p>
-</li>
-<li>
-<p>leds[pos] = color gives a virtual pixel a value</p>
-</li>
-<li>
-<p>leds[pos] = color is identical to leds.setPixelColor(pos, color);</p>
-</li>
-<li>
-<p>color = leds[pos] is identical to color = leds.getPixelColor(pos);</p>
-</li>
+<li>name(), dim() and tags() provide effect metadata</li>
+<li>leds.sharedData.bind() preserves data over multiple loops, in case of array add the number of elements. .bind is the only command needed, data allocation and management will be done transparent from the effect code.</li>
+<li>leds.size is the virtual size of the effect</li>
+<li>leds[pos] = color gives a virtual pixel a value</li>
+<li>leds[pos] = color is identical to leds.setPixelColor(pos, color);</li>
+<li>color = leds[pos] is identical to color = leds.getPixelColor(pos);</li>
+<li>FastLed library commands can be used. e.g. leds.fill_solid(CRGB::Black); operations will be executed in the virtual leds context</li>
 </ul>
 <p>Notes:</p>
 <ul>
