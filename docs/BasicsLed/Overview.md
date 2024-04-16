@@ -19,7 +19,7 @@ Fixture:
 
 ## StarMod Leds overview
 
-De Leds modules of StarMod define a fixture ([Fixture generator module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/)), Set Effects and projections ([Effects module](https://ewowi.github.io/StarDocs/LedMod/LedModEffects/)) and displays it ([Fixture module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture/)).
+The Leds modules of StarMod define a fixture ([Fixture generator module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/)), Set Effects and projections ([Effects module](https://ewowi.github.io/StarDocs/LedMod/LedModEffects/)) and displays it ([Fixture module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture/)).
 
 All Modulus support 1D, 2D and 3D effects and fixtures and all combinations of it. Effects are unaware of the fixtures it is displayed on (e.g. a 1D effect can be projected on a 3D fixture or a 3D effect on a 1D fixture (strip))
 
@@ -37,6 +37,7 @@ In the world of Led software mapping is a word causing lots of discussion and co
 * Effects are defined in LedEffects.h
 * Projections are defined in LedFixture.cpp
 * Fixtures are controlled in LedModFixture.h
+* LedModEffects.h glues all of this together: one or more effects each with their own projections and locations on the fixture are called in the main loop and send to FastLed (FastLED.show()). If fixture, dimensions or projections change, fixture.projectAndMap is called to create new mappings. For each new fixture the pins defined in the fixture are allocated (FastLED.addLeds)
 
 🚧
 
