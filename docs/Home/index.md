@@ -17,45 +17,21 @@ hide:
   
 # Welcome to StarMod
 
-**********************************************************
-Update April, 2024: 
+StarMod is for freeRTOS (the underlying operating system of ESP32) what Windows is for MSDos: a layer on top of it what makes programming applications easier. The layer consists of modules: everything is a module. Examples are printing, file management, persistent data, Wifi, Web, UI and system management. This works right out of the box.
 
-The LEDs part of [ewowi/StarMod](https://github.com/ewowi/StarMod) has been moved to [MoonModules/StarModLeds](https://github.com/MoonModules/StarModLeds). From now on:
+StarMod will integrate with major IOT/network devices and applications 🚧.
 
-* StarMod (Core) is a generic ESP32 platfom without any notion of LEDs
-* StarMod LEDS is a fork of StarMod (Core) which adds LED functionality on top of it.
-* StarMod (Core) can be forked by anyone who wants to build an ESP32 application
-* Forks of StarMod (Core) should not change System functionality, changes on that should be done on StarMod (Core):
-    * Sys Modules 
-    * Generic User Modules
-    * index.js / html / css
-    * platformio.ini
-* The following should be changed on forks:
-    * App Modules
-    * main.cpp
-    * app.js 
-* Use Github issues for [StarMod (Core)](https://github.com/ewowi/StarMod/issues) or [StarMod Leds](https://github.com/MoonModules/StarModLeds/issues) respectively.
-
-End of update
-**********************************************************
-
-
-
-
-Headstart for building ESP32 applications: printing, file management, persistent data, Wifi, Web, UI and system management works out of the box.
-StarMod will integrate with major IOT/network devices and applications.
-
-Everything is a module.
+StarMod can be forked to build custom applications. StarLeds is an example of this (There is no notion of LEDs whatsoever in the core StarMod)
 
 System modules:
 
-* Print: Print to different targets (Serial, file, net)
-* Files: File Manager
+* Print: Print to different targets (Serial, UI, file, net)
+* Files: File Manager, upload files
 * Model: Datamodel in json, stored to file, used in ui and network comms
 * Network: Wifi 
 * Web: Web server
 * UI: UI Server
-* System: Show and manage ESP32 system
+* System: Show and manage ESP32 system, OTA updates
 
 User Modules
 
@@ -66,7 +42,7 @@ User Modules
 
 Build apps on top of this
 
-* Led apps
+* Led apps (StarLeds)
 * IO control apps
 * IOT apps 
 * Any app
@@ -76,7 +52,7 @@ See this for more info on StarMod:
 
 By [MoonModules](https://github.com/MoonModules)
 
-LED module inspired by [WLED MM](https://github.com/MoonModules/WLED)
+StarLeds inspired by [WLED MM](https://github.com/MoonModules/WLED)
 
 Disclaimer:
 
@@ -90,10 +66,7 @@ Join the Discord server to discuss everything about StarMod MM and SR!
 
 <a href="https://discord.gg/TC8NSUSCdV"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="25%"></a>
 
-© 2024 MoonModules ☾ - StarMod is licensed under GPL-v3
+© 2024 MoonModules ☾ - StarMod and StarLeds is licensed under GPL-v3
 
 ## MoonModules
 <img width="456" alt="20230805-2049-000" src="https://github.com/ewowi/StarDocs/assets/1737159/6e0dd13d-1e1a-4956-98ae-6d1a22b70562">
-
-
-🚧

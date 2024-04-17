@@ -68,14 +68,16 @@ extra_css:
 extra_javascript:
   - assets/js/newtab.js
 nav:
-  - Welcome: index.md
+  - Home: 
+    - Welcome: index.md
+    - News: news.md
   - StarMod Basics:
     - Getting started: BasicsStarMod/GettingStarted.md
     - Contribute: BasicsStarMod/Contribute.md
     - Testing: BasicsStarMod/Testing.md
     - Development: BasicsStarMod/Development.md
     - Standards and Guidelines: BasicsStarMod/StandardsAndGuidelines.md
-  - System Modules:
+  - StarMod Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md
     - Files Module: SysMod/SysModFiles.md
@@ -87,13 +89,13 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
-  - StarMod Leds:
+  - StarLeds:
     - Overview: BasicsLed/Overview.md 
     - Getting started: BasicsLed/GettingStarted.md
     - Effects: BasicsLed/Effects.md
     - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
     - Gallery: BasicsLed/Gallery.md
-  - Led Modules:
+  - StarLeds Modules:
     - Fixture Generator Module: LedMod/LedModFixture Generator.md
     - Effects Module: LedMod/LedModEffects.md
     - Fixture Module: LedMod/LedModFixture.md
