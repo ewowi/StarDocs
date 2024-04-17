@@ -40,7 +40,6 @@ hide:
         * Minimal code lines
         * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
         * No get/set like function wrappers around variables
-    * Like Apple, not like Android (😳)
 * Other standards and guidelines yet to be written down ;-)
 * These standards and guidelines should result in the posibility to create a complete new service by creating one module in one .h file allowing it to use all functionality available in StarMod. Including UI, pins, files, print, model persistent storage, enabling and disabling, loop injection etc. If you feel it's not possible, log a github issue.
 * These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues
