@@ -15,7 +15,7 @@ hide:
   <a href="https://gitpod.io/#https://github.com/ewowi/StarMod"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?style=flat-square&logo=gitpod"></a>
 </p>
 
-<img width="1456" alt="image" src="https://github.com/ewowi/StarMod/assets/138451817/e29cfed8-59b2-4abb-82e4-c26bbec4cde2">
+<img width="400" alt="image" src="https://github.com/ewowi/StarMod/assets/138451817/e29cfed8-59b2-4abb-82e4-c26bbec4cde2">
 
 # Welcome to StarMod
 
