@@ -7,7 +7,7 @@ hide:
 
 ## Getting Started
 
-* Setup StarMod
+* Follow StarMod steps using StarLeds binary
     * [StarMod](/StarDocs/BasicsStarMod/GettingStarted)
 
 * Select the Leds tab in the UI
@@ -31,4 +31,4 @@ hide:
 
 <img width="848" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/bc43ffb3-b931-4365-9405-168d41829a84">
 
-* StarMod Leds is up and running now !
+* StarLeds is up and running now !

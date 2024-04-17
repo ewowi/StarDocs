@@ -1,8 +1,8 @@
 ---
 title: News
 hide:
-  - navigation
-  - toc
+  # - navigation
+  # - toc
 ---
 
 ## News
