@@ -14,7 +14,9 @@ hide:
   <a href="https://github.com/ewowi/StarMod-App"><img src="https://img.shields.io/badge/app-StarMod-blue.svg?style=flat-square"></a>
   <a href="https://gitpod.io/#https://github.com/ewowi/StarMod"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?style=flat-square&logo=gitpod"></a>
 </p>
-  
+
+<img width="1456" alt="image" src="https://github.com/ewowi/StarMod/assets/138451817/e29cfed8-59b2-4abb-82e4-c26bbec4cde2">
+
 # Welcome to StarMod
 
 StarMod is for freeRTOS (the underlying operating system of ESP32) what Windows is for MSDos: a layer on top of it what makes programming applications easier. The layer consists of modules: everything is a module. Examples are printing, file management, persistent data, Wifi, Web, UI and system management. This works right out of the box.
@@ -43,6 +45,9 @@ User Modules
 Build apps on top of this
 
 * Led apps (StarLeds)
+
+  <img width="316" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/d48679eb-efbe-4133-b43d-e3f33587530a">
+
 * IO control apps
 * IOT apps 
 * Any app
