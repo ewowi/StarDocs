@@ -68,10 +68,10 @@ extra_css:
 extra_javascript:
   - assets/js/newtab.js
 nav:
-  - Home: index.md
-    - News: news.md
+  - Welcome: index.md
   - StarMod Basics:
     - Getting started: BasicsStarMod/GettingStarted.md
+    - News: BasicsStarMod/news.md
     - Contribute: BasicsStarMod/Contribute.md
     - Testing: BasicsStarMod/Testing.md
     - Development: BasicsStarMod/Development.md
