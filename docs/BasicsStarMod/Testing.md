@@ -11,7 +11,7 @@ hide:
 
 * Follow a test scenario
 * Please report issues in [Github StarMod issues](https://github.com/ewowi/StarMod/issues) or [Github StarLeds issues](https://github.com/MoonModules/StarModLeds/issues)
-    * Include the version of the build you are testing (see [System](/StarDocs/SysMod/SysModSystem))
+    * Include the build you are testing (see [System](/StarDocs/SysMod/SysModSystem))
     * Include the test scenario
 * You can report success also in Github issues or on [Discord / StarMod](https://discord.gg/VGDGGX8qvQ) and include things not clear, suggestions for improvement, new test scenarios etc.
 * Improve this documentation by forking [StarDocs](https://github.com/ewowi/StarDocs), edit and submit a pull request
@@ -27,9 +27,9 @@ hide:
 * [OTA Update](/StarDocs/SysMod/SysModSystem/)
     * Download a firmware bin, see [Getting Started](/StarDocs/BasicsStarMod/GettingStarted/)
     * in the [System module](/StarDocs/SysMod/SysModSystem):
-      * Check the currently installed build (Since April 14)
-      * Upload a bin corresponding with the installed build / board using OTA update
-      * Check if upload successful
-      * Reboot
-      * Check if newest version is installed (build)
+        * Check the currently installed build (Since April 14)
+        * Upload a bin corresponding with the installed build / board using OTA update
+        * Check if upload successful
+        * Reboot
+        * Check if newest version is installed (build)
 * 🚧

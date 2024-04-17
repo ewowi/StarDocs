@@ -12,18 +12,15 @@ hide:
     * [StarMod latest](https://github.com/ewowi/StarMod/actions) or [StarLeds latest](https://github.com/MoonModules/StarModLeds/actions)
         * Click on the latest workflow run, scroll down to Artifacts, then download the bin file
         * Currently only esp32dev builds can be found here
-    * Compile a bin using VSCode / PIO
+    * Compile a bin using [StarMod source code](https://github.com/ewowi/StarMod) or [StarLeds source code](https://github.com/MoonModules/StarModLeds) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
+        * The following builds are available using VSCode:
+
+        <img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82">
 
 * Flash the unzipped "firmware.bin" to an ESP32 module using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
     * Unzip/extract the "firmware.bin" from the downloaded folder, then flash it to your connected ESP32 module
 
 <img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
-
-* Alternatively, you can compile and upload [source code](https://github.com/ewowi/StarMod) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
-
-* The following builds are available using VSCode:
-
-<img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82">
 
 * Find the "StarMod" WiFi network and connect (no password needed)
 
