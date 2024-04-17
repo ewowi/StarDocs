@@ -1853,12 +1853,12 @@
 <p><a href="/StarDocs">StarMod</a> is in user test phase. Test scenarios are currently developed. See below for current available test scenarios. If you want to participate in testing:</p>
 <ul>
 <li>Follow a test scenario</li>
-<li>Please report issues in <a href="https://github.com/ewowi/StarMod/issues">Github issues</a><ul>
+<li>Please report issues in <a href="https://github.com/ewowi/StarMod/issues">Github StarMod issues</a> or <a href="https://github.com/MoonModules/StarModLeds/issues">Github StarLeds issues</a><ul>
 <li>Include the version of the build you are testing (see <a href="/StarDocs/SysMod/SysModSystem">System</a>)</li>
 <li>Include the test scenario</li>
 </ul>
 </li>
-<li>You can report success also in <a href="https://github.com/ewowi/StarMod/issues">Github issues</a> or on <a href="https://discord.gg/VGDGGX8qvQ">Discord / StarMod</a> and include things not clear, suggestions for improvement, new test scenarios etc.</li>
+<li>You can report success also in Github issues or on <a href="https://discord.gg/VGDGGX8qvQ">Discord / StarMod</a> and include things not clear, suggestions for improvement, new test scenarios etc.</li>
 <li>Improve this documentation by forking <a href="https://github.com/ewowi/StarDocs">StarDocs</a>, edit and submit a pull request</li>
 <li>Any feedback big or small is welcome</li>
 <li>See <a href="https://github.com/ewowi/StarDocs/files/14837446/Starmod.pdf">Starmod 💫.pdf</a> for the story of StarMod in bullet points</li>
@@ -1866,9 +1866,19 @@
 <h2 id="current-test-scenarios">Current test scenarios</h2>
 <ul>
 <li><a href="/StarDocs/BasicsStarMod/GettingStarted/">Getting Started</a><ul>
-<li>Follow the instructions until StarMod Leds is up and running now !</li>
+<li>Follow the instructions until StarLeds is up and running</li>
 <li>Optionally add a led panel or ring to a gpio port of the esp32 and check leds are burning</li>
-<li>Report a custom fixture you would like to have supported in <a href="https://github.com/ewowi/StarMod/issues">Github issues</a>. To get an idea of current predefined fixtures check  <a href="https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/#examples">Fixture Generator / examples</a></li>
+<li>Report a custom fixture you would like to have supported in Github issues. To get an idea of current predefined fixtures check  <a href="https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/#examples">Fixture Generator / examples</a></li>
+</ul>
+</li>
+<li><a href="/StarDocs/SysMod/SysModSystem/">OTA Update</a><ul>
+<li>Download a firmware bin, see <a href="/StarDocs/BasicsStarMod/GettingStarted/">Getting Started</a></li>
+<li>in the <a href="/StarDocs/SysMod/SysModSystem">System module</a>:</li>
+<li>Check the currently installed build (Since April 14)</li>
+<li>Upload a bin corresponding with the installed build / board using OTA update</li>
+<li>Check if upload successful</li>
+<li>Reboot</li>
+<li>Check if newest version is installed (build)</li>
 </ul>
 </li>
 <li>🚧</li>
