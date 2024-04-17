@@ -11,7 +11,7 @@ If you want to help with StarMod, the following needs helping hands:
 
 Core:
 
-* Custom bin name - Small 🚧
+* Custom bin name - Small, see also [issues/48](https://github.com/ewowi/StarMod/issues/48) 🚧
 * Improve UI - big
 * Setup StarMod.org - medium
 * Print to different targets (Serial, file, net) - medium 🚧
