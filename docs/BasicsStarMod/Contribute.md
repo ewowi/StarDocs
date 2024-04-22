@@ -24,6 +24,7 @@ Leds
 
 * create new effects - Medium
 * create new projections - Medium
+* Fixture generator preview - Medium
 * Generate your fixture - Medium
     * [burning man](https://3dwarehouse.sketchup.com/model/e9de47b1-02f6-4677-a2ad-e73c1af6442f/Burning-Man-Effigy)
     * bike fixture - ewowi
