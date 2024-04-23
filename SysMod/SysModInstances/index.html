@@ -775,6 +775,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      dev
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1806,6 +1815,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      dev
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1831,7 +1849,36 @@
 
   <h1>Instances Module</h1>
 
+<p>Instances: System view:</p>
+<p><img width="363" alt="Screenshot 2024-04-23 at 21 52 33" src="https://github.com/ewowi/StarDocs/assets/138451817/f5719954-52cc-4caa-8339-d7e549d9c2bb"></p>
+<p>Instances: Dashboard view:</p>
+<p><img width="882" alt="Screenshot 2024-04-23 at 21 46 58" src="https://github.com/ewowi/StarDocs/assets/138451817/2d49f218-7bf3-4c13-bdfc-f013ccff44cb"></p>
 <h2 id="sysmod-instances">SysMod Instances</h2>
+<p>The instance module show all the StarMod instances in the network.</p>
+<ul>
+<li>In the System view version and uptime is shown</li>
+<li>In the Dashboad view "dash" variables are shown, the dmx start channel and the Sync master<ul>
+<li>Dash variables: variables where the dash property is set to true. The on/off variable is typically a dash variable. In StarModLed, brightness is a dash variable.</li>
+<li>DMX start channel: only visible if the e131 usermod module is compiled (per default). Dash variables can be controlled via DMX (🚧)</li>
+<li>Sync Master: StarMod instances can control each-others dash variables. A sync master controls the variables of instances set to this sync master.</li>
+</ul>
+</li>
+<li>The dashboard view is used to control other instances from an instance</li>
+<li>Dash variables makes it easy for StarMod applications (like StarModLeds) to define which variables are used for central control, whether it is done by the dashboard view, dmx or also Home Automation. Only thing StarMod applications need to define is the dash property, all functionality is implemented by StarMod (core).</li>
+</ul>
+<h2 id="dev">dev</h2>
+<p>'''
+    JsonObject currentVar = ui-&gt;initCheckBox(parentVar, "on", true, false, <a href="JsonObject var, unsigned8 rowNr, unsigned8 funType"></a> { switch (funType) { //varFun
+      case f_UIFun:
+        ui-&gt;setLabel(var, "On");
+        return true;
+      case f_ChangeFun:
+        //implement on/off behaviour
+        return true;
+      default: return false;
+    }});
+    currentVar["dash"] = true;
+'''</p>
 <p>🚧</p>
 
 
