@@ -1867,18 +1867,17 @@
 <li>Dash variables makes it easy for StarMod applications (like StarModLeds) to define which variables are used for central control, whether it is done by the dashboard view, dmx or also Home Automation. Only thing StarMod applications need to define is the dash property, all functionality is implemented by StarMod (core).</li>
 </ul>
 <h2 id="dev">dev</h2>
-<p>'''
-    JsonObject currentVar = ui-&gt;initCheckBox(parentVar, "on", true, false, <a href="JsonObject var, unsigned8 rowNr, unsigned8 funType"></a> { switch (funType) { //varFun
+<div class="highlight"><pre><span></span><code>    JsonObject currentVar = ui-&gt;initCheckBox(parentVar, &quot;on&quot;, true, false, [](JsonObject var, unsigned8 rowNr, unsigned8 funType) { switch (funType) { //varFun
       case f_UIFun:
-        ui-&gt;setLabel(var, "On");
+        ui-&gt;setLabel(var, &quot;On&quot;);
         return true;
       case f_ChangeFun:
         //implement on/off behaviour
         return true;
       default: return false;
     }});
-    currentVar["dash"] = true;
-'''</p>
+    currentVar[&quot;dash&quot;] = true;
+</code></pre></div>
 <p>🚧</p>
 
 
