@@ -15,7 +15,15 @@ Text
 
 ## Dev
 
-### Projections cases
+Effects send pixel values using FastLed leds[i] style or calling setPixelColor (sPC) or getPixelColor(gPC).
+
+* leds[i] is an overloading function which calls sPC or gPC
+* leds[i] can address 2D or 3D in case i is of type Coord3D: {Coord3D pixel; leds[pixel];} also function XY or XYZ can be called: leds[XYZ(1,2,3)];
+* the pipeline is: leds[i] -> s/gPC —> mapping table -> ledsP
+* a mapping table is filled by the projectAndMap function, see below.
+* ledsP is directly fed to FastLed and FastLed will show whatever content is in ledsP
+
+### Projections
 (LedFixture.cpp - projectAndMap)
 
 Projection is depending on the dimension of the effect and the dimension of the projection, 1D, 2D or 3D.
