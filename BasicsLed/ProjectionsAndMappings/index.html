@@ -1050,9 +1050,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#projections-cases" class="md-nav__link">
+  <a href="#projections_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Projections cases
+      Projections
     </span>
   </a>
   
@@ -1868,9 +1868,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#projections-cases" class="md-nav__link">
+  <a href="#projections_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Projections cases
+      Projections
     </span>
   </a>
   
@@ -1920,7 +1920,15 @@
 <h2 id="mappings">Mappings</h2>
 <p>Text</p>
 <h2 id="dev">Dev</h2>
-<h3 id="projections-cases">Projections cases</h3>
+<p>Effects send pixel values using FastLed leds[i] style or calling setPixelColor (sPC) or getPixelColor(gPC).</p>
+<ul>
+<li>leds[i] is an overloading function which calls sPC or gPC</li>
+<li>leds[i] can address 2D or 3D in case i is of type Coord3D: {Coord3D pixel; leds[pixel];} also function XY or XYZ can be called: leds[XYZ(1,2,3)];</li>
+<li>the pipeline is: leds[i] -&gt; s/gPC —&gt; mapping table -&gt; ledsP</li>
+<li>a mapping table is filled by the projectAndMap function, see below.</li>
+<li>ledsP is directly fed to FastLed and FastLed will show whatever content is in ledsP</li>
+</ul>
+<h3 id="projections_1">Projections</h3>
 <p>(LedFixture.cpp - projectAndMap)</p>
 <p>Projection is depending on the dimension of the effect and the dimension of the projection, 1D, 2D or 3D.
 This means there are 9 different cases.</p>
