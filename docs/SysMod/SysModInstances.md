@@ -27,7 +27,7 @@ The instance module show all the StarMod instances in the network.
 
 ## dev
 
-'''
+```
     JsonObject currentVar = ui->initCheckBox(parentVar, "on", true, false, [](JsonObject var, unsigned8 rowNr, unsigned8 funType) { switch (funType) { //varFun
       case f_UIFun:
         ui->setLabel(var, "On");
@@ -38,6 +38,6 @@ The instance module show all the StarMod instances in the network.
       default: return false;
     }});
     currentVar["dash"] = true;
-'''
+```
 
 🚧
