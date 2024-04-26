@@ -10,7 +10,7 @@ theme:
   name: material
   custom_dir: docs/assets/overrides
   language: en
-  favicon: assets/images/ui/aircoookie/blurple.png
+  favicon: assets/images/ui/starmod/favicon-16x16.png
   logo: assets/images/ui/starmod/moonmodules.png
   icon: 
     repo: fontawesome/brands/github
