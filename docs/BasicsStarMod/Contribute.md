@@ -17,7 +17,8 @@ Core:
 * Print to different targets (Serial, file, net) - medium 🚧
 * Promote StarMod to other communities eg Fastled community
 * Improve pins viewer, see [gpio viewer](https://github.com/thelastoutpostworkshop/gpio_viewer/issues/110) - big 🚧
-* Example AppModules (eg FastLed, blink, pin high/low, gyro viewer, ...)
+* Example AppModules (eg FastLed, blink, pin high/low, gyro viewer, ...) see https://github.com/ewowi/StarMod/issues/50
+* synchronized time within 20ms between instances
 * ...
 
 Leds
