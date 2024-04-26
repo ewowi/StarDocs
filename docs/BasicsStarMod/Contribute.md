@@ -27,7 +27,7 @@ Leds
 * create new projections - Medium
 * Fixture generator preview - Medium
 * Generate your fixture - Medium
-    * [burning man](https://3dwarehouse.sketchup.com/model/e9de47b1-02f6-4677-a2ad-e73c1af6442f/Burning-Man-Effigy)
+    * [burning man](https://3dwarehouse.sketchup.com/model/e9de47b1-02f6-4677-a2ad-e73c1af6442f/Burning-Man-Effigy) - create conversion script between 3D models and StarMod 
     * bike fixture - ewowi
 
 Both
