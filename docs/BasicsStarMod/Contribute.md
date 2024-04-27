@@ -12,13 +12,13 @@ If you want to help with StarMod, the following needs helping hands:
 Core:
 
 * Custom bin name - Small, see also [issues/48](https://github.com/ewowi/StarMod/issues/48) 🚧
-* Improve UI - big
+* Improve UI - big see [issues/54](https://github.com/ewowi/StarMod/issues/54)
 * Setup StarMod.org - medium
 * Print to different targets (Serial, file, net) - medium 🚧
 * Promote StarMod to other communities eg Fastled community
 * Improve pins viewer, see [gpio viewer](https://github.com/thelastoutpostworkshop/gpio_viewer/issues/110) - big 🚧
 * Example AppModules (eg FastLed, blink, pin high/low, gyro viewer, ...) see [issues/50](https://github.com/ewowi/StarMod/issues/50)
-* synchronized time within 20ms between instances
+* synchronized time within 20ms between instances (look for Toki::Time and timebase)
 * ...
 
 Leds
