@@ -1,4 +1,4 @@
-# StarMod Docs
+# StarDocs
 
 The official documentation page for the WLED MoonModules project!  
 [To live page](https://starmod.org/)

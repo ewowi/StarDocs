@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-By using the StarMod embedded system code, the StarMod iOS mobile application, the StarMod Android mobile application, web client, or associated Services, no personally identifiable data is collected, transmitted and/or stored on external servers.
+By using the StarBase embedded system code, the StarBase iOS mobile application, the StarBase Android mobile application, web client, or associated Services, no personally identifiable data is collected, transmitted and/or stored on external servers.
 No data is processed in any way not absolutely required for the operation of the Service.
 
 This https://starmod.org/ page is hosted using GitHub Pages. While the author of this page does not collect any personally identifiable data, the service provider GitHub "may collect User Personal Information from visitors to [the] GitHub Pages website, including logs of visitor IP addresses, to comply with legal obligations, and to maintain the security and integrity of the Website and the Service." (https://docs.github.com/en/github/site-policy/github-privacy-statement#github-pages)  

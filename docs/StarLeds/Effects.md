@@ -64,4 +64,4 @@ Notes:
 
 ### See also
 
-* [Projections And Mappings](/StarDocs/BasicsLed/ProjectionsAndMappings) : virtual to physical mapping of an effect
+* [Projections And Mappings](/StarDocs/StarLeds/ProjectionsAndMappings) : virtual to physical mapping of an effect

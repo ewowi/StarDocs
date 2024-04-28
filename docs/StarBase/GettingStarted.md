@@ -8,11 +8,11 @@ hide:
 ## Getting Started
 
 * Download a firmware bin
-    * [StarMod release](https://github.com/ewowi/StarMod/releases) or [StarLeds release](https://github.com/MoonModules/StarModLeds/releases)
-    * [StarMod latest](https://github.com/ewowi/StarMod/actions) or [StarLeds latest](https://github.com/MoonModules/StarModLeds/actions)
+    * [StarBase release](https://github.com/ewowi/StarBase/releases) or [StarLeds release](https://github.com/MoonModules/StarLeds/releases)
+    * [StarBase latest](https://github.com/ewowi/StarBase/actions) or [StarLeds latest](https://github.com/MoonModules/StarLeds/actions)
         * Click on the latest workflow run, scroll down to Artifacts, then download the bin file
         * Currently only esp32dev builds can be found here
-    * Compile a bin using [StarMod source code](https://github.com/ewowi/StarMod) or [StarLeds source code](https://github.com/MoonModules/StarModLeds) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
+    * Compile a bin using [StarBase source code](https://github.com/ewowi/StarBase) or [StarLeds source code](https://github.com/MoonModules/StarLeds) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
         * The following builds are available using VSCode:
 
         <img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82">
@@ -22,7 +22,7 @@ hide:
 
 <img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
 
-* Find the "StarMod" WiFi network and connect (no password needed)
+* Find the "StarBase" WiFi network and connect (no password needed)
 
 <img width="293" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/e7b1e16a-8014-42dc-9e07-f4e0cbf04efd">
 
@@ -41,8 +41,8 @@ hide:
 * Connect to the WiFi network
 * Optionally choose a Theme
 * Setup Application
-    * Continue here ! : [Setup StarMod Leds](/StarDocs/BasicsLed/GettingStarted)
+    * Continue here ! : [Setup StarLeds](/StarDocs/StarLeds/GettingStarted)
 
-## Update StarMod binary
+## Update StarBase binary
 
 * See Ota Update in [System](/StarDocs/SysMod/SysModSystem)

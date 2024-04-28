@@ -30,18 +30,18 @@ Current tags
 
 ♫ Audio Frequency
 
-💫StarMod origin
+💫StarLeds origin
 
 ⚡FastLed origin
 
 💡WLED origin
 
-💡💫 WLED origin, StarMod enhanced
+💡💫 WLED origin, StarLeds enhanced
 
 ### Dev
 
 ### See also
 
-* [Effects](/StarDocs/BasicsLed/Effects)
+* [Effects](/StarDocs/StarLeds/Effects)
 
-* [Projections And Mappings](/StarDocs/BasicsLed/ProjectionsAndMappings) : virtual to physical mapping of an effect
+* [Projections And Mappings](/StarDocs/StarLeds/ProjectionsAndMappings) : virtual to physical mapping of an effect

@@ -7,8 +7,8 @@ hide:
 
 ## Getting Started
 
-* Follow StarMod steps using StarLeds binary
-    * [StarMod](/StarDocs/BasicsStarMod/GettingStarted)
+* Follow StarBase steps using StarLeds binary
+    * [StarBase](/StarDocs/StarBase/GettingStarted)
 
 * Select the Leds tab in the UI
 

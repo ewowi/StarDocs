@@ -1,17 +1,17 @@
-site_name: StarMod Project
+site_name: StarBase Project
 site_author: Ewoud Wijma (ewowi)
 #site_url: https://starmod.app
-repo_name: StarMod
-repo_url: https://github.com/ewowi/StarMod
-repo_title: StarMod Repository
+repo_name: StarBase
+repo_url: https://github.com/ewowi/StarBase
+repo_title: StarBase Repository
 #copyright: Copyright &copy; 2016-2024 MoonModules, Contributors
 edit_uri: https://github.com/ewowi/StarDocs/edit/main/docs
 theme:
   name: material
   custom_dir: docs/assets/overrides
   language: en
-  favicon: assets/images/ui/starmod/favicon-16x16.png
-  logo: assets/images/ui/starmod/moonmodules.png
+  favicon: assets/images/ui/starbase/favicon-16x16.png
+  logo: assets/images/ui/starbase/moonmodules.png
   icon: 
     repo: fontawesome/brands/github
   features: 
@@ -22,7 +22,7 @@ theme:
     - content.action.edit
     # - toc.integrate
   palette:
-    - scheme: starmod
+    - scheme: starbase
       primary: cyan #mostly overriden in extra.css
       accent: orange
       toggle: 
@@ -49,17 +49,17 @@ extra:
       link: https://discord.gg/K9JBvgNG
       name: Discord SR
     - icon: fontawesome/brands/discourse
-      link: https://starmod.discourse.group/
+      link: https://starbase.discourse.group/
       name: Forum
     - icon: fontawesome/solid/code
-      link: https://gitpod.io/#https://github.com/ewowi/StarMod
+      link: https://gitpod.io/#https://github.com/ewowi/StarBase
       name: Gitpod
     - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/starmod_project/
+      link: https://www.instagram.com/starbase_project/
     - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/results?search_query=StarMod
+      link: https://www.youtube.com/results?search_query=StarBase
     - icon: fontawesome/solid/shirt
-      link: https://starmod.teemill.com/
+      link: https://starbase.teemill.com/
     - icon: fontawesome/solid/heart
       link: https://paypal.me/moonmodules/
 extra_css:
@@ -69,14 +69,14 @@ extra_javascript:
   - assets/js/newtab.js
 nav:
   - Welcome: index.md
-  - StarMod Basics:
-    - Getting started: BasicsStarMod/GettingStarted.md
-    - News: BasicsStarMod/news.md
-    - Contribute: BasicsStarMod/Contribute.md
-    - Testing: BasicsStarMod/Testing.md
-    - Development: BasicsStarMod/Development.md
-    - Standards and Guidelines: BasicsStarMod/StandardsAndGuidelines.md
-  - StarMod Modules:
+  - StarBase:
+    - Getting started: StarBase/GettingStarted.md
+    - News: StarBase/news.md
+    - Contribute: StarBase/Contribute.md
+    - Testing: StarBase/Testing.md
+    - Development: StarBase/Development.md
+    - Standards and Guidelines: StarBase/StandardsAndGuidelines.md
+  - StarBase Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md
     - Files Module: SysMod/SysModFiles.md
@@ -89,11 +89,11 @@ nav:
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
   - StarLeds:
-    - Overview: BasicsLed/Overview.md 
-    - Getting started: BasicsLed/GettingStarted.md
-    - Effects: BasicsLed/Effects.md
-    - Projections and Mappings: BasicsLed/ProjectionsAndMappings.md
-    - Gallery: BasicsLed/Gallery.md
+    - Overview: StarLeds/Overview.md 
+    - Getting started: StarLeds/GettingStarted.md
+    - Effects: StarLeds/Effects.md
+    - Projections and Mappings: StarLeds/ProjectionsAndMappings.md
+    - Gallery: StarLeds/Gallery.md
   - StarLeds Modules:
     - Fixture Generator Module: LedMod/LedModFixture Generator.md
     - Effects Module: LedMod/LedModEffects.md

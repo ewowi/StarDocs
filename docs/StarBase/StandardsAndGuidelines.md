@@ -8,7 +8,7 @@ hide:
 ## Standards and Guidelines
 
 * Orthogonality: concepts are independent or irrelevant to eachother. Examples:
-    * StarMod Core has no notion of applications build on top of it e.g. StarMod Leds
+    * StarBase has no notion of applications build on top of it e.g. StarLeds
     * No notion of HTML in c(++) code
     * Effects have no notion of the type of projection or fixture it is applied to
     * Any projection can be applied to any effect in any fixture, 1D to 3D in any combination
@@ -35,11 +35,11 @@ hide:
 * Pragmatic use of Design Patterns (e.g. Singleton) and OO concepts - aiming at maximal efficiency in ESP32 environment
 * Keep it simple to start with, build from there
     * [MVP (Minimum Viable Product)](https://en.wikipedia.org/wiki/Minimum_viable_product) concept
-    * Copy - refactor - paste: copy code from the internet -> apply mvp -> apply standards and guidelines - paste in StarMod
+    * Copy - refactor - paste: copy code from the internet -> apply mvp -> apply standards and guidelines - paste in StarBase
     * Code should be as readable as possible
         * Minimal code lines
         * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
         * No get/set like function wrappers around variables
 * Other standards and guidelines yet to be written down ;-)
-* These standards and guidelines should result in the posibility to create a complete new service by creating one module in one .h file allowing it to use all functionality available in StarMod. Including UI, pins, files, print, model persistent storage, enabling and disabling, loop injection etc. If you feel it's not possible, log a github issue.
+* These standards and guidelines should result in the posibility to create a complete new service by creating one module in one .h file allowing it to use all functionality available in StarBase. Including UI, pins, files, print, model persistent storage, enabling and disabling, loop injection etc. If you feel it's not possible, log a github issue.
 * These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues
