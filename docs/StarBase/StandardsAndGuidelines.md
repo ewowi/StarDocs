@@ -17,6 +17,7 @@ hide:
 * Code of a module is in the module class
 * Minimize the use of static / global variables. Use modules classes to define variables
 * "functional locality": code of a feature is in one place, not in different files etc.
+* JSON (powered by ArduinoJSON v7 ! and StarJson for highspeed low mem read) as the default way to store and comminicate data 
 * Model.json for variables and UI generation
 * Minimize model json size
     * UiFun: send labels and comments and select options instead of storing in model
