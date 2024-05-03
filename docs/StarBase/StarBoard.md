@@ -19,9 +19,9 @@ Mockup:
 * USB Powered (2.5A)
 * ESP32-S3 based
 * Headers to plugin INMP443 (no onboard mic as we got non functioning mics at  JLCPCB once probably due to wrong hole alignment or too much paste)
-* 5 input/outputs with standard leds pin (Red, Green, White = +,data,- per default)
-* Level shifters with solder pads to enable them per output
-* 5 outputs can be used to drive leds or repurposed for other io
+* 5 input/outputs with standard leds pin headers (Red, Green, White = +,data,- per default)
+* Level shifters with solder pads to enable them per input/output
+* 5 input/outputs can be used to drive leds or repurposed for other io
 * all on one board
 * perfect for: plug and play development boards, fairy lights (HSC), 256-400 leds per pin at reduced brightness, 50-125 leds at full brightness
 
