@@ -17,6 +17,7 @@ Mockup:
 <img width="400" src="https://github.com/ewowi/StarDocs/assets/138451817/2990689a-cf37-4da7-9a60-4973d16ef74f">
 
 * USB Powered (2.5A)
+* ESP32-S3 based
 * Headers to plugin INMP443 (no onboard mic as we got non functioning mics at  JLCPCB once probably due to wrong hole alignment or too much paste)
 * 5 input/outputs with standard leds pin (Red, Green, White = +,data,- per default)
 * Level shifters with solder pads to enable them per output
