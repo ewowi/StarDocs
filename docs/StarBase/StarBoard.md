@@ -24,7 +24,8 @@ Mockup:
 * 5 input/outputs can be used to drive leds or repurposed for other io
 * all on one board
 * perfect for: plug and play development boards, fairy lights (HSC), 256-400 leds per pin at reduced brightness, 50-125 leds at full brightness
-* optional: separate screw terminal to power the board and the 5 io headers wirh more than 2.5A
+* optional: separate screw terminal to 5V power the board and the 5 io headers with more than 2.5A
+    * optional: allow higher voltages for >5V led strips/panels
 
 ## StarBoard More
 
