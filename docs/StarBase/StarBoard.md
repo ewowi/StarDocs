@@ -7,7 +7,7 @@ hide:
 
 ## StarBoard
 
-Here are some ideas for the perfect board for StarMod. 
+Here are some ideas for the perfect board to drive LEDs. 
 Most likely there are more perfect boards, so they can be added here.
 
 ## StarBoardLeds
