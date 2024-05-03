@@ -25,7 +25,7 @@ StarMod consists of multiple github repositories:
 
 * [StarBase](https://github.com/ewowi/StarBase): The upstream repo containing generic functionality. This works right out of the box. StarBase can be forked to build custom applications.
 * [StarLeds](https://github.com/MoonModules/StarLeds): Fork from StarBase adding Leds specific functionality. (There is no notion of LEDs whatsoever in StarBase)
-* Star????: Overybody can fork StarBase and add new functionality. 
+* Star????: Everybody can fork StarBase and add new functionality. 
 
 StarMod will integrate with major IOT/network devices and applications 🚧.
 
