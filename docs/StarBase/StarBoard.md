@@ -14,6 +14,7 @@ Most likely there are more perfect boards, so they can be added here.
 
 Mockup:
 
+<img width="400" src="https://github.com/ewowi/StarDocs/assets/138451817/2990689a-cf37-4da7-9a60-4973d16ef74f">
 
 * USB Powered (2.5A)
 * Headers to plugin INMP443 (no onboard mic as we got non functioning mics at  JLCPCB once probably due to wrong hole alignment or too much paste)
