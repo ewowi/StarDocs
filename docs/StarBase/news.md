@@ -22,7 +22,7 @@ see [StarBase Testing](https://ewowi.github.io/StarDocs/StarBase/Testing/)
 
 
 
-### April 6, 2024: StarBase and StarLeds repositories
+### April 6, 2024: StarMod -> StarBase and StarLeds repositories
 
 The LEDs part of [ewowi/StarBase](https://github.com/ewowi/StarBase) has been moved to [MoonModules/StarLeds](https://github.com/MoonModules/StarLeds). From now on:
 
@@ -34,7 +34,7 @@ The LEDs part of [ewowi/StarBase](https://github.com/ewowi/StarBase) has been mo
     * Generic User Modules
     * index.js / html / css
     * platformio.ini
-* The following should be changed on forks:
+* The following can be changed on forks:
     * App Modules
     * main.cpp
     * app.js 

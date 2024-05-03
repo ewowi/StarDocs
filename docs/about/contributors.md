@@ -5,9 +5,9 @@ hide:
   # - toc
 ---
 
-This page is to honor the work of all the people who helped to make StarBase what it is today!
+This page is to honor the work of all the people who helped to make StarMod what it is today!
 
-### Direct Contributors to StarBase code
+### Direct Contributors to StarMod code
 
 Everyone you see on the Contributors page and:  
 [@netmindz](https://github.com/netmindz) 
@@ -42,7 +42,7 @@ _This list has been redacted for privacy reasons. If you've contributed to the p
 [Espalexa](https://github.com/Aircoookie/Espalexa) by Aircoookie (modified)  
 Many included FastLED effects are modified versions of [kriegsman](https://gist.github.com/kriegsman/)'s gists!  
 
-StarBase implements Art-Net™ Designed by and Copyright Artistic Licence Holdings Ltd  
+StarMod implements Art-Net™ Designed by and Copyright Artistic Licence Holdings Ltd  
 
 [WebServer_tng](https://github.com/bbx10/WebServer_tng) by bbx10 (ESP32, up to 0.8.3)  
 [PubSubClient](https://github.com/knolleary/pubsubclient) by knolleary (modified, up to 0.8.3)  

@@ -1,5 +1,5 @@
 ---
-title: Welcome to StarBase
+title: Welcome to StarMod
 hide:
   - navigation
   - toc
@@ -17,15 +17,18 @@ hide:
 
 <img width="400" alt="image" src="https://github.com/ewowi/StarBase/assets/138451817/e29cfed8-59b2-4abb-82e4-c26bbec4cde2">
 
-# Welcome to StarBase
+# Welcome to StarMod
 
-StarBase is for freeRTOS (the underlying operating system of ESP32) what Windows is for MSDos: a layer on top of it what makes programming applications easier. The layer consists of modules: everything is a module. Examples are printing, file management, persistent data, Wifi, Web, UI and system management. This works right out of the box.
+StarMod is for freeRTOS (the underlying operating system of ESP32) what Windows is for MSDos: a layer on top of it what makes programming applications easier. The layer consists of modules: everything is a module. 
 
-StarBase will integrate with major IOT/network devices and applications 🚧.
+StarMod consists of multiple github repositories:
+* [StarBase](https://github.com/ewowi/StarBase): The upstream repo containing generic functionality. This works right out of the box. StarBase can be forked to build custom applications.
+* [StarLeds](https://github.com/MoonModules/StarLeds): Fork from StarBase adding Leds specific functionality. (There is no notion of LEDs whatsoever in StarLeds)
+* Star????: Overybody can fork StarBase and add new functionality. 
 
-StarBase can be forked to build custom applications. StarLeds is an example of this (There is no notion of LEDs whatsoever in StarBase)
+StarMod will integrate with major IOT/network devices and applications 🚧.
 
-System modules:
+StarBase System modules:
 
 * Print: Print to different targets (Serial, UI, file, net)
 * Files: File Manager, upload files
@@ -39,10 +42,9 @@ User Modules
 
 * E131/DMX support
 * Home Assistant (planned)
-* LEDs
 * ...
 
-Build apps on top of this
+Build apps on top of this by forking StarBase
 
 * Led apps (StarLeds)
 
@@ -50,10 +52,12 @@ Build apps on top of this
 
 * IO control apps
 * IOT apps 
+* Controlling your fishtank
+* DMX controller
 * Any app
 
-See this for more info on StarBase:
-[StarBase 💫.pdf](https://github.com/ewowi/StarDocs/files/14837446/Starmod.pdf)
+See this for more info on StarMod:
+[StarMod 💫.pdf](https://github.com/ewowi/StarDocs/files/14837446/Starmod.pdf)
 
 By [MoonModules](https://github.com/MoonModules)
 
@@ -67,11 +71,11 @@ GPL V3 License:
 
 You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) GPL-licensed code must also be made available under the GPL along with build & install instructions ([tldrlegal](https://www.tldrlegal.com/license/gnu-general-public-license-v3-gpl-3))
 
-Join the Discord server to discuss everything about StarBase MM and SR!
+Join the Discord server to discuss everything about StarMod MM and SR!
 
 <a href="https://discord.gg/TC8NSUSCdV"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="25%"></a>
 
-© 2024 MoonModules ☾ - StarBase and StarLeds is licensed under GPL-v3
+© 2024 MoonModules ☾ - StarMod, StarBase and StarLeds is licensed under GPL-v3
 
 ## MoonModules
 <img width="456" alt="20230805-2049-000" src="https://github.com/ewowi/StarDocs/assets/1737159/6e0dd13d-1e1a-4956-98ae-6d1a22b70562">

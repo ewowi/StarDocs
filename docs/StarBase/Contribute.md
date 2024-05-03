@@ -7,7 +7,7 @@ hide:
 
 ## Contribute
 
-If you want to help with StarBase, the following needs helping hands:
+If you want to help with StarMod, the following needs helping hands:
 
 StarBase:
 
