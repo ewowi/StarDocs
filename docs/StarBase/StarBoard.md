@@ -26,6 +26,8 @@ Mockup:
 * perfect for: plug and play development boards, fairy lights (HSC), 256-400 leds per pin at reduced brightness, 50-125 leds at full brightness
 * optional: separate screw terminal to 5V power the board and the 5 io headers with more than 2.5A
     * optional: allow higher voltages for >5V led strips/panels
+* optional: i2s, one or two in parallel for gyro board and or 4 line display
+* plus enclosure
 
 ## StarBoard More
 
