@@ -35,3 +35,4 @@ Mockup:
 * Line in
 * Ethernet
 * Display (touch?)
+* external antenna 
