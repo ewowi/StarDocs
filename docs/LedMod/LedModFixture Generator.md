@@ -13,9 +13,7 @@ Fixtures can be generated using the Fixture generator module or manually created
 
 The fixture generator generates predefined fixtures, specific parameters can be added e.g. size of panels etc:
 
-See the dropdown for all fixtures currently supported
-
-<img width="101" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/50725965-e16e-4cf3-9b28-1062af8638b3">
+See the dropdown above for all fixtures currently supported
 
 * Fixture: matrix, panels rings etc.
 * For each fixture:
