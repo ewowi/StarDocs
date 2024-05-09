@@ -5,7 +5,7 @@ hide:
   # - toc
 ---
 
-<img width="405" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/db5875e3-5b80-42a3-8393-5e2d0dbcd830">
+<img width="407" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/53500c8a-a3e0-4251-912d-1cdf7466475d">
 
 ## Fixture Generator
 
@@ -28,7 +28,7 @@ See the dropdown for all fixtures currently supported
 
 ### Matrix fixtures
 
-See image above
+<img width="405" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/db5875e3-5b80-42a3-8393-5e2d0dbcd830">
 
 For each panel:
 
