@@ -92,6 +92,7 @@ nav:
   - StarLeds:
     - Overview: StarLeds/Overview.md 
     - Getting started: StarLeds/GettingStarted.md
+    - Testing: StarLeds/Testing.md
     - Effects: StarLeds/Effects.md
     - Projections and Mappings: StarLeds/ProjectionsAndMappings.md
     - Gallery: StarLeds/Gallery.md

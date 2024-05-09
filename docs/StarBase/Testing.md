@@ -32,4 +32,5 @@ hide:
         * Check if upload successful
         * Reboot
         * Check if newest version is installed (build)
+* Check the [StarLeds test scenarios](StarDocs/StarLeds/Testing/)
 * 🚧
