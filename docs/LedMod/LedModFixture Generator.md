@@ -5,29 +5,30 @@ hide:
   # - toc
 ---
 
-<img width="526" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/82fff9b5-2459-4706-9f5b-7125e4bc7717">
+<img width="405" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/db5875e3-5b80-42a3-8393-5e2d0dbcd830">
 
 ## Fixture Generator
 
-Fixtures can be generated (predefined) or manually created, see below.
+Fixtures can be generated using the Fixture generator module or manually created, see below.
 
 The fixture generator generates predefined fixtures, specific parameters can be added e.g. size of panels etc:
 
-<img width="129" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/d7b89a67-2c2c-449f-86ca-c4f5b4a54c5d">
+See the dropdown for all fixtures currently supported
+
+<img width="101" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/50725965-e16e-4cf3-9b28-1062af8638b3">
 
 * Fixture: matrix, panels rings etc.
 * For each fixture:
     * IP: will be used for super-sync (Not implemented yet)
     * pin: the pin this fixture is connected to
     * custom parameters like number of leds, coordinates
- * A fixture can be made out of multiple panels. Panels can be matrices but also rings etc. If the panel checkbox is checked, each panel can be specified in a table
- * If Panel is selected, presets can be selected, e.g. for fixture Matrix, 16x16, 4*16x16, cube etc can be selected
- * In the panel table, each panel can be give a seperate (or same) pin
+ * A fixture can be made out of multiple parts. Parts can be matrices but also rings etc. each part can be specified in a table
+ * In the fixtures table, each part can be give a seperate (or same) pin
  * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles) and can be selected, see [Fixtures](/StarDocs/LedMod/LedModFixture)
 
 ### Matrix fixtures
 
-<img width="361" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/1f276d52-f19a-45a7-93a9-854214af9a99">
+See image above
 
 For each panel:
 
@@ -35,9 +36,9 @@ For each panel:
 * Row End: the position of the last led in the first row
 * Column End: The position of the last column of the panel.
     * Odd nr of columns: if the column end matches the First led then the leds are layed out in serpentine 
-    * Even nr of columns: if the column end matches the Row End then the leds are layed out in serpentine 
-
-Note: panels can be defined in a 2D space but also in a 3D space !!
+    * Even nr of columns: if the column end matches the Row End then the leds are layed out in serpentine
+* panels can be defined in a 2D space but also in a 3D space
+* Rotation: a panel can be rotated into a 3D space using pan, tilt and roll.
 
 <img width="326" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/2288dfa6-e063-4d8e-88c6-9bd53c196b12">
 
