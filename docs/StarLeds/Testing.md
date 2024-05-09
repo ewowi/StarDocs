@@ -13,7 +13,7 @@ See [StarBase](/StarDocs/StarBase/Testing) for test procedure and StarBase test 
 
 * [Generate fixtures](/StarDocs/LedMod/LedModFixture%20Generator/)
 
-    <img width="405" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/db5875e3-5b80-42a3-8393-5e2d0dbcd830">
+    <img width="407" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/81eb11cf-c4e5-439e-a810-76aeec638a97">
 
     * Select one of the predefined fixtures in the dropdown
     * Press Generate
