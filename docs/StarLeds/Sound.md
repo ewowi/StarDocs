@@ -9,7 +9,7 @@ hide:
 
 This is VERY much 🚧
 
-* 7 bands, same frequencies as MSGEQ7
+* 7 bands, same frequencies as MSGEQ7 (but only if no visual difference in 16 band smooth mode)
 * 7 knobs to tune each band
 * Master - with option for AGC
 * Auto squelch ? (No noise, increase until first signals)
