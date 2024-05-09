@@ -95,6 +95,7 @@ nav:
     - Testing: StarLeds/Testing.md
     - Effects: StarLeds/Effects.md
     - Projections and Mappings: StarLeds/ProjectionsAndMappings.md
+    - Sound: StarLeds/Sound.md
     - Gallery: StarLeds/Gallery.md
   - StarLeds Modules:
     - Fixture Generator Module: LedMod/LedModFixture Generator.md
