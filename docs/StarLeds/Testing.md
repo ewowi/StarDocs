@@ -7,7 +7,9 @@ hide:
 
 ## Testing StarLeds
 
-See [StarBase](/StarDocs/StarBase/Testing) for test procedure and StarBase test scenarios (follow them first if not done)
+See [StarBase](/StarDocs/StarBase/Testing) for test procedure and StarBase test scenarios 
+
+Follow getting started first if not done yet
 
 ## StarLeds test scenarios
 
