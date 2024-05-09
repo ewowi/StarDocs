@@ -7,11 +7,14 @@ hide:
 
 ## Testing StarLeds
 
-See [StarBase](/StarDocs/StarBase/Testing)
+See [StarBase](/StarDocs/StarBase/Testing) for test procedure and StarBase test scenarios (follow them first if not done)
 
-## Current test scenarios
+## StarLeds test scenarios
 
 * [Generate fixtures](/StarDocs/LedMod/LedModFixture%20Generator/)
+
+    <img width="405" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/db5875e3-5b80-42a3-8393-5e2d0dbcd830">
+
     * Select one of the predefined fixtures in the dropdown
     * Press Generate
     * Check file is created in [Files](/StarDocs/SysMod/SysModFiles)
@@ -20,3 +23,5 @@ See [StarBase](/StarDocs/StarBase/Testing)
     * To get an idea of current predefined fixtures check  [Fixture Generator / examples](https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/#examples)
     * Optionally change the values in the fixtures table and create fixtures with other than the default parameters
     * Optionally create your own manual fixture in a json file and upload the file in [Files](/StarDocs/SysMod/SysModFiles)
+
+* 🚧
