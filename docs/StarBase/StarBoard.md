@@ -27,7 +27,13 @@ Mockup:
 * optional: separate screw terminal to 5V power the board and the 5 io headers with more than 2.5A
     * optional: allow higher voltages for >5V led strips/panels
 * optional: i2s, one or two in parallel for gyro board and or 4 line display
-* plus enclosure
+* plus printable enclosure
+
+    * inspiration
+    * <img width="400" src="https://github.com/ewowi/StarDocs/assets/138451817/cc491eee-fed6-421d-a438-20da375b3ba2">
+    * On/Off button
+    * Optional: mode button (next effect, next preset, ...)
+    * Optional: brightness knob
 
 ## StarBoard More
 
