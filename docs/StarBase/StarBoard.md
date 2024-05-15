@@ -41,4 +41,7 @@ Mockup:
 * Line in
 * Ethernet
 * Display (touch?)
-* external antenna 
+* external antenna
+* lipo charge
+* ir
+* dallas temp
