@@ -120,6 +120,10 @@ std::vector<PhysMap> mappingTable;
 Each PhysMap can be a color OR and array of physical pixels. For projections where a logical pixel is not mapped to a physical pixel (like LedV 0 and 1 in above example) the color variable is used to store (setPixelColor) and retreive (getPixelColor) the color.
 
 * To do: make union work so sizeof(PhysMap is less then 8)
+    * check Fixture::projectAndMap(). There the mappingTable is build  
+    * mappingTable is a vector of PhysMap
+    * PhysMap contains a vector indexes of physical leds if they exist OR! a color if no physical leds exist, in that case color is a placeholder used for getPixelColor. 
+    * PhysMap currently is 8 bytes !! (+ the length of the indexes vector) I wanted to make a union of it and expected it to be 5 bytes then but that didn't work (WIP). So with a cube of 2000 pixels this is a huge memory foodprint, but still it works (if 5 bytes then still huge but 40% smaller...)
 
 Example preview:
 
