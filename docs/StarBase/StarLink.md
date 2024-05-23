@@ -27,7 +27,7 @@ StarLink functionality is active if there are 2 or more instances in a group. Th
 
 In the StarBase demoApp, On, Brightness and DMX channel are currently dash variables. In StarLeds, FX (and it's children/controls), projection (and it's children) are currently dash variables.
 
-On a group if sticks this looks as follows:
+On a group of sticks this looks as follows:
 
 <video width="405" autoplay><source src="https://github.com/ewowi/StarDocs/assets/138451817/36d8a25d-c3cb-40d1-953a-330e06db9983" type="video/mp4"></video>
 
