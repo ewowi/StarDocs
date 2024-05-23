@@ -29,7 +29,7 @@ In the StarBase demoApp, On, Brightness and DMX channel are currently dash varia
 
 On a group of sticks this looks as follows:
 
-<video width="405" autoplay><source src="https://github.com/ewowi/StarDocs/assets/138451817/36d8a25d-c3cb-40d1-953a-330e06db9983" type="video/mp4"></video>
+<video width="650" autoplay><source src="https://github.com/ewowi/StarDocs/assets/138451817/36d8a25d-c3cb-40d1-953a-330e06db9983" type="video/mp4"></video>
 
 (there are 2 rgbW sticks which behave a bit different in this video)
 
