@@ -77,6 +77,7 @@ nav:
     - Development: StarBase/Development.md
     - Standards and Guidelines: StarBase/StandardsAndGuidelines.md
     - StarBoard: StarBase/StarBoard.md
+    - StarLink: StarBase/StarLink.md
   - StarBase Modules:
     - SysMod Overview: SysMod/SysModOverview.md
     - Print Module: SysMod/SysModPrint.md
