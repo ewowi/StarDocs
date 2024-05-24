@@ -5,7 +5,8 @@ hide:
   # - toc
 ---
 
-<img width="407" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/53500c8a-a3e0-4251-912d-1cdf7466475d">
+<img width="306" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/534315da-25c6-4e5c-9c1d-2fa75d1c35ff">
+
 
 ## Fixture Generator
 
@@ -15,7 +16,7 @@ The fixture generator generates predefined fixtures, specific parameters can be 
 
 See the dropdown above for all fixtures currently supported
 
-* Fixture: matrix, panels rings etc.
+* Fixture: strips, matrix, cubes, rings etc.
 * For each fixture:
     * IP: will be used for super-sync (Not implemented yet)
     * pin: the pin this fixture is connected to
@@ -24,9 +25,11 @@ See the dropdown above for all fixtures currently supported
  * In the fixtures table, each part can be give a seperate (or same) pin
  * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles) and can be selected, see [Fixtures](/StarDocs/LedMod/LedModFixture)
 
-### Matrix fixtures
+### Matrix and Cube fixtures
 
-<img width="405" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/db5875e3-5b80-42a3-8393-5e2d0dbcd830">
+<img width="302" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/b0b0e42d-2a82-4d21-8c3d-fd07267b5142">
+
+* Matrix fixtures have a width and height parameter, cube fixtures a length parameter.
 
 For each panel:
 
