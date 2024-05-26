@@ -125,6 +125,22 @@ Each PhysMap can be a color OR and array of physical pixels. For projections whe
     * PhysMap contains a vector indexes of physical leds if they exist OR! a color if no physical leds exist, in that case color is a placeholder used for getPixelColor. 
     * PhysMap currently is 8 bytes !! (+ the length of the indexes vector) I wanted to make a union of it and expected it to be 5 bytes then but that didn't work (WIP). So with a cube of 2000 pixels this is a huge memory foodprint, but still it works (if 5 bytes then still huge but 40% smaller...)
 
-Example preview:
+## More theory
+
+<img width="455" src="https://github.com/ewowi/StarDocs/assets/138451817/15f217bc-4ef4-40d1-bc32-11dedd8c0532">
+
+In black are 2 3D fixtures, a cube and a sphere. In red are 2 possible projections of a 2D effect. The first is just a square with with and length, the second is a folded 'paper' in a circle. Idea is that both projections could work on both fixtures.
+
+what the mapping could do in this example is : from a certain point (V) on the 2D projector you should draw a perpendicular line and see where it crosses the fixture (could cross zero, one, or multiple times. In the case of the square or sphere, it crosses 2 times mostly (the visible part and the invisible part): P1 and P2. The in the mapping table on position V you will add the pixelNrs P1 and P2.
+
+This are ‘just’ 2 projections, more are possible of course, would be nice we could discover one what is the default for 2D to 3D
+
+One of the first utility functions to implement this is probably: given a line , show me the intersection points of that line with a fixture.
+
+The second is: given a point in a 2D plane, give me the perpendicular line of that point
+So I am now thinking out loud - abusing our chat to write it down - never went this far in drafting a solution for this - but something like this might work 😉
+... as projectAndMap loops over the pixels of the fixture, the algorithm should be inverse: given a physical point (P), draw a line which crosses the 2D plane perpendicularly, that point is the V where P should be added to (in mappingTable[V].indexes)
+
+## Example preview:
 
 <video width="248" autoplay><source src="https://github.com/ewowi/StarDocs/assets/1737159/637588d2-0f38-46ba-b765-a37acf5fd385" type="video/mp4"></video>
