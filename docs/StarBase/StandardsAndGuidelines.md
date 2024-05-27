@@ -45,5 +45,5 @@ hide:
 * Other standards and guidelines yet to be written down ;-)
 * These standards and guidelines should result in the posibility to create a complete new service by creating one module in one .h file allowing it to use all functionality available in StarBase. Including UI, pins, files, print, model persistent storage, enabling and disabling, loop injection etc. If you feel it's not possible, log a github issue.
 * These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues
-* A lot of good stuff is in here [The C++ Programming Language Bjarne Stroustrup, 3rd edition](). Maybe some notes on esp32 specific programming?
+* A lot of good stuff is in here [The C++ Programming Language Bjarne Stroustrup, 3rd edition](https://gist.github.com/victormwenda/6bb04802d65eaab11a724ac4b04dd9e6). Maybe some notes on esp32 specific programming?
     * We prefer char * over String especially if you don't know what you are doing - which is a contradiction as chars are also tricky ;-)
