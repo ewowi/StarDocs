@@ -78,5 +78,7 @@ Join the Discord server to discuss everything about StarMod MM and SR!
 
 © 2024 MoonModules ☾ - StarMod, StarBase and StarLeds is licensed under GPL-v3
 
+[Used libraries and dependencies](https://ewowi.github.io/StarDocs/about/contributors/#used-libraries-and-dependencies)
+
 ## MoonModules
 <img width="456" alt="20230805-2049-000" src="https://github.com/ewowi/StarDocs/assets/1737159/6e0dd13d-1e1a-4956-98ae-6d1a22b70562">
