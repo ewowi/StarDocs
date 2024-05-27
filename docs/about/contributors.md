@@ -10,10 +10,12 @@ This page is to honor the work of all the people who helped to make StarMod what
 ### Direct Contributors to StarMod code
 
 Everyone you see on the Contributors page and:  
+
 [@netmindz](https://github.com/netmindz) 
 [@softhack007](https://github.com/softhack007)
 [@sören](https://github.com/lost-hope)
 [@troy](https://github.com/troyhacks)
+[@brandon502](https://github.com/brandon502)
 
 _This list is incomplete._  
 
@@ -50,5 +52,9 @@ StarMod implements Art-Net™ Designed by and Copyright Artistic Licence Holding
 [![badge](https://img.shields.io/badge/badges-by%20shields.io-blue.svg?style=flat-square)](https://shields.io)  
 [iro.js](https://iro.js.org/) colorpicker by James Daniel!  
 Classic UI icons by [Linearicons](https://linearicons.com) created by [Perxis](https://perxis.com)!  
+
+Plus 
+
+[Toki.h - Minimal millisecond accurate timekeeping]([https://github.com/Aircoookie/Espalexa](https://github.com/Aircoookie/WLED/tree/main/wled00/src/dependencies/toki)) by Aircoookie (modified)  
 
 If you would like to appear in this list for a contribution you made or be removed from it, feel free to contact me!
