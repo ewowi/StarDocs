@@ -42,4 +42,8 @@ This is WIP:
 * IP, mac-address, name: Mac-address will be the id to store info of other instances in an instance (unchangeable), IP is used to access an instance (can change), instance name is the user friendly name of an instance (and used for grouping)
 * Position: Each instance will have a position which is used to order instances
 * Synchronized time: each instance will have the same time in milliseconds, will have the same random seed and therefor in StarLeds, effects will run exactly the same.
-* StarLeds: Distributed effect: using ordered instances, multiple instances can each run part of an effect - scalibility
+* StarLeds: Distributed effect: using ordered instances, multiple instances can each run part of an effect - scalibility, depending on the effect:
+    * only the displayed part can be rendered. also random seeds helps here
+    * disolayed part plus a bit needs to be rendered
+    * the whole effect must be rendered.
+    * note: rendering the effect without showing it on leds is much faster, eg game of life about 10 times faster
