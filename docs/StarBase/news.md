@@ -13,12 +13,12 @@ see [StarBase Testing](https://ewowi.github.io/StarDocs/StarBase/Testing/)
 
 <img width="400" alt="Screenshot 2024-04-17 at 10 52 13" src="https://github.com/ewowi/StarDocs/assets/138451817/fc72063e-20b5-4f55-ba13-cbe80b889b0b">
 
-* Testers wanted to test OTA update, and also Getting Started 
-* Can be tested on StarBase or StarLeds, StarLeds is the most feature rich test
-* Release 0.0.0 has been added in github repos of StarBase and StarLeds you can download bins there
+* Testers are wanted to test OTA updates, and to follow the Getting Started and deliver feedback.
+* Tests can be performed on StarBase or StarLeds. StarLeds is the most feature rich test.
+* Release 0.0.0 has been added in GitHub repos of StarBase and StarLeds. You can download bins there.
 * Different target boards supported, esp32, esp32s3, esp32s2, esp32c3, pico32
-* Some work has been done on documentation in StarDocs but still far from complete and sometimes in telegram style. Improving the docs by forking and submitting pull requests is highly appreciated :wink:
-* Check also the [contribute page](https://ewowi.github.io/StarDocs/StarBase/Contribute/)
+* Some work has been done on StarDocs documentation but still far from complete and sometimes described in a terse style. Improving the docs by forking and submitting pull requests is highly appreciated :wink:
+* Please also review the [contribute page](https://ewowi.github.io/StarDocs/StarBase/Contribute/) for more ways to help advance the project
 
 
 

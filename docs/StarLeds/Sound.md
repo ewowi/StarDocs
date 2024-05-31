@@ -7,7 +7,7 @@ hide:
 
 ## Starleds sound - Design
 
-This is VERY much 🚧
+This is VERY much in progress 🚧
 
 * 7 bands, same frequencies as MSGEQ7 (but only if no visual difference in 16 band smooth mode)
 * 7 knobs to tune each band

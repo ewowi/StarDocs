@@ -10,7 +10,7 @@ hide:
 * Follow StarBase steps using StarLeds binary
     * [StarBase](/StarDocs/StarBase/GettingStarted)
 
-* Select the Leds tab in the UI
+* Select the LEDs tab in the UI
 
 * Generate a fixture
     * [Fixture Generator](/StarDocs/LedMod/LedModFixture Generator)
@@ -19,7 +19,7 @@ hide:
 
 <img width="365" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/67a4ae2c-1ad9-4e30-88a9-f70f6187f613">
 
-* Connect leds to the ESP32 GPIO pins as defined in the F_ixture.json file
+* Connect LEDs to the ESP32 GPIO pins as defined in the F_ixture.json file
 
 * A generated fixture will be selected automatically in the Fixture Module
     * [Fixture](/StarDocs/LedMod/LedModFixture)
