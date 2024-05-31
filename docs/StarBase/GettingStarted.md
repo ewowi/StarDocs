@@ -7,7 +7,7 @@ hide:
 
 ## Getting Started
 
-* Download a firmware bin
+* Download a firmware binary (bin)
     * [StarBase release](https://github.com/ewowi/StarBase/releases) or [StarLeds release](https://github.com/MoonModules/StarLeds/releases)
     * [StarBase latest](https://github.com/ewowi/StarBase/actions) or [StarLeds latest](https://github.com/MoonModules/StarLeds/actions)
         * Click on the latest workflow run, scroll down to Artifacts, then download the bin file
@@ -26,7 +26,7 @@ hide:
 
 <img width="293" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/e7b1e16a-8014-42dc-9e07-f4e0cbf04efd">
 
-* The Captive portal will show the setup tab, alternatively go to [4.3.2.1](http://4.3.2.1)
+* The StarMod adaptive portal will show the setup tab, alternatively go to [4.3.2.1](http://4.3.2.1)
 
 <img width="896" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cd8bd820-0a40-4ead-a0d2-14e0d0aa4ac3">
 
@@ -34,13 +34,13 @@ hide:
     * [System](/StarDocs/SysMod/SysModSystem)
 * Enter your Wifi credentials
     * [Network](/StarDocs/SysMod/SysModNetwork)
-    * Note: first Save Model, then connect 
+    * Note: first Save Model, then connect
 * Save Model
     * [Model](/StarDocs/SysMod/SysModModel)
 * Reboot or press Connect
 * Connect to the WiFi network
-* Optionally choose a Theme
-* Setup Application
+* Optionally, choose a display theme
+* Setup the application
     * Continue here ! : [Setup StarLeds](/StarDocs/StarLeds/GettingStarted)
 
 ## Update StarBase binary
