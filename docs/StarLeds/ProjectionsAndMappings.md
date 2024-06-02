@@ -125,6 +125,12 @@ Each PhysMap can be a color OR and array of physical pixels. For projections whe
     * PhysMap contains a vector indexes of physical leds if they exist OR! a color if no physical leds exist, in that case color is a placeholder used for getPixelColor. 
     * PhysMap currently is 8 bytes !! (+ the length of the indexes vector) I wanted to make a union of it and expected it to be 5 bytes then but that didn't work (WIP). So with a cube of 2000 pixels this is a huge memory foodprint, but still it works (if 5 bytes then still huge but 40% smaller...)
 
+
+## Example preview:
+
+this shows above mapping
+
+<video width="248" autoplay><source src="https://github.com/ewowi/StarDocs/assets/1737159/637588d2-0f38-46ba-b765-a37acf5fd385" type="video/mp4"></video>
 ## More theory
 
 <img width="455" src="https://github.com/ewowi/StarDocs/assets/138451817/15f217bc-4ef4-40d1-bc32-11dedd8c0532">
@@ -141,6 +147,3 @@ The second is: given a point in a 2D plane, give me the perpendicular line of th
 So I am now thinking out loud - abusing our chat to write it down - never went this far in drafting a solution for this - but something like this might work 😉
 ... as projectAndMap loops over the pixels of the fixture, the algorithm should be inverse: given a physical point (P), draw a line which crosses the 2D plane perpendicularly, that point is the V where P should be added to (in mappingTable[V].indexes)
 
-## Example preview:
-
-<video width="248" autoplay><source src="https://github.com/ewowi/StarDocs/assets/1737159/637588d2-0f38-46ba-b765-a37acf5fd385" type="video/mp4"></video>
