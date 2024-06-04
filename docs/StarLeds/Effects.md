@@ -15,7 +15,7 @@ Text
 class ExampleEffect: public Effect {
 public:
   const char * name() {return "ExampleEffect";}
-  unsigned8 dim() {return _2D;}
+  uint8_t dim() {return _2D;}
   const char * tags() {return "♪♫⚡💡💫";}
 
   void setup(Leds &leds) {
@@ -23,35 +23,36 @@ public:
   }
 
   void loop(Leds &leds) {
+    //Binding of controls. Keep before binding of vars and keep in same order as in controls()
+    uint8_t speed = leds.sharedData.read<uint8_t>();
+    uint8_t legs = leds.sharedData.read<uint8_t>();
 
-    CRGBPalette16 pal = getPalette();
-    stackUnsigned8 speed = mdl->getValue("speed");
-    stackUnsigned8 legs = mdl->getValue("legs");
-
-    map_t    *rMap = leds.sharedData.bind(rMap, leds.size.x * leds.size.y); //array
-    uint8_t *offsX = leds.sharedData.bind(offsX);
-    uint16_t *aux0 = leds.sharedData.bind(aux0);
+    //binding of loop persistent values (pointers) tbd: aux0,1,step etc can be renamed to meaningful names
+    map_t    *rMap = leds.sharedData.readWrite<map_t>(leds.size.x * leds.size.y); //array
+    uint8_t *offsX = leds.sharedData.readWrite<uint8_t>();
+    uint16_t *aux0 = leds.sharedData.readWrite<uint16_t>();
 
     Coord3D pos = {0,0,0};
 
     for (pos.x = 0; pos.x < leds.size.x; pos.x++) {
       for (pos.y = 0; pos.y < leds.size.y; pos.y++) {
-        CRGB color = ColorFromPalette(pal, radius, intensity);
+        CRGB color = ColorFromPalette(leds.palette, radius, intensity);
         leds[pos] = color; // or setPixelColor(pos, color);
       }
     }
   }
 
   void controls(JsonObject parentVar) {
-    addPalette(parentVar, 4);
-    ui->initSlider(parentVar, "speed", 128, 1, 255);
-    ui->initSlider(parentVar, "legs", 4, 1, 8);
+    Effect::controls(leds, parentVar);
+    ui->initSlider(parentVar, "speed", leds.sharedData.write<uint8_t>(128), 1, 255);
+    ui->initSlider(parentVar, "legs", leds.sharedData.write<uint8_t>(4), 1, 8);
   }
 }; // ExampleEffect
 ```
+(updated June 4, 2024)
 
 * name(), dim() and tags() provide effect metadata
-* leds.sharedData.bind() preserves data over multiple loops, in case of array add the number of elements. .bind is the only command needed, data allocation and management will be done transparent from the effect code.
+* leds.sharedData preserves data over multiple loops, in case of array add the number of elements. data allocation and management will be done transparent from the effect code.
 * leds.size is the virtual size of the effect
 * leds[pos] = color gives a virtual pixel a value
 * leds[pos] = color is identical to leds.setPixelColor(pos, color);
@@ -60,7 +61,7 @@ public:
 
 Notes:
 
-* Effect class may not contain vars, use return functions instead to minimize memory foodprint
+* Effect class should not contain vars, use return functions instead to minimize memory foodprint
 
 ### See also
 
