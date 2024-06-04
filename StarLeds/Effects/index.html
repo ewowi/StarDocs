@@ -2014,11 +2014,8 @@ public:
 <li>leds[pos] = color is identical to leds.setPixelColor(pos, color);</li>
 <li>color = leds[pos] is identical to color = leds.getPixelColor(pos);</li>
 <li>FastLed library commands can be used. e.g. leds.fill_solid(CRGB::Black); operations will be executed in the virtual leds context</li>
+<li>Effect class should not contain public or private variables, use return functions instead to minimize memory foodprint</li>
 <li>use sys-&gt;now instead of millis() as it supports syncing with other instances, random16_set_seed(sys-&gt;now) is provided under the hood for predictable execution of effects using the random function (however wip)</li>
-</ul>
-<p>Notes:</p>
-<ul>
-<li>Effect class should not contain vars, use return functions instead to minimize memory foodprint</li>
 </ul>
 <h3 id="see-also">See also</h3>
 <ul>
