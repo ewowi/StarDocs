@@ -1079,21 +1079,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    <span class="md-ellipsis">
-      See also
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -1921,21 +1906,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Dev">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    <span class="md-ellipsis">
-      See also
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -2006,7 +1976,10 @@ public:
 }; // ExampleEffect
 </code></pre></div>
 (updated June 4, 2024)</p>
+<p>Remarks</p>
 <ul>
+<li>there is no notion of the physical shape of the fixture the effect will be projected on. An effect has a dimension but the projection functions in StarLeds will deal with properly displaying an effect on a fixture. See <a href="/StarDocs/StarLeds/ProjectionsAndMappings">Projections And Mappings</a></li>
+<li>Effects should be written in a way it supports any dimension including 1:1:1 and 0:0:0 (exotic projections do rely on this).</li>
 <li>name(), dim() and tags() provide effect metadata</li>
 <li>leds.sharedData preserves data over multiple loops, in case of array add the number of elements. data allocation and management will be done transparent from the effect code.</li>
 <li>leds.size is the virtual size of the effect</li>
@@ -2016,10 +1989,6 @@ public:
 <li>FastLed library commands can be used. e.g. leds.fill_solid(CRGB::Black); operations will be executed in the virtual leds context</li>
 <li>Effect class should not contain public or private variables, use return functions instead to minimize memory foodprint</li>
 <li>use sys-&gt;now instead of millis() as it supports syncing with other instances, random16_set_seed(sys-&gt;now) is provided under the hood for predictable execution of effects using the random function (however wip)</li>
-</ul>
-<h3 id="see-also">See also</h3>
-<ul>
-<li><a href="/StarDocs/StarLeds/ProjectionsAndMappings">Projections And Mappings</a> : virtual to physical mapping of an effect</li>
 </ul>
 
 
