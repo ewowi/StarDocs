@@ -53,6 +53,10 @@ public:
 ```
 (updated June 4, 2024)
 
+Remarks
+
+* there is no notion of the physical shape of the fixture the effect will be projected on. An effect has a dimension but the projection functions in StarLeds will deal with properly displaying an effect on a fixture. See [Projections And Mappings](/StarDocs/StarLeds/ProjectionsAndMappings)
+* Effects should be written in a way it supports any dimension including 1:1:1 and 0:0:0 (exotic projections do rely on this).
 * name(), dim() and tags() provide effect metadata
 * leds.sharedData preserves data over multiple loops, in case of array add the number of elements. data allocation and management will be done transparent from the effect code.
 * leds.size is the virtual size of the effect
@@ -62,7 +66,3 @@ public:
 * FastLed library commands can be used. e.g. leds.fill_solid(CRGB::Black); operations will be executed in the virtual leds context
 * Effect class should not contain public or private variables, use return functions instead to minimize memory foodprint
 * use sys->now instead of millis() as it supports syncing with other instances, random16_set_seed(sys->now) is provided under the hood for predictable execution of effects using the random function (however wip)
-
-### See also
-
-* [Projections And Mappings](/StarDocs/StarLeds/ProjectionsAndMappings) : virtual to physical mapping of an effect
