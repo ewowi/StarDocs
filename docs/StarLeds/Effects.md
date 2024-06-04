@@ -26,6 +26,7 @@ public:
     //Binding of controls. Keep before binding of vars and keep in same order as in controls()
     uint8_t speed = leds.sharedData.read<uint8_t>();
     uint8_t legs = leds.sharedData.read<uint8_t>();
+    Coord3D testCoord3D = leds.sharedData.read<Coord3D>();
 
     //binding of loop persistent values (pointers) tbd: aux0,1,step etc can be renamed to meaningful names
     map_t    *rMap = leds.sharedData.readWrite<map_t>(leds.size.x * leds.size.y); //array
@@ -48,6 +49,7 @@ public:
     Effect::controls(leds, parentVar);
     ui->initSlider(parentVar, "speed", leds.sharedData.write<uint8_t>(128), 1, 255);
     ui->initSlider(parentVar, "legs", leds.sharedData.write<uint8_t>(4), 1, 8);
+    ui->initCoord3D(parentVar, "testCoord3D", leds.sharedData.write<Coord3D>({1,2,3}));
   }
 }; // ExampleEffect
 ```
