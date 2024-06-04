@@ -128,9 +128,10 @@ Each PhysMap can be a color OR and array of physical pixels. For projections whe
 
 ## Example preview:
 
-this shows above mapping
+this shows above mapping:
 
 <video width="248" autoplay><source src="https://github.com/ewowi/StarDocs/assets/1737159/637588d2-0f38-46ba-b765-a37acf5fd385" type="video/mp4"></video>
+
 ## More theory
 
 <img width="455" src="https://github.com/ewowi/StarDocs/assets/138451817/15f217bc-4ef4-40d1-bc32-11dedd8c0532">
@@ -146,4 +147,6 @@ One of the first utility functions to implement this is probably: given a line ,
 The second is: given a point in a 2D plane, give me the perpendicular line of that point
 So I am now thinking out loud - abusing our chat to write it down - never went this far in drafting a solution for this - but something like this might work 😉
 ... as projectAndMap loops over the pixels of the fixture, the algorithm should be inverse: given a physical point (P), draw a line which crosses the 2D plane perpendicularly, that point is the V where P should be added to (in mappingTable[V].indexes)
+
+Another projection can be a mercator projection (2D) as a globe (3D) around a 3d fixture...
 
