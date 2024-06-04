@@ -2014,7 +2014,7 @@ public:
 <li>leds[pos] = color is identical to leds.setPixelColor(pos, color);</li>
 <li>color = leds[pos] is identical to color = leds.getPixelColor(pos);</li>
 <li>FastLed library commands can be used. e.g. leds.fill_solid(CRGB::Black); operations will be executed in the virtual leds context</li>
-<li>use sys-&gt;now instead of millis() as it supports syncing with other instances, random16_set_seed(sys-&gt;now) is provided under the hood for predictable execution of effects (however wip)</li>
+<li>use sys-&gt;now instead of millis() as it supports syncing with other instances, random16_set_seed(sys-&gt;now) is provided under the hood for predictable execution of effects using the random function (however wip)</li>
 </ul>
 <p>Notes:</p>
 <ul>
