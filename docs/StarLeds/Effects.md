@@ -32,11 +32,13 @@ public:
     uint8_t *offsX = leds.sharedData.readWrite<uint8_t>();
     uint16_t *aux0 = leds.sharedData.readWrite<uint16_t>();
 
+    unsigned long beatTimer = sys->now - *step;
+
     Coord3D pos = {0,0,0};
 
     for (pos.x = 0; pos.x < leds.size.x; pos.x++) {
       for (pos.y = 0; pos.y < leds.size.y; pos.y++) {
-        CRGB color = ColorFromPalette(leds.palette, radius, intensity);
+        CRGB color = ColorFromPalette(leds.palette, random8());
         leds[pos] = color; // or setPixelColor(pos, color);
       }
     }
@@ -58,6 +60,7 @@ public:
 * leds[pos] = color is identical to leds.setPixelColor(pos, color);
 * color = leds[pos] is identical to color = leds.getPixelColor(pos);
 * FastLed library commands can be used. e.g. leds.fill_solid(CRGB::Black); operations will be executed in the virtual leds context
+* use sys->now instead of millis() as it supports syncing with other instances, random16_set_seed(sys->now) is provided under the hood for predictable execution of effects (however wip)
 
 Notes:
 
