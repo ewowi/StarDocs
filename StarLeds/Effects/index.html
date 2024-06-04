@@ -1966,10 +1966,10 @@
 <h2 id="effects">Effects</h2>
 <p>Text</p>
 <h2 id="dev">Dev</h2>
-<div class="highlight"><pre><span></span><code>class ExampleEffect: public Effect {
+<p><div class="highlight"><pre><span></span><code>class ExampleEffect: public Effect {
 public:
   const char * name() {return &quot;ExampleEffect&quot;;}
-  unsigned8 dim() {return _2D;}
+  uint8_t dim() {return _2D;}
   const char * tags() {return &quot;♪♫⚡💡💫&quot;;}
 
   void setup(Leds &amp;leds) {
@@ -1977,35 +1977,36 @@ public:
   }
 
   void loop(Leds &amp;leds) {
+    //Binding of controls. Keep before binding of vars and keep in same order as in controls()
+    uint8_t speed = leds.sharedData.read&lt;uint8_t&gt;();
+    uint8_t legs = leds.sharedData.read&lt;uint8_t&gt;();
 
-    CRGBPalette16 pal = getPalette();
-    stackUnsigned8 speed = mdl-&gt;getValue(&quot;speed&quot;);
-    stackUnsigned8 legs = mdl-&gt;getValue(&quot;legs&quot;);
-
-    map_t    *rMap = leds.sharedData.bind(rMap, leds.size.x * leds.size.y); //array
-    uint8_t *offsX = leds.sharedData.bind(offsX);
-    uint16_t *aux0 = leds.sharedData.bind(aux0);
+    //binding of loop persistent values (pointers) tbd: aux0,1,step etc can be renamed to meaningful names
+    map_t    *rMap = leds.sharedData.readWrite&lt;map_t&gt;(leds.size.x * leds.size.y); //array
+    uint8_t *offsX = leds.sharedData.readWrite&lt;uint8_t&gt;();
+    uint16_t *aux0 = leds.sharedData.readWrite&lt;uint16_t&gt;();
 
     Coord3D pos = {0,0,0};
 
     for (pos.x = 0; pos.x &lt; leds.size.x; pos.x++) {
       for (pos.y = 0; pos.y &lt; leds.size.y; pos.y++) {
-        CRGB color = ColorFromPalette(pal, radius, intensity);
+        CRGB color = ColorFromPalette(leds.palette, radius, intensity);
         leds[pos] = color; // or setPixelColor(pos, color);
       }
     }
   }
 
   void controls(JsonObject parentVar) {
-    addPalette(parentVar, 4);
-    ui-&gt;initSlider(parentVar, &quot;speed&quot;, 128, 1, 255);
-    ui-&gt;initSlider(parentVar, &quot;legs&quot;, 4, 1, 8);
+    Effect::controls(leds, parentVar);
+    ui-&gt;initSlider(parentVar, &quot;speed&quot;, leds.sharedData.write&lt;uint8_t&gt;(128), 1, 255);
+    ui-&gt;initSlider(parentVar, &quot;legs&quot;, leds.sharedData.write&lt;uint8_t&gt;(4), 1, 8);
   }
 }; // ExampleEffect
 </code></pre></div>
+(updated June 4, 2024)</p>
 <ul>
 <li>name(), dim() and tags() provide effect metadata</li>
-<li>leds.sharedData.bind() preserves data over multiple loops, in case of array add the number of elements. .bind is the only command needed, data allocation and management will be done transparent from the effect code.</li>
+<li>leds.sharedData preserves data over multiple loops, in case of array add the number of elements. data allocation and management will be done transparent from the effect code.</li>
 <li>leds.size is the virtual size of the effect</li>
 <li>leds[pos] = color gives a virtual pixel a value</li>
 <li>leds[pos] = color is identical to leds.setPixelColor(pos, color);</li>
@@ -2014,7 +2015,7 @@ public:
 </ul>
 <p>Notes:</p>
 <ul>
-<li>Effect class may not contain vars, use return functions instead to minimize memory foodprint</li>
+<li>Effect class should not contain vars, use return functions instead to minimize memory foodprint</li>
 </ul>
 <h3 id="see-also">See also</h3>
 <ul>
