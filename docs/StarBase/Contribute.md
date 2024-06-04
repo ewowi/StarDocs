@@ -19,6 +19,7 @@ StarBase:
 * Improve pins viewer, see [gpio viewer](https://github.com/thelastoutpostworkshop/gpio_viewer/issues/110) - Big 🚧
 * Example AppModules (eg FastLed, blink, pin high/low, gyro viewer, ...) see [issues/50](https://github.com/ewowi/StarBase/issues/50)
 * synchronized time within 20ms between instances (look for Toki::Time and timebase)
+* replace ESPAsyncWebServer by the new one wled uses (get rid of occassionaly assert failed: multi_heap_free multi_heap_poisoning.c:259 (head != NULL) when on usb/pio)
 * ...
 
 StarLeds
