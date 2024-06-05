@@ -23,9 +23,9 @@ StarMod is for freeRTOS (the underlying operating system of ESP32) what Windows 
 
 StarMod consists of multiple github repositories:
 
-* [StarBase](https://github.com/ewowi/StarBase): The upstream repo containing generic functionality. This works right out of the box. StarBase can be forked to build custom applications.
-* [StarLeds](https://github.com/MoonModules/StarLeds): Fork from StarBase adding Leds specific functionality. (There is no notion of LEDs whatsoever in StarBase)
-* Star????: Everybody can fork StarBase and add new functionality. 
+* [StarBase](https://github.com/ewowi/StarBase) is the upstream repository containing generic functionality. This works right out of the box. StarBase can be forked to build custom networked applications for microcontrollers.
+* [StarLeds](https://github.com/MoonModules/StarLeds) is a fork from StarBase includes the parts required to control Leds. StarBase itself can work without including the Led code.
+* Star???? Everybody can fork StarBase and add new functionality. 
 
 StarMod will integrate with major IOT/network devices and applications 🚧.
 
