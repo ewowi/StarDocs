@@ -18,22 +18,29 @@ StarBase:
 * Promote StarBase to other communities eg Fastled community
 * Improve pins viewer, see [gpio viewer](https://github.com/thelastoutpostworkshop/gpio_viewer/issues/110) - Big 🚧
 * Example AppModules (eg FastLed, blink, pin high/low, gyro viewer, ...) see [issues/50](https://github.com/ewowi/StarBase/issues/50)
-* synchronized time within 20ms between instances (look for Toki::Time and timebase)
+* synchronized time within 20ms between instances (look for Toki::Time and timebase) - @ewowi 🚧
 * replace ESPAsyncWebServer by the new one wled uses (get rid of occassionaly assert failed: multi_heap_free multi_heap_poisoning.c:259 (head != NULL) when on usb/pio)
 * ...
 
 StarLeds
 
 * Create new effects - Medium
+    * @WildCats Game of Life on 2D and 3D 🚧
+    * Analog VU meter
+    * Akemi like effect for StarLeds - need to design a StarMod avatar
 * Create new projections - Medium
+    * revisit the projection mechanism: @ewowi, planned in July
+    * See [theory](https://ewowi.github.io/StarDocs/StarLeds/ProjectionsAndMappings/#more-theory)
 * Fixture generator preview - Medium
 * Generate your fixture - Medium
     * [burning man](https://3dwarehouse.sketchup.com/model/e9de47b1-02f6-4677-a2ad-e73c1af6442f/Burning-Man-Effigy) - create conversion script between 3D models and StarLeds 
     * bike fixture - ewowi (the bike is ready: [insta](https://www.instagram.com/reel/C7zkuuYuvhC/?igsh=MWZkYXJheXZqc3FzYw==) )
+* Sound reactive palette
 * Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLeds Effects](https://ewowi.github.io/StarDocs/StarLeds/Effects/) on effect dimensions 
 
 Both
 
-* Documention (this)
+* Documention (this):
+    * @MONSOONO / @Flavourdynamics 🚧
 
 Contact us on [Discord](https://discord.gg/VGDGGX8qvQ).
