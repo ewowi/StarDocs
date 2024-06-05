@@ -18,6 +18,11 @@ public:
   uint8_t dim() {return _2D;}
   const char * tags() {return "♪♫⚡💡💫";}
 
+  struct Map_t {
+    uint8_t angle;
+    uint8_t radius;
+  };
+
   void setup(Leds &leds) {
     leds.fill_solid(CRGB::Black);
   }
@@ -29,9 +34,10 @@ public:
     Coord3D testCoord3D = leds.sharedData.read<Coord3D>();
 
     //binding of loop persistent values (pointers) tbd: aux0,1,step etc can be renamed to meaningful names
-    map_t    *rMap = leds.sharedData.readWrite<map_t>(leds.size.x * leds.size.y); //array
+    Map_t    *rMap = leds.sharedData.readWrite<Map_t>(leds.size.x * leds.size.y); //array
     uint8_t *offsX = leds.sharedData.readWrite<uint8_t>();
     uint16_t *aux0 = leds.sharedData.readWrite<uint16_t>();
+    unsigned long *step = leds.sharedData.readWrite<unsigned long>();
 
     unsigned long beatTimer = sys->now - *step;
 
@@ -43,9 +49,14 @@ public:
         leds[pos] = color; // or setPixelColor(pos, color);
       }
     }
+    if (leds.projectionDimension == _3D)
+      //do something special for 3D projections/fixtures
+      if (!leds.isMapped(leds.XYZ(1,2,3)))
+        //do something special if there is no physical led in the current projection
+        ppf("test %d\n", beatTimer);
   }
 
-  void controls(JsonObject parentVar) {
+  void controls(Leds &leds, JsonObject parentVar) {
     Effect::controls(leds, parentVar);
     ui->initSlider(parentVar, "speed", leds.sharedData.write<uint8_t>(128), 1, 255);
     ui->initSlider(parentVar, "legs", leds.sharedData.write<uint8_t>(4), 1, 8);
