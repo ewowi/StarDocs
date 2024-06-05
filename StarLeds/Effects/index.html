@@ -1073,9 +1073,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
+  <a href="#effect-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Dev
+      Effect Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-new-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating New Effects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effects Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastled-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      FastLED commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genral-approaches-to-creating-an-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genral Approaches to Creating an Effect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect Example
     </span>
   </a>
   
@@ -1900,9 +1945,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dev" class="md-nav__link">
+  <a href="#effect-types" class="md-nav__link">
     <span class="md-ellipsis">
-      Dev
+      Effect Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-new-effects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating New Effects
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effects Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastled-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      FastLED commands
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#genral-approaches-to-creating-an-effect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Genral Approaches to Creating an Effect
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effect-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Effect Example
     </span>
   </a>
   
@@ -1934,8 +2024,33 @@
   <h1>Effects</h1>
 
 <h2 id="effects">Effects</h2>
-<p>Text</p>
-<h2 id="dev">Dev</h2>
+<p>StarLeds comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.</p>
+<h2 id="effect-types">Effect Types</h2>
+<p>Effects can be specific to a type of fixture, such as 2D or 3D effects. Effects can be synchronized between multiple instances of StarLeds.</p>
+<h2 id="creating-new-effects">Creating New Effects</h2>
+<p>The procedure for creating a new effect is easy:</p>
+<ol>
+<li>Copy the Effect Template found on this page into "src/App/LedEffects.h".</li>
+<li>Rename the "ExampleEffect" in both locations (2 top, 1 bottom) within the template.</li>
+<li>Add it to the appropriate location "class Effects {}" near the bottom of the file.</li>
+</ol>
+<p>This is sufficient for the new effect to run and be selectable.</p>
+<h2 id="effects-basics">Effects Basics</h2>
+<p>Addressing LEDs</p>
+<ol>
+<li>"leds.size" is the virtual size of the effect.</li>
+<li>"leds[pos] = color" gives a virtual pixel a color value. Identical to "leds.setPixelColor(pos, color)"</li>
+<li>"color = leds[pos]" </li>
+<li>Colors can be an HSV or RGB value. RGB is intuitive as it relates to the LED hardware. HSV is often simpler for programming effects.</li>
+<li>Colors can be applied directly from a palette: "ColorFromPalette( const CRGBPalette16&amp; pal, uint8_t index, uint8_t brightness, TBlendType blendType)"</li>
+</ol>
+<h2 id="fastled-commands">FastLED commands</h2>
+<p>StarLeds runs on <a href="https://github.com/FastLED/FastLED">FastLED</a>. FastLED's <a href="http://fastled.io/docs/modules.html">documentation</a> has more information about the wide range of options available for programming LEDs.</p>
+<p>🚧</p>
+<h2 id="genral-approaches-to-creating-an-effect">Genral Approaches to Creating an Effect</h2>
+<p>🚧</p>
+<h2 id="effect-example">Effect Example</h2>
+<p>This template can be used to create new effects. The settings are explained below:</p>
 <p><div class="highlight"><pre><span></span><code>class ExampleEffect: public Effect {
 public:
   const char * name() {return &quot;ExampleEffect&quot;;}
@@ -1992,9 +2107,9 @@ public:
 <p>Remarks</p>
 <ul>
 <li>Updated!: An effect should run fine on any dimension of a fixture (1D/2D/3D) of any size (including 0,0,0 or 1,1,1 as exotic projections do rely on this).<ul>
-<li>An effect has no notion of the physical shape of the fixture the effect will be projected on.</li>
+<li>There is no notion of the physical shape of the fixture the effect will be projected on.</li>
 <li>The only information an effect has is leds.projectionDimension and leds.isMapped(Coord3D).</li>
-<li>An effect has a default effect dimension (dim(), but the projection functions in StarLeds will deal with properly displaying an effect on a fixture.</li>
+<li>An effect has a dimension (dim()) but the projection functions in StarLeds will deal with properly displaying an effect on a fixture.</li>
 <li>An effect can use leds.projectionDimension to make it optimized for 1D, 2D and 3D, no need to create different effects for different dimensions (e.g. fire 1D, 2D and 3D can all be in one effect).</li>
 <li>See the Game of Life effect for an advanced effect using leds.projectionDimension and leds.isMapped(Coord3D)</li>
 <li>See also <a href="/StarDocs/StarLeds/ProjectionsAndMappings">Projections And Mappings</a></li>
