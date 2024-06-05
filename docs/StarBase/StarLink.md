@@ -11,7 +11,7 @@ StarLink is the current name for the module that allows for multiple instances t
 
 Its origin is Super-Sync, which can be found in WLED-MoonModules. Other names used are Mega-Sync, Ultra-Sync etc.
 
-StarLink is a distributed system meaning there is no sync master (there is in WLED). Instead, instances are part of a group. A group is specified by an instance name identified by a hyphen: groupname-instancename.
+In StarBase (and it's forks) StarLink is a distributed system meaning there is no sync master (there is in WLED) but instances are part of a group. A group is specified by an instance name identified by a hyphen: groupname-instancename.
 
 <img width="455" alt="Screenshot 2024-05-23 at 20 50 02" src="https://github.com/ewowi/StarDocs/assets/138451817/e3dbd019-6193-4081-aad1-63f178d396ac">
 
