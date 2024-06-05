@@ -28,7 +28,7 @@ StarLeds
     * @WildCats Game of Life on 2D and 3D 🚧
     * Analog VU meter
     * Akemi like effect for StarLeds - need to design a StarMod avatar
-    * Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLeds Effects](https://ewowi.github.io/StarDocs/StarLeds/Effects/) on effect dimensions 
+    * Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLeds Effects](https://ewowi.github.io/StarDocs/StarLeds/Effects/) on effect and projection dimensions 
 * Create new projections - Medium
     * revisit the projection mechanism: @ewowi, planned in July
     * See [theory](https://ewowi.github.io/StarDocs/StarLeds/ProjectionsAndMappings/#more-theory)
