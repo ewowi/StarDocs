@@ -28,6 +28,7 @@ StarLeds
     * @WildCats Game of Life on 2D and 3D 🚧
     * Analog VU meter
     * Akemi like effect for StarLeds - need to design a StarMod avatar
+    * Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLeds Effects](https://ewowi.github.io/StarDocs/StarLeds/Effects/) on effect dimensions 
 * Create new projections - Medium
     * revisit the projection mechanism: @ewowi, planned in July
     * See [theory](https://ewowi.github.io/StarDocs/StarLeds/ProjectionsAndMappings/#more-theory)
@@ -36,7 +37,6 @@ StarLeds
     * [burning man](https://3dwarehouse.sketchup.com/model/e9de47b1-02f6-4677-a2ad-e73c1af6442f/Burning-Man-Effigy) - create conversion script between 3D models and StarLeds 
     * bike fixture - ewowi (the bike is ready: [insta](https://www.instagram.com/reel/C7zkuuYuvhC/?igsh=MWZkYXJheXZqc3FzYw==) )
 * Sound reactive palette
-* Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLeds Effects](https://ewowi.github.io/StarDocs/StarLeds/Effects/) on effect dimensions 
 
 Both
 
