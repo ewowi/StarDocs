@@ -68,14 +68,13 @@ public:
 
 Remarks
 
-* Updated!: An effect should run fine on any dimension of a fixture (1D/2D/3D) of any size (including 0,0,0 or 1,1,1).
+* Updated!: An effect should run fine on any dimension of a fixture (1D/2D/3D) of any size (including 0,0,0 or 1,1,1 as exotic projections do rely on this).
     * An effect has no notion of the physical shape of the fixture the effect will be projected on.
     * The only information an effect has is leds.projectionDimension and leds.isMapped(Coord3D).
     * An effect has a default effect dimension (dim(), but the projection functions in StarLeds will deal with properly displaying an effect on a fixture.
     * An effect can use leds.projectionDimension to make it optimized for 1D, 2D and 3D, no need to create different effects for different dimensions (e.g. fire 1D, 2D and 3D can all be in one effect).
     * See the Game of Life effect for an advanced effect using leds.projectionDimension and leds.isMapped(Coord3D)
     * See also [Projections And Mappings](/StarDocs/StarLeds/ProjectionsAndMappings)
-* Effects should be written in a way it supports any dimension including 1:1:1 and 0:0:0 (exotic projections do rely on this).
 * name(), dim() and tags() provide effect metadata
 * leds.sharedData preserves data over multiple loops, in case of array add the number of elements. data allocation and management will be done transparent from the effect code.
 * leds.size is the virtual size of the effect
