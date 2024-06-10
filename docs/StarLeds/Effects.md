@@ -9,6 +9,8 @@ hide:
 
 StarLeds comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.
 
+For programming palettes, see this page: 🚧
+
 ## Effect Types
 
 Effects can be specific to a type of fixture, such as 2D or 3D effects. Effects can be synchronized between multiple instances of StarLeds.
@@ -37,11 +39,9 @@ Addressing LEDs
 
 StarLeds runs on [FastLED](https://github.com/FastLED/FastLED). FastLED's [documentation](http://fastled.io/docs/modules.html) has more information about the wide range of options available for programming LEDs.
 
-🚧
+## General Approaches to Creating an Effect
 
-## Genral Approaches to Creating an Effect
-
-🚧
+It is possible to program effects in many different ways. Sometimes it is easiest to simple loop through every pixel, and other times it is advantageous to draw objects to specific locations, without addressing every LED. These can also be combined.
 
 ## Effect Example
 
