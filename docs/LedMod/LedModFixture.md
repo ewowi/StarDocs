@@ -9,4 +9,4 @@ hide:
 
 ## Fixtures
 
-🚧
+Fixtures serve as a map to create a software representation of physical Leds. These fixtures can be shared between multiple boards to create a distributed effect in multiple dimensions. There are a range of default fixture types available, but users can create a fixture that reflects the positions and distances between their Leds.
