@@ -18,8 +18,12 @@ StarBase:
 * Promote StarBase to other communities eg Fastled community
 * Improve pins viewer, see [gpio viewer](https://github.com/thelastoutpostworkshop/gpio_viewer/issues/110) - Big 🚧
 * Example AppModules (eg FastLed, blink, pin high/low, gyro viewer, ...) see [issues/50](https://github.com/ewowi/StarBase/issues/50)
-* synchronized time within 20ms between instances (look for Toki::Time and timebase) - @ewowi 🚧
+* StarLink: synchronized time within 20ms between instances (look for Toki::Time and timebase) - @ewowi 🚧
 * replace ESPAsyncWebServer by the new one wled uses (get rid of occassionaly assert failed: multi_heap_free multi_heap_poisoning.c:259 (head != NULL) when on usb/pio)
+* Presets: a module can store it's current values to file system and if there are more you can select one of them
+* DMX / Artnet 🚧
+* Home Assistant 🚧
+* Basic devices (I2S support (e.g. gyro, buttons, rotary encoder), support for on/off and brightness hardware
 * ...
 
 StarLeds
@@ -37,6 +41,8 @@ StarLeds
     * [burning man](https://3dwarehouse.sketchup.com/model/e9de47b1-02f6-4677-a2ad-e73c1af6442f/Burning-Man-Effigy) - create conversion script between 3D models and StarLeds 
     * bike fixture - ewowi (the bike is ready: [insta](https://www.instagram.com/reel/C7zkuuYuvhC/?igsh=MWZkYXJheXZqc3FzYw==) )
 * Sound reactive palette
+* New bin -> default fixture and default effect
+* Sound reactive (now sound sync)
 
 Both
 
