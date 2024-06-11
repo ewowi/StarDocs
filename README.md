@@ -1,8 +1,11 @@
 # StarDocs
 
 The official documentation page for the WLED MoonModules project!  
-[To live page](https://starmod.org/)
-  
+[To the StarMod live page](https://starmod.org/)
+[To the StarMod GitHub page](https://github.com/ewowi/StarBase)
+[To the StarLeds GitHub page](https://github.com/MoonModules/StarLeds)
+
+
 Community improvements are encouraged! Just click the little pencil mark on the page you'd like to change and submit a pull request.  
 If you'd like to do more advanced changes (e.g. adding a page), the [Material for MkDocs documentation](https://squidfunk.github.io/mkdocs-material/getting-started/) is very helpful.
 
