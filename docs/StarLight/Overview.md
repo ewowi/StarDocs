@@ -5,6 +5,17 @@ hide:
   # - toc
 ---
 
+_Starlight, starbright
+First star I see tonight
+Starlight (Starbright)
+Make everything all right
+Starlight, starbright
+First star I see tonight
+Starlight (Starbright), yeah
+You must be my Lucky Star_
+
+---- By Madonna
+
 Fixture generator:
 
 <img width="481" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/06cc1d89-ce54-4feb-8023-581bfce16fbd">
