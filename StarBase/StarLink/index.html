@@ -291,10 +291,10 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../StarLeds/Overview/" class="md-tabs__link">
+        <a href="../../StarLight/Overview/" class="md-tabs__link">
           
   
-  StarLeds
+  StarLight
 
         </a>
       </li>
@@ -312,7 +312,7 @@
         <a href="../../LedMod/LedModFixture%20Generator/" class="md-tabs__link">
           
   
-  StarLeds Modules
+  StarLight Modules
 
         </a>
       </li>
@@ -992,7 +992,7 @@
             
   
   <span class="md-ellipsis">
-    StarLeds
+    StarLight
   </span>
   
 
@@ -1002,7 +1002,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            StarLeds
+            StarLight
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1013,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../StarLeds/Overview/" class="md-nav__link">
+      <a href="../../StarLight/Overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1034,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../StarLeds/GettingStarted/" class="md-nav__link">
+      <a href="../../StarLight/GettingStarted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1055,7 +1055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../StarLeds/Testing/" class="md-nav__link">
+      <a href="../../StarLight/Testing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1076,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../StarLeds/Effects/" class="md-nav__link">
+      <a href="../../StarLight/Effects/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1097,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../StarLeds/ProjectionsAndMappings/" class="md-nav__link">
+      <a href="../../StarLight/ProjectionsAndMappings/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1118,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../StarLeds/Sound/" class="md-nav__link">
+      <a href="../../StarLight/Sound/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1139,7 +1139,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../StarLeds/Gallery/" class="md-nav__link">
+      <a href="../../StarLight/Gallery/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1184,7 +1184,7 @@
             
   
   <span class="md-ellipsis">
-    StarLeds Modules
+    StarLight Modules
   </span>
   
 
@@ -1194,7 +1194,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            StarLeds Modules
+            StarLight Modules
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1946,19 +1946,19 @@
 </ul>
 <p>Note that an instance in a group can be offline, but as soon as the instance recovers, it will rejoin the group.</p>
 <p>StarLink functionality is active if there are 2 or more instances in a group. This means that all dash variables (Variables which will show up in the dashboard 🚧) and it's children will be synchronized between all instances of the group. It doesn't matter in which instance of the group it will be changed, all other instances will be updated if it's changed.</p>
-<p>In the StarBase demoApp: "On", "Brightness" and "DMX channel" are currently dash variables. In StarLeds, "FX" (and it's children/controls), "Projection" (and it's children) are currently dash variables.</p>
+<p>In the StarBase demoApp: "On", "Brightness" and "DMX channel" are currently dash variables. In StarLight, "FX" (and it's children/controls), "Projection" (and it's children) are currently dash variables.</p>
 <p>On a group of sticks this looks as follows:</p>
 <video width="650" autoplay><source src="https://github.com/ewowi/StarDocs/assets/138451817/36d8a25d-c3cb-40d1-953a-330e06db9983" type="video/mp4"></video>
 
 <p>(In this video, there are 2 RGBW sticks which behave a bit differently)</p>
 <h2 id="_1">🚧</h2>
-<p>Above is the current state of StarMod/StarLeds.</p>
+<p>Above is the current state of StarMod/StarLight.</p>
 <p>Below are the works in progress:</p>
 <ul>
 <li>IP, mac-address, name: Mac-address will be the id to store info of other instances in an instance (unchangeable), IP is used to access an instance (can change), instance name is the user friendly name of an instance (and used for grouping)</li>
 <li>Position: Each instance will have a position which is used to order instances</li>
-<li>Synchronized Time: Each instance will have the same time in milliseconds, will have the same random seed and therefore in StarLeds, effects will run exactly the same.</li>
-<li>StarLeds - Distributed effects: Using ordered instances, multiple instances can each run part of an effect. This can facilitate scalibility, depending on how the effect is implemented. Each approach has different benefits in terms of performance and simplicity:<ul>
+<li>Synchronized Time: Each instance will have the same time in milliseconds, will have the same random seed and therefore in StarLight, effects will run exactly the same.</li>
+<li>StarLight - Distributed effects: Using ordered instances, multiple instances can each run part of an effect. This can facilitate scalibility, depending on how the effect is implemented. Each approach has different benefits in terms of performance and simplicity:<ul>
 <li>
 <ol>
 <li>Render only the displayed part. It can be beneficial to use a random seed here.</li>

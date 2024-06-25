@@ -294,7 +294,7 @@
         <a href="../Overview/" class="md-tabs__link">
           
   
-  StarLeds
+  StarLight
 
         </a>
       </li>
@@ -312,7 +312,7 @@
         <a href="../../LedMod/LedModFixture%20Generator/" class="md-tabs__link">
           
   
-  StarLeds Modules
+  StarLight Modules
 
         </a>
       </li>
@@ -938,7 +938,7 @@
             
   
   <span class="md-ellipsis">
-    StarLeds
+    StarLight
   </span>
   
 
@@ -948,7 +948,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            StarLeds
+            StarLight
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1229,7 +1229,7 @@
             
   
   <span class="md-ellipsis">
-    StarLeds Modules
+    StarLight Modules
   </span>
   
 
@@ -1239,7 +1239,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            StarLeds Modules
+            StarLight Modules
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2013,7 +2013,7 @@
                   
 
   
-    <a href="https://github.com/ewowi/StarDocs/edit/main/docs/StarLeds/Effects.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/ewowi/StarDocs/edit/main/docs/StarLight/Effects.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -2024,10 +2024,10 @@
   <h1>Effects</h1>
 
 <h2 id="effects">Effects</h2>
-<p>StarLeds comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.</p>
+<p>StarLight comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.</p>
 <p>For programming palettes, see this page: 🚧</p>
 <h2 id="effect-types">Effect Types</h2>
-<p>Effects can be specific to a type of fixture, such as 2D or 3D effects. Effects can be synchronized between multiple instances of StarLeds.</p>
+<p>Effects can be specific to a type of fixture, such as 2D or 3D effects. Effects can be synchronized between multiple instances of StarLight.</p>
 <h2 id="creating-new-effects">Creating New Effects</h2>
 <p>The procedure for creating a new effect is easy:</p>
 <ol>
@@ -2046,7 +2046,7 @@
 <li>Colors can be applied directly from a palette: "ColorFromPalette( const CRGBPalette16&amp; pal, uint8_t index, uint8_t brightness, TBlendType blendType)"</li>
 </ol>
 <h2 id="fastled-commands">FastLED commands</h2>
-<p>StarLeds runs on <a href="https://github.com/FastLED/FastLED">FastLED</a>. FastLED's <a href="http://fastled.io/docs/modules.html">documentation</a> has more information about the wide range of options available for programming LEDs.</p>
+<p>StarLight runs on <a href="https://github.com/FastLED/FastLED">FastLED</a>. FastLED's <a href="http://fastled.io/docs/modules.html">documentation</a> has more information about the wide range of options available for programming LEDs.</p>
 <h2 id="general-approaches-to-creating-an-effect">General Approaches to Creating an Effect</h2>
 <p>It is possible to program effects in many different ways. Sometimes it is easiest to simple loop through every pixel, and other times it is advantageous to draw objects to specific locations, without addressing every LED. These can also be combined.</p>
 <h2 id="effect-example">Effect Example</h2>
@@ -2109,10 +2109,10 @@ public:
 <li>Updated!: An effect should run fine on any dimension of a fixture (1D/2D/3D) of any size (including 0,0,0 or 1,1,1 as exotic projections do rely on this).<ul>
 <li>There is no notion of the physical shape of the fixture the effect will be projected on.</li>
 <li>The only information an effect has is leds.projectionDimension and leds.isMapped(Coord3D).</li>
-<li>An effect has a dimension (dim()) but the projection functions in StarLeds will deal with properly displaying an effect on a fixture.</li>
+<li>An effect has a dimension (dim()) but the projection functions in StarLight will deal with properly displaying an effect on a fixture.</li>
 <li>An effect can use leds.projectionDimension to make it optimized for 1D, 2D and 3D, no need to create different effects for different dimensions (e.g. fire 1D, 2D and 3D can all be in one effect).</li>
 <li>See the Game of Life effect for an advanced effect using leds.projectionDimension and leds.isMapped(Coord3D)</li>
-<li>See also <a href="/StarDocs/StarLeds/ProjectionsAndMappings">Projections And Mappings</a></li>
+<li>See also <a href="/StarDocs/StarLight/ProjectionsAndMappings">Projections And Mappings</a></li>
 </ul>
 </li>
 <li>name(), dim() and tags() provide effect metadata</li>
