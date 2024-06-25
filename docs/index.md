@@ -24,10 +24,10 @@ StarMod is for freeRTOS (the underlying operating system of ESP32) what Windows 
 StarMod consists of multiple github repositories:
 
 * [StarBase](https://github.com/ewowi/StarBase) is the upstream repository containing generic functionality. This works right out of the box. StarBase can be forked to build custom networked applications for microcontrollers.
-* [StarLeds](https://github.com/MoonModules/StarLeds) is a fork from StarBase includes the parts required to control Leds. StarBase itself can work without including the Led code.
+* [StarLight](https://github.com/MoonModules/StarLight) is a fork from StarBase includes the parts required to control Leds. StarBase itself can work without including the Led code.
 * Star???? Everybody can fork StarBase and add new functionality. 
 
-StarMod is made by MoonModules, a group of elly-dee enthousiasts who also made [WLED MM](https://mm.kno.wled.ge) and contribute to [WLED](https://kno.wled.ge) and can be found at [Discord - WLED 2D and audio dev](https://discord.gg/TC8NSUSCdV). Where WLED (MM) is aimed at 1D and 2D effects and fixtures, StarLeds is aimed at 2D and 3D effects and fixtures. StarMod has been build up from the ground using the experience gained working on WLED (MM).
+StarMod is made by MoonModules, a group of elly-dee enthousiasts who also made [WLED MM](https://mm.kno.wled.ge) and contribute to [WLED](https://kno.wled.ge) and can be found at [Discord - WLED 2D and audio dev](https://discord.gg/TC8NSUSCdV). Where WLED (MM) is aimed at 1D and 2D effects and fixtures, StarLight is aimed at 2D and 3D effects and fixtures. StarMod has been build up from the ground using the experience gained working on WLED (MM).
 
 StarMod will integrate with major IOT/network devices and applications 🚧.
 
@@ -49,7 +49,7 @@ User Modules
 
 Build apps on top of this by forking StarBase
 
-* Led apps (StarLeds)
+* Led apps (StarLight)
 
   <img width="316" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/d48679eb-efbe-4133-b43d-e3f33587530a">
 
@@ -64,7 +64,7 @@ See this for more info on StarMod:
 
 By [MoonModules](https://github.com/MoonModules)
 
-StarLeds inspired by [WLED MM](https://github.com/MoonModules/WLED)
+StarLight inspired by [WLED MM](https://github.com/MoonModules/WLED)
 
 Disclaimer:
 
@@ -78,7 +78,7 @@ Join the Discord server to discuss everything about StarMod MM and SR!
 
 <a href="https://discord.gg/TC8NSUSCdV"><img src="https://discordapp.com/api/guilds/700041398778331156/widget.png?style=banner2" width="25%"></a>
 
-© 2024 MoonModules ☾ - StarMod, StarBase and StarLeds is licensed under GPL-v3
+© 2024 MoonModules ☾ - StarMod, StarBase and StarLight is licensed under GPL-v3
 
 [Used libraries and dependencies](https://ewowi.github.io/StarDocs/about/contributors/#used-libraries-and-dependencies)
 

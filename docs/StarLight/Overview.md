@@ -1,5 +1,5 @@
 ---
-title: StarLeds Overview
+title: StarLight Overview
 hide:
   # - navigation
   # - toc
@@ -17,7 +17,7 @@ Fixture:
 
 <img width="390" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/59dc199c-6697-43f4-9a1b-f8413005aa5f">
 
-## StarLeds overview
+## StarLight overview
 
 The Leds modules of StarBase define a fixture ([Fixture generator module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture%20Generator/)), Set Effects and projections ([Effects module](https://ewowi.github.io/StarDocs/LedMod/LedModEffects/)) and displays it ([Fixture module](https://ewowi.github.io/StarDocs/LedMod/LedModFixture/)).
 
@@ -25,7 +25,7 @@ All Modules support 1D, 2D and 3D effects and fixtures and all combinations of i
 
 ## Mappings
 
-In the world of LED software mapping is a word causing lots of discussion and confusion. StarLeds is designed to make it simpler and more flexible, by having a clear separation of physical and logical and a clear distinction of fixtures, effects and projections (see [Orthogonality](https://ewowi.github.io/StarDocs/StarBase/StandardsAndGuidelines/)). Below is an attempt to explain it. Feel free to improve the text / add pictures (fork and PR).
+In the world of LED software mapping is a word causing lots of discussion and confusion. StarLight is designed to make it simpler and more flexible, by having a clear separation of physical and logical and a clear distinction of fixtures, effects and projections (see [Orthogonality](https://ewowi.github.io/StarDocs/StarBase/StandardsAndGuidelines/)). Below is an attempt to explain it. Feel free to improve the text / add pictures (fork and PR).
 
 * F_ixture.json contains a definition of the fixture. It specifies the name, nrOfLeds and the width, height and depth of the fixture in cm. Note that nrOfLeds is not equal to the product of width, height and depth as in a lot of fixtures there is not a pixel on every cm. Panels and strips do have a pixel on each cm but rings or hexagons or wheels etc not. Furthermore it specifies for each pin (or ip addres - WIP) the physical coordinate of the pixels (in mm as circular fixtures requires mm accuracy !!) which are connected to the pin, in order of pixels connected in the daisy chain.
 * An effect specifies in a virtual width, height and depth what the effect does. It uses a FASTLED compatible syntax including leds[i] assignments. Also setPixelColor and getPixelColor can be used. Effect can be 1D, 2D or 3D.

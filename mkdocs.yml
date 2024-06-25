@@ -90,15 +90,15 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
-  - StarLeds:
-    - Overview: StarLeds/Overview.md 
-    - Getting started: StarLeds/GettingStarted.md
-    - Testing: StarLeds/Testing.md
-    - Effects: StarLeds/Effects.md
-    - Projections and Mappings: StarLeds/ProjectionsAndMappings.md
-    - Sound: StarLeds/Sound.md
-    - Gallery: StarLeds/Gallery.md
-  - StarLeds Modules:
+  - StarLight:
+    - Overview: StarLight/Overview.md 
+    - Getting started: StarLight/GettingStarted.md
+    - Testing: StarLight/Testing.md
+    - Effects: StarLight/Effects.md
+    - Projections and Mappings: StarLight/ProjectionsAndMappings.md
+    - Sound: StarLight/Sound.md
+    - Gallery: StarLight/Gallery.md
+  - StarLight Modules:
     - Fixture Generator Module: LedMod/LedModFixture Generator.md
     - Effects Module: LedMod/LedModEffects.md
     - Fixture Module: LedMod/LedModFixture.md

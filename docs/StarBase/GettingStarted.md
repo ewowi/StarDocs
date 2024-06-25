@@ -8,11 +8,11 @@ hide:
 ## Getting Started
 
 * Download a firmware binary (bin)
-    * [StarBase release](https://github.com/ewowi/StarBase/releases) or [StarLeds release](https://github.com/MoonModules/StarLeds/releases)
-    * [StarBase latest](https://github.com/ewowi/StarBase/actions) or [StarLeds latest](https://github.com/MoonModules/StarLeds/actions)
+    * [StarBase release](https://github.com/ewowi/StarBase/releases) or [StarLight release](https://github.com/MoonModules/StarLight/releases)
+    * [StarBase latest](https://github.com/ewowi/StarBase/actions) or [StarLight latest](https://github.com/MoonModules/StarLight/actions)
         * Click on the latest workflow run, scroll down to Artifacts, then download the bin file
         * Currently only esp32dev builds can be found here
-    * Compile a bin using [StarBase source code](https://github.com/ewowi/StarBase) or [StarLeds source code](https://github.com/MoonModules/StarLeds) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
+    * Compile a bin using [StarBase source code](https://github.com/ewowi/StarBase) or [StarLight source code](https://github.com/MoonModules/StarLight) via [VSCode](https://code.visualstudio.com) and [PIO](https://platformio.org). 
         * The following builds are available using VSCode:
 
         <img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82">
@@ -41,7 +41,7 @@ hide:
 * Connect to the WiFi network
 * Optionally, choose a display theme
 * Setup the application
-    * Continue here ! : [Setup StarLeds](/StarDocs/StarLeds/GettingStarted)
+    * Continue here ! : [Setup StarLight](/StarDocs/StarLight/GettingStarted)
 
 ## Update StarBase binary
 

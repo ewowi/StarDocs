@@ -25,7 +25,7 @@ Note that an instance in a group can be offline, but as soon as the instance rec
 
 StarLink functionality is active if there are 2 or more instances in a group. This means that all dash variables (Variables which will show up in the dashboard 🚧) and it's children will be synchronized between all instances of the group. It doesn't matter in which instance of the group it will be changed, all other instances will be updated if it's changed.
 
-In the StarBase demoApp: "On", "Brightness" and "DMX channel" are currently dash variables. In StarLeds, "FX" (and it's children/controls), "Projection" (and it's children) are currently dash variables.
+In the StarBase demoApp: "On", "Brightness" and "DMX channel" are currently dash variables. In StarLight, "FX" (and it's children/controls), "Projection" (and it's children) are currently dash variables.
 
 On a group of sticks this looks as follows:
 
@@ -35,14 +35,14 @@ On a group of sticks this looks as follows:
 
 ## 🚧
 
-Above is the current state of StarMod/StarLeds.
+Above is the current state of StarMod/StarLight.
 
 Below are the works in progress:
 
 * IP, mac-address, name: Mac-address will be the id to store info of other instances in an instance (unchangeable), IP is used to access an instance (can change), instance name is the user friendly name of an instance (and used for grouping)
 * Position: Each instance will have a position which is used to order instances
-* Synchronized Time: Each instance will have the same time in milliseconds, will have the same random seed and therefore in StarLeds, effects will run exactly the same.
-* StarLeds - Distributed effects: Using ordered instances, multiple instances can each run part of an effect. This can facilitate scalibility, depending on how the effect is implemented. Each approach has different benefits in terms of performance and simplicity:
+* Synchronized Time: Each instance will have the same time in milliseconds, will have the same random seed and therefore in StarLight, effects will run exactly the same.
+* StarLight - Distributed effects: Using ordered instances, multiple instances can each run part of an effect. This can facilitate scalibility, depending on how the effect is implemented. Each approach has different benefits in terms of performance and simplicity:
     * 1. Render only the displayed part. It can be beneficial to use a random seed here.
     * 2. Displayed part plus a bit needs to be rendered
     * 3. Render the entire effect, including parts that are not displayed by each instance. This can be simple, but can experience scalability barriers.

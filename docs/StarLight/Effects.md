@@ -7,13 +7,13 @@ hide:
 
 ## Effects
 
-StarLeds comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.
+StarLight comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.
 
 For programming palettes, see this page: 🚧
 
 ## Effect Types
 
-Effects can be specific to a type of fixture, such as 2D or 3D effects. Effects can be synchronized between multiple instances of StarLeds.
+Effects can be specific to a type of fixture, such as 2D or 3D effects. Effects can be synchronized between multiple instances of StarLight.
 
 ## Creating New Effects
 
@@ -37,7 +37,7 @@ Addressing LEDs
 
 ## FastLED commands
 
-StarLeds runs on [FastLED](https://github.com/FastLED/FastLED). FastLED's [documentation](http://fastled.io/docs/modules.html) has more information about the wide range of options available for programming LEDs.
+StarLight runs on [FastLED](https://github.com/FastLED/FastLED). FastLED's [documentation](http://fastled.io/docs/modules.html) has more information about the wide range of options available for programming LEDs.
 
 ## General Approaches to Creating an Effect
 
@@ -107,10 +107,10 @@ Remarks
 * Updated!: An effect should run fine on any dimension of a fixture (1D/2D/3D) of any size (including 0,0,0 or 1,1,1 as exotic projections do rely on this).
     * There is no notion of the physical shape of the fixture the effect will be projected on.
     * The only information an effect has is leds.projectionDimension and leds.isMapped(Coord3D).
-    * An effect has a dimension (dim()) but the projection functions in StarLeds will deal with properly displaying an effect on a fixture.
+    * An effect has a dimension (dim()) but the projection functions in StarLight will deal with properly displaying an effect on a fixture.
     * An effect can use leds.projectionDimension to make it optimized for 1D, 2D and 3D, no need to create different effects for different dimensions (e.g. fire 1D, 2D and 3D can all be in one effect).
     * See the Game of Life effect for an advanced effect using leds.projectionDimension and leds.isMapped(Coord3D)
-    * See also [Projections And Mappings](/StarDocs/StarLeds/ProjectionsAndMappings)
+    * See also [Projections And Mappings](/StarDocs/StarLight/ProjectionsAndMappings)
 * name(), dim() and tags() provide effect metadata
 * leds.sharedData preserves data over multiple loops, in case of array add the number of elements. data allocation and management will be done transparent from the effect code.
 * leds.size is the virtual size of the effect

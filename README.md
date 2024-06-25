@@ -3,7 +3,7 @@
 The official documentation page for the WLED MoonModules project!  
 [To the StarMod live page](https://starmod.org/)
 [To the StarBase GitHub page](https://github.com/ewowi/StarBase)
-[To the StarLeds GitHub page](https://github.com/MoonModules/StarLeds)
+[To the StarLight GitHub page](https://github.com/MoonModules/StarLight)
 
 
 Community improvements are encouraged! Just click the little pencil mark on the page you'd like to change and submit a pull request.  

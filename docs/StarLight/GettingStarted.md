@@ -7,7 +7,7 @@ hide:
 
 ## Getting Started
 
-* Follow StarBase steps using StarLeds binary
+* Follow StarBase steps using StarLight binary
     * [StarBase](/StarDocs/StarBase/GettingStarted)
 
 * Select the LEDs tab in the UI
@@ -31,8 +31,8 @@ hide:
 
 <img width="848" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/bc43ffb3-b931-4365-9405-168d41829a84">
 
-* StarLeds is up and running now !
+* StarLight is up and running now !
 
 ## Start Creating Effects
 
-See [this page](https://ewowi.github.io/StarDocs/StarLeds/Effects/#CreatingNewEffects) to start creating effects for Leds.
+See [this page](https://ewowi.github.io/StarDocs/StarLight/Effects/#CreatingNewEffects) to start creating effects for Leds.

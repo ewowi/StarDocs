@@ -8,7 +8,7 @@ hide:
 ## Standards and Guidelines
 
 * Orthogonality: concepts are independent or irrelevant to eachother. Examples:
-    * StarBase has no notion of applications build on top of it e.g. StarLeds
+    * StarBase has no notion of applications build on top of it e.g. StarLight
     * No notion of HTML in c(++) code
     * Effects have no notion of the type of projection or fixture it is applied to
     * Any projection can be applied to any effect in any fixture, 1D to 3D in any combination

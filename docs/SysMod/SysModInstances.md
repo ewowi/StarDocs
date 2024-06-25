@@ -19,11 +19,11 @@ The instance module show all the StarBase instances in the network.
 
 * In the System view version and uptime is shown
 * In the Dashboad view "dash" variables are shown, the dmx start channel and the Sync master
-    * Dash variables: variables where the dash property is set to true. The on/off variable is typically a dash variable. In StarLeds, brightness is a dash variable.
+    * Dash variables: variables where the dash property is set to true. The on/off variable is typically a dash variable. In StarLight, brightness is a dash variable.
     * DMX start channel: only visible if the e131 usermod module is compiled (per default). Dash variables can be controlled via DMX (🚧)
     * Sync Master: StarBase instances can control each-others dash variables. A sync master controls the variables of instances set to this sync master.
 * The dashboard view is used to control other instances from an instance
-* Dash variables makes it easy for StarBase applications (like StarLeds) to define which variables are used for central control, whether it is done by the dashboard view, dmx or also Home Automation. Only thing StarBase applications need to define is the dash property, all functionality is implemented by StarBase.
+* Dash variables makes it easy for StarBase applications (like StarLight) to define which variables are used for central control, whether it is done by the dashboard view, dmx or also Home Automation. Only thing StarBase applications need to define is the dash property, all functionality is implemented by StarBase.
 
 ## dev
 

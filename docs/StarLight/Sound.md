@@ -5,7 +5,7 @@ hide:
   # - toc
 ---
 
-## Starleds sound - Design
+## StarLight sound - Design
 
 This is VERY much in progress 🚧
 
@@ -14,9 +14,9 @@ This is VERY much in progress 🚧
 * Master - with option for AGC
 * Auto squelch ? (No noise, increase until first signals)
 * In effects smooth default on (setting?)
-* Save presets (StarBase will implement Presets which can turned on for modules - e.g. effect module or sound module) - alternative to presets in WLED, so no specific code for this in StarLeds (except maybe autoplay...)
+* Save presets (StarBase will implement Presets which can turned on for modules - e.g. effect module or sound module) - alternative to presets in WLED, so no specific code for this in StarLight (except maybe autoplay...)
 
-## Starleds sound - Build
+## StarLight sound - Build
 
 Not build yet (SH007 summer retreat ;-)
 

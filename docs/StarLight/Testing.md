@@ -5,13 +5,13 @@ hide:
   # - toc
 ---
 
-## Testing StarLeds
+## Testing StarLight
 
 See [StarBase](/StarDocs/StarBase/Testing) for test procedure and StarBase test scenarios 
 
 Follow getting started first if not done yet
 
-## StarLeds test scenarios
+## StarLight test scenarios
 
 * [Generate fixtures](/StarDocs/LedMod/LedModFixture%20Generator/)
 

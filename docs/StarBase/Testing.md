@@ -10,7 +10,7 @@ hide:
 [StarBase](/StarDocs) is in user test phase. Test scenarios are currently available. If you want to participate in testing, please see below for currently available test scenarios:
 
 * Follow a test scenario
-* Please report issues in [Github StarBase issues](https://github.com/ewowi/StarBase/issues) or [Github StarLeds issues](https://github.com/MoonModules/StarLeds/issues)
+* Please report issues in [Github StarBase issues](https://github.com/ewowi/StarBase/issues) or [Github StarLight issues](https://github.com/MoonModules/StarLight/issues)
     * Include the build you are testing (see [System](/StarDocs/SysMod/SysModSystem))
     * Include the test scenario
 * You can report success also in Github issues or on [Discord / StarMod](https://discord.gg/VGDGGX8qvQ). Please include information explaining whether the instructions were clear, suggestions for improvement to documentation or procedure, or share opportunities new test scenarios, etc.
@@ -21,7 +21,7 @@ hide:
 ## Current test scenarios
 
 * [Getting Started](/StarDocs/StarBase/GettingStarted/)
-    * Follow the instructions to get StarLeds up and running
+    * Follow the instructions to get StarLight up and running
     * Optionally, add a LED panel or ring to a gpio port of the ESP32 and check to confirm that LEDs are burning
 * [OTA Update](/StarDocs/SysMod/SysModSystem/)
     * Download a firmware binary (bin), see [Getting Started](/StarDocs/StarBase/GettingStarted/)
@@ -31,5 +31,5 @@ hide:
         * Check if upload successful
         * Reboot
         * Check if newest version is installed (build)
-* Check the [StarLeds test scenarios](/StarDocs/StarLeds/Testing/)
+* Check the [StarLight test scenarios](/StarDocs/StarLight/Testing/)
 * 🚧
