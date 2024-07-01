@@ -34,7 +34,7 @@ StarLight
     * Akemi like effect for StarLight - need to design a StarMod avatar
     * Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLight Effects](https://ewowi.github.io/StarDocs/StarLight/Effects/) on effect and projection dimensions 
 * Create new projections - Medium
-    * revisit the projection mechanism: @ewowi, planned in July
+    * revisit the projection mechanism: @ewowi, planned in July, WildCats08
     * See [theory](https://ewowi.github.io/StarDocs/StarLight/ProjectionsAndMappings/#more-theory)
 * Fixture generator preview - Medium
 * Generate your fixture - Medium
@@ -43,6 +43,7 @@ StarLight
 * Sound reactive palette
 * New bin -> default fixture and default effect
 * Sound reactive (now sound sync)
+* use Fusion (or other CAD tool) to generate F_ixture.json files, optionally draw lamps with lights and extract the json from it (possibly with python api?) 
 
 Both
 
