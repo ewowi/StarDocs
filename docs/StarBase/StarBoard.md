@@ -45,3 +45,4 @@ Mockup:
 * lipo charge
 * ir
 * dallas temp
+* 18650 or 26650 battery holder
