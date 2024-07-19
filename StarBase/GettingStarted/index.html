@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#follow-these-steps-to-get-starmod-and-starlight-running" class="md-skip">
           Skip to content
         </a>
       
@@ -512,18 +512,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#follow-these-steps-to-get-starmod-and-starlight-running" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Follow these steps to get StarMod and StarLight running
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-starbase-binary" class="md-nav__link">
+  <a href="#updating-the-starbase-binary" class="md-nav__link">
     <span class="md-ellipsis">
-      Update StarBase binary
+      Updating the StarBase binary
     </span>
   </a>
   
@@ -1891,18 +1891,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#follow-these-steps-to-get-starmod-and-starlight-running" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
+      Follow these steps to get StarMod and StarLight running
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-starbase-binary" class="md-nav__link">
+  <a href="#updating-the-starbase-binary" class="md-nav__link">
     <span class="md-ellipsis">
-      Update StarBase binary
+      Updating the StarBase binary
     </span>
   </a>
   
@@ -1933,65 +1933,59 @@
 
   <h1>Getting started</h1>
 
-<h2 id="getting-started">Getting Started</h2>
-<ul>
-<li>
-<p>Download a firmware binary (bin)</p>
+<h2 id="follow-these-steps-to-get-starmod-and-starlight-running">Follow these steps to get StarMod and StarLight running</h2>
+<p><strong>1. Acquire a firmware binary (bin)</strong></p>
+<p>Use a pre-built bin (Beginner-Advanced)</p>
 <ul>
 <li><a href="https://github.com/ewowi/StarBase/releases">StarBase release</a> or <a href="https://github.com/MoonModules/StarLight/releases">StarLight release</a></li>
-<li><a href="https://github.com/ewowi/StarBase/actions">StarBase latest</a> or <a href="https://github.com/MoonModules/StarLight/actions">StarLight latest</a><ul>
-<li>Click on the latest workflow run, scroll down to Artifacts, then download the bin file</li>
-<li>Currently only esp32dev builds can be found here</li>
+<li><a href="https://github.com/ewowi/StarBase/actions">StarBase latest</a> or <a href="https://github.com/MoonModules/StarLight/actions">StarLight latest</a></li>
+<li>Click on the latest workflow run, scroll down to Artifacts, then download the bin file
+        * Currently only esp32dev builds can be found here</li>
 </ul>
-</li>
-<li>
-<p>Compile a bin using <a href="https://github.com/ewowi/StarBase">StarBase source code</a> or <a href="https://github.com/MoonModules/StarLight">StarLight source code</a> via <a href="https://code.visualstudio.com">VSCode</a> and <a href="https://platformio.org">PIO</a>. </p>
+<p>Build your own bin (Intermediate-Advanced)</p>
 <ul>
-<li>The following builds are available using VSCode:</li>
-</ul>
+<li>
+<p>Compile a bin using <a href="https://github.com/ewowi/StarBase">StarBase source code</a> or <a href="https://github.com/MoonModules/StarLight">StarLight source code</a> via <a href="https://code.visualstudio.com">VSCode</a> and <a href="https://platformio.org">PIO</a>. 
+        * The following builds are available using VSCode:</p>
 <p><img width="255" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cbd75a65-0046-4008-8670-ef97f4393b82"></p>
 </li>
 </ul>
+<p><strong>2. Flash StarMod an ESP32 board</strong></p>
+<ul>
+<li>Flash the unzipped "firmware.bin" to an ESP32 module using <a href="https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher">ESP Flasher</a></li>
+<li>
+<p>Unzip/extract the "firmware.bin" from the downloaded folder, then flash it to your connected ESP32 module</p>
+<p><img width="450" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f"></p>
+</li>
+</ul>
+<p><strong>3. Set up the StarMod instance</strong></p>
+<ul>
+<li>
+<p>Find the "StarBase" WiFi network broadcasted by the ESP32 and connect (no password needed)</p>
+<p><img width="293" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/e7b1e16a-8014-42dc-9e07-f4e0cbf04efd"></p>
 </li>
 <li>
-<p>Flash the unzipped "firmware.bin" to an ESP32 module using <a href="https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher">ESP Flasher</a></p>
+<p>The StarMod adaptive portal will show the setup tab. Alternatively, go to <a href="http://4.3.2.1">4.3.2.1</a></p>
+<p><img width="450" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cd8bd820-0a40-4ead-a0d2-14e0d0aa4ac3"></p>
+</li>
+<li>
+<p>Give the instance a name</p>
 <ul>
-<li>Unzip/extract the "firmware.bin" from the downloaded folder, then flash it to your connected ESP32 module</li>
+<li>Read more: <a href="/StarDocs/SysMod/SysModSystem">System</a></li>
 </ul>
 </li>
-</ul>
-<p><img width="716" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f"></p>
-<ul>
-<li>Find the "StarBase" WiFi network and connect (no password needed)</li>
-</ul>
-<p><img width="293" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/e7b1e16a-8014-42dc-9e07-f4e0cbf04efd"></p>
-<ul>
-<li>The StarMod adaptive portal will show the setup tab, alternatively go to <a href="http://4.3.2.1">4.3.2.1</a></li>
-</ul>
-<p><img width="896" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cd8bd820-0a40-4ead-a0d2-14e0d0aa4ac3"></p>
-<ul>
-<li>Give the instance a name<ul>
-<li><a href="/StarDocs/SysMod/SysModSystem">System</a></li>
-</ul>
+<li>
+<p>Enter your Wifi credentials (Do not hit connect yet)</p>
 </li>
-<li>Enter your Wifi credentials<ul>
-<li><a href="/StarDocs/SysMod/SysModNetwork">Network</a></li>
-<li>Note: first Save Model, then connect</li>
-</ul>
-</li>
-<li>Save Model<ul>
-<li><a href="/StarDocs/SysMod/SysModModel">Model</a></li>
-</ul>
-</li>
+<li>Read more: <a href="/StarDocs/SysMod/SysModNetwork">Network</a></li>
+<li>Save Model</li>
+<li>Read more: <a href="/StarDocs/SysMod/SysModModel">Model</a></li>
 <li>Reboot or press Connect</li>
-<li>Connect to the WiFi network</li>
-<li>Optionally, choose a display theme</li>
-<li>Setup the application<ul>
-<li>Continue here ! : <a href="/StarDocs/StarLight/GettingStarted">Setup StarLight</a></li>
 </ul>
-</li>
-</ul>
-<h2 id="update-starbase-binary">Update StarBase binary</h2>
+<p><strong>4. Start using Starmod</strong>
+  * Connect to the WiFi network
+  * <a href="/StarDocs/StarLight/GettingStarted">Configure StarLight</a></p>
+<h2 id="updating-the-starbase-binary">Updating the StarBase binary</h2>
 <ul>
 <li>See Ota Update in <a href="/StarDocs/SysMod/SysModSystem">System</a></li>
 </ul>
