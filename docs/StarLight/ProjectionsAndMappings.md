@@ -9,6 +9,22 @@ hide:
 
 Text
 
+## List of projections
+
+WIP
+
+* Pinwheel Projection Added
+    * Projects 1D/2D effects onto 2D/3D fixtures in a pinwheel pattern.
+    * Swirl option to bend the pinwheel.
+    * Reverse option.
+    * Rotation Symmetry: Controls the rotational symmetry of the pattern.
+    * Petals option to adjust the number of petals.
+    * Ztwist option for 3D fixtures to twist the pattern along the z-axis.
+
+* Basic Projections
+    * Includes options for mirroring, reversing, transpose, and grouping projections.
+    * Configurable for x, y, and z axes depending on the fixture.
+
 ## Mappings
 
 Text
