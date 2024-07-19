@@ -9,6 +9,25 @@ hide:
 
 StarLight comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.
 
+## List of effects
+
+🚧
+
+* Rubik's Cube Effect
+    * Simulates cube sizes from 2x2 to 8x8 on 3D fixtures.
+    * Demonstrates solving by reversing the initial scramble.
+    * Option for infinite random turns.
+
+* Game of Life Options
+    * Infinite Mode: Continuously spawns random cells, preventing the game from ending or repeating.
+    * Color By Age: Cells spawn green and gradually fade to red as they age.
+
+* 1D Effect Rainbow
+    * Features speed and scale sliders.
+
+* 1D Effect Flow
+    * Features speed and scale sliders.
+
 For programming palettes, see this page: 🚧
 
 ## Effect Types
