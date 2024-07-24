@@ -62,3 +62,5 @@ npm needs to be installed and also npm ci (or npm install) - tbd: difference bet
 installing npm is a manual task to be done by a developer (instructions?) but the rest is done by the webbundle.py script.
 
 (previously a developer must execute npm ci (or npm install) and npm run build (or npm run dev) on the command prompt)
+
+see also here for how it was explained in the past [WLEDSR/Modifying Sound Reactive WLED](info https://mm.kno.wled.ge/WLEDSR/Modifying-Sound-Reactive-WLED/)
