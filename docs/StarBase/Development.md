@@ -63,4 +63,4 @@ installing npm is a manual task to be done by a developer (instructions?) but th
 
 (previously a developer must execute npm ci (or npm install) and npm run build (or npm run dev) on the command prompt)
 
-see also here for how it was explained in the past [WLEDSR/Modifying Sound Reactive WLED](info https://mm.kno.wled.ge/WLEDSR/Modifying-Sound-Reactive-WLED/)
+see also here for how it was explained in the past [WLEDSR/Modifying Sound Reactive WLED](https://mm.kno.wled.ge/WLEDSR/Modifying-Sound-Reactive-WLED/)
