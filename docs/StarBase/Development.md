@@ -49,3 +49,16 @@ Step 3: see the result in your browser (127.0.0.1)
 Note 1: This live view uses the model.json file to get the module data
 
 Note 2: Functionality is limited yet: it now shows the UI elements without the data
+
+## HTML compression
+July 24, 2024
+
+htm, js and css files are compressed into html_ui.h and html_newui.h files when compiled and flashed. By this memory footprint is smaller and also these files are not on the esp32 fileserver but flashed as compiled c code.
+
+The magic for this is done in cdata.js and webbundle.py. Both files can be found in the tools folder.
+
+npm needs to be installed and also npm ci (or npm install) - tbd: difference between ci and install?
+
+installing npm is a manual task to be done by a developer (instructions?) but the rest is done by the webbundle.py script.
+
+(previously a developer must execute npm ci (or npm install) and npm run build (or npm run dev) on the command prompt)
