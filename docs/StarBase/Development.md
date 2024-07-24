@@ -28,3 +28,24 @@ Process
 * Determine if post merge steps are needed in StarLight (e.g. rerun npm run dev to update html_ui.h)
 
 🚧
+
+## Live Server
+July 24, 2024
+
+StarBase htm, js and css files can be previewed directly using the Live Server plugin. This makes UI development faster as no need to compile flash and run on esp32 each time.
+
+Step 1: Install the plugin and restart VSCode
+
+<img width="466" alt="Screenshot 2024-07-24 at 18 20 22" src="https://github.com/user-attachments/assets/0c4d4d27-d275-420c-9483-53f36f6dcd8b">
+
+Step 2, select an htm file and right click Open with Live Server
+
+<img width="439" alt="Screenshot 2024-07-24 at 18 20 05" src="https://github.com/user-attachments/assets/8b8d89d5-a8aa-4866-8e41-7d0e06665f2e">
+
+Step 3: see the result in your browser (127.0.0.1)
+
+<img width="1417" alt="Screenshot 2024-07-24 at 18 20 39" src="https://github.com/user-attachments/assets/44a0ab83-7172-4fa8-94ee-50217a8318a0">
+
+Note 1: This live view uses the model.json file to get the module data
+
+Note 2: Functionality is limited yet: it now shows the UI elements without the data
