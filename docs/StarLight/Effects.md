@@ -9,33 +9,7 @@ hide:
 
 StarLight comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.
 
-## List of effects
-
-🚧
-
-* Rubik's Cube Effect
-    * Simulates cube sizes from 2x2 to 8x8 on 3D fixtures.
-    * Demonstrates solving by reversing the initial scramble.
-    * Option for infinite random turns.
-
-* Game of Life Options
-    * Infinite Mode: Continuously spawns random cells, preventing the game from ending or repeating.
-    * Color By Age: Cells spawn green and gradually fade to red as they age.
- 
-* Praxis Effect
-    * This effect has a large range of adjustability based on two oscillating functions: the Macro Mutator and the Micro Mutator.
-    * Each mutator can be adjusted, with the ability to change the frequency and range of each oscillation. Faster frequency and greater ranges will result in a more frantic effect, whereas smaller frequencies and ranges will result in a more relaxed effect.
-    * Try looking at wide range for either mutator, while setting the frequency on the other mutator to 0. Start with a low frequency to identify a range that you prefer, then try adding in the other mutator.
-
-* 1D Effect Rainbow
-    * Features speed and scale sliders.
-
-* 1D Effect Flow
-    * Features speed and scale sliders.
-
-* Live Script Effect
-    * see [Files Module](/StarDocs/StarLight/LiveScriptsEffects)
-
+A list of effects can be found here [StarLight Effects](StarDocs/StarLightMod/StarLightModEffects/)
 
 For programming palettes, see this page: 🚧
 
