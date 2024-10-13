@@ -5,10 +5,12 @@ hide:
   # - toc
 ---
 
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/9d26c8d3-edbd-44d2-b3a2-26c7ff5ce579">
+
 ## Introduction
 
-* Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at high speed without rebooting or flashing. They can be used by end-user of StarBase (or one if its forks) to create custom code without talking to StarBase developers asking to publish a new version with the new code in it.
-Live scripts are implemented using [hpwit/ESPLiveScript](https://github.com/hpwit/ESPLiveScript/tree/v2.8). Both this repo and the implementation in StarMod is in development and more and more functionality is expected to be released.
+* Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at high speed without rebooting or flashing. They can be used by end-users of StarBase (or one if its forks) to create custom code without the need to publish a new version with the new code in it.
+Live scripts are implemented using [hpwit/ESPLiveScript](https://github.com/hpwit/ESPLiveScript/tree/v2.8). Both this repo and the implementation in StarBase is in development and more functionality is expected to be released.
 Live scripts are stored on the filesystem and can be uploaded, edited and deleted in the [Files Module](/StarDocs/SysMod/SysModFiles), the have extension .sc.
 Example(s) of scripts can be found in [StarBase repo/misc/LiveScripts](https://github.com/ewowi/StarBase/tree/main/misc/LiveScripts)
 
@@ -35,7 +37,7 @@ void loop() {
 }
 ```
 
-pinMode, digitalWrite and delay are 'externally' defined functions, in other words, StarBase have implemented them. Currently this are even the only defined functions, so this will be expanded in furter developing Live Scrips, which in turn is triggered by user needs, these can be reported in [Github issues](https://github.com/ewowi/StarBase/issues).
+pinMode, digitalWrite and delay are 'externally' defined functions, in other words, StarBase have implemented them. Currently these are the only defined functions and more functions will be available later, requests for new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
 
 ## Preparing  live scripts
 * Make sure StarBase is compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)
