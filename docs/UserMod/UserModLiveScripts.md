@@ -10,8 +10,11 @@ hide:
 ## Introduction
 
 Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at high speed without rebooting or flashing. They can be used by end-users of StarBase (or one if its forks) to create custom code without the need to publish a new version with the new code in it.
+
 Live scripts are implemented using [hpwit/ESPLiveScript](https://github.com/hpwit/ESPLiveScript/tree/v2.8). Both this repo and the implementation in StarBase is in development and more functionality is expected to be released.
+
 Live scripts are stored on the filesystem and can be uploaded, edited and deleted in the [Files Module](/StarDocs/SysMod/SysModFiles), the have extension .sc.
+
 Example(s) of scripts can be found in [StarBase repo/misc/LiveScripts](https://github.com/ewowi/StarBase/tree/main/misc/LiveScripts)
 
 The most basic program is blink.sc: 
