@@ -7,3 +7,4 @@ hide:
 
 ## Introduction
 
+* see also [Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)
