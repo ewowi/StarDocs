@@ -36,8 +36,8 @@ This list is not complete 🚧
 * 1D Effect Flow
     * Features speed and scale sliders.
 
-* Live Script Effect
-    * see [Live Script Effects Module](/StarDocs/StarLight/LiveScriptEffects)
+* Live Effect
+    * see [Live Effects Module](/StarDocs/StarLight/LiveEffects)
 
 
 

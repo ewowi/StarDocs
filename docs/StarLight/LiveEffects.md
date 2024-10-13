@@ -1,5 +1,5 @@
 ---
-title: Live Script Effects
+title: Live Effects
 hide:
   # - navigation
   # - toc
