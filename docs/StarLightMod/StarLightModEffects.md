@@ -37,7 +37,7 @@ This list is not complete 🚧
     * Features speed and scale sliders.
 
 * Live Effect
-    * see [Live Effects Module](/StarDocs/StarLight/LiveEffects)
+    * see [Live Effects](/StarDocs/StarLight/LiveEffects)
 
 
 
