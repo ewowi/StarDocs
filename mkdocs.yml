@@ -90,24 +90,24 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
+    - UserMod E131: UserMod/UserModE131.md
+    - UserMod Live Scripts: StarBase/LiveScripts.md
+    - UserMod MDNS Module: UserMod/UserModMDNS.md
   - StarLight:
     - Overview: StarLight/Overview.md 
     - Getting started: StarLight/GettingStarted.md
     - Testing: StarLight/Testing.md
     - Effects: StarLight/Effects.md
     - Projections and Mappings: StarLight/ProjectionsAndMappings.md
+    - Live Script Effects: StarLight/LiveScriptsEffects.md
     - Sound: StarLight/Sound.md
     - Gallery: StarLight/Gallery.md
   - StarLight Modules:
     - Fixture Generator Module: LedMod/LedModFixture Generator.md
     - Effects Module: LedMod/LedModEffects.md
     - Fixture Module: LedMod/LedModFixture.md
-  - User Modules:
-    - UserMod overview: UserMod/UserModOverview.md
-    - E131-sACN Module: UserMod/UserModE131-sACN.md
-    - Artnet Module: UserMod/UserModArtNet.md
-    - DDP Module: UserMod/UserModDDP.md
-    - MDNS Module: UserMod/UserModMDNS.md
+    - UserMod Artnet: UserMod/UserModArtNet.md
+    - UserMod DDP: UserMod/UserModDDP.md
   - About: 
     - Contributors & Credits: about/contributors.md
     - Privacy Policy: about/privacy-policy.md

@@ -1,5 +1,5 @@
 ---
-title: UserMod E131-sACN
+title: UserMod E131
 hide:
   # - navigation
   # - toc
