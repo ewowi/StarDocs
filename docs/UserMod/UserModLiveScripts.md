@@ -9,7 +9,7 @@ hide:
 
 ## Introduction
 
-Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at high speed without rebooting or flashing. They can be used by end-users of StarBase (or one if its forks) to create custom code without the need to publish a new version with the new code in it.
+Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at high speed without rebooting or flashing!!! They can be used by end-users of StarBase (or one if its forks) to create custom code without the need to publish a new version with the new code in it.
 
 Live scripts are implemented using [hpwit/ESPLiveScript](https://github.com/hpwit/ESPLiveScript/tree/v2.8). Both this repo and the implementation in StarBase is in development and more functionality is expected to be released.
 
