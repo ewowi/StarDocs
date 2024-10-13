@@ -5,8 +5,8 @@ hide:
   # - toc
 ---
 
-<img width="280" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/2d5d6e0f-eb04-424d-a3f5-075977d2a512">
+<img width="589" alt="image" src="https://github.com/user-attachments/assets/281ecbbf-b414-4f46-bfd3-4c4d52187911">
 
 ## Files
-
+Upload, edit and delete files
 🚧
