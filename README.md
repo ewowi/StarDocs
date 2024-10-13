@@ -2,7 +2,7 @@
 
 The official documentation page for StarMod, StarBase and StarLight!  
 
-[Read StarDocs](StarDocs/)
+[Read StarDocs](https://ewowi.github.io/StarDocs/)
 
 [To the StarMod live page](https://starmod.org/)
 
