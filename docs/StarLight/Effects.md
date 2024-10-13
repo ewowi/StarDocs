@@ -33,6 +33,10 @@ StarLight comes with a range of built in lighting effects. Users can also create
 * 1D Effect Flow
     * Features speed and scale sliders.
 
+* Live Script Effect
+    * see [Files Module](/StarDocs/StarLight/LiveScriptsEffects)
+
+
 For programming palettes, see this page: 🚧
 
 ## Effect Types
