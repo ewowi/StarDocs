@@ -1,5 +1,5 @@
 ---
-title: User Mod Live Scripts
+title: UserMod Live Scripts
 hide:
   # - navigation
   # - toc

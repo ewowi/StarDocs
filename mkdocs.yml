@@ -90,8 +90,8 @@ nav:
     - Pins Module: SysMod/SysModPins.md
     - UI Module: SysMod/SysModUI.md
     - Web Module: SysMod/SysModWeb.md
+    - UserMod Live Scripts: UserMod/UserModLiveScripts.md
     - UserMod E131: UserMod/UserModE131.md
-    - UserMod Live Scripts: StarBase/LiveScripts.md
     - UserMod MDNS Module: UserMod/UserModMDNS.md
   - StarLight:
     - Overview: StarLight/Overview.md 
@@ -103,9 +103,9 @@ nav:
     - Sound: StarLight/Sound.md
     - Gallery: StarLight/Gallery.md
   - StarLight Modules:
-    - Fixture Generator Module: LedMod/LedModFixture Generator.md
-    - Effects Module: LedMod/LedModEffects.md
-    - Fixture Module: LedMod/LedModFixture.md
+    - Fixture Generator Module: StarLightMod/StarLightModFixtureGenerator.md
+    - Effects Module: StarLightMod/StarLightModEffects.md
+    - Fixture Module: StarLightMod/StarLightModFixture.md
     - UserMod Artnet: UserMod/UserModArtNet.md
     - UserMod DDP: UserMod/UserModDDP.md
   - About: 
