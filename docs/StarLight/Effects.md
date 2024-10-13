@@ -9,7 +9,7 @@ hide:
 
 StarLight comes with a range of built in lighting effects. Users can also create their own effects in the LedEffects.h file.
 
-A list of effects can be found here [StarLight Effects](StarDocs/StarLightMod/StarLightModEffects/)
+A list of effects can be found here [StarLight Effects](/StarDocs/StarLightMod/StarLightModEffects/)
 
 For programming palettes, see this page: 🚧
 

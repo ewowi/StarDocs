@@ -15,7 +15,7 @@ Process
 * Fork the appropriate (StarBase or StarLight)
 * Create a branch (more text needed here) for medium or big changes (small can be done on main)
 * Implement your change
-* Follow the [Standards and guidelines](StarDocs/StarBase/StandardsAndGuidelines/)
+* Follow the [Standards and guidelines](/StarDocs/StarBase/StandardsAndGuidelines/)
 * Create a pull request
 * Update StarDocs to document and describe the impact of the change. You can use a link to the commit implementing the change as follows ([2024040511](https://github.com/ewowi/StarBase/commit/4f12da235bcee958b74f6d932b20a5ffcf9c449c) is the version number of the change):
 
@@ -33,7 +33,7 @@ Process
 July 24, 2024
 
 StarBase htm, js and css files can be previewed directly using the Live Server plugin. This makes UI development faster as no need to compile flash and run on esp32 each time.
-(Note: Do not confuse Live Server with [Live Scripts](StarDocs/StarBase/LiveScripts/) / [Live Effects](StarDocs/StarLight/LiveEffects/) and Live Fixtures)
+(Note: Do not confuse Live Server with [Live Scripts](/StarDocs/StarBase/LiveScripts/) / [Live Effects](/StarDocs/StarLight/LiveEffects/) and Live Fixtures)
 
 Step 1: Install the plugin and restart VSCode
 

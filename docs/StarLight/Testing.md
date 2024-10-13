@@ -22,7 +22,7 @@ Follow getting started first if not done yet
     * Check file is created in [Files](/StarDocs/SysMod/SysModFiles)
     * Check the newly generated file is selected in the [Fixture](/StarDocs/StarLightMod/StarLightModFixture) module and an effect is shown on the fixture
     * Report a custom fixture you would like to have supported in Github issues. 
-    * To get an idea of current predefined fixtures check  [Fixture Generator / examples](StarDocs/StarLightMod/StarLightModFixtureGenerator/#examples)
+    * To get an idea of current predefined fixtures check  [Fixture Generator / examples](/StarDocs/StarLightMod/StarLightModFixtureGenerator/#examples)
     * Optionally change the values in the fixtures table and create fixtures with other than the default parameters
     * Optionally create your own manual fixture in a json file and upload the file in [Files](/StarDocs/SysMod/SysModFiles)
 

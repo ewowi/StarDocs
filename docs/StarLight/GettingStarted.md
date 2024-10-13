@@ -35,4 +35,4 @@ hide:
 
 ## Start Creating Effects
 
-See [this page](StarDocs/StarLight/Effects/#CreatingNewEffects) to start creating effects for Leds.
+See [this page](/StarDocs/StarLight/Effects/#CreatingNewEffects) to start creating effects for Leds.
