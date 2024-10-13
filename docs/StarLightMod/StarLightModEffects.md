@@ -12,6 +12,35 @@ One or more effects can be defined. Currently there are some works in progress
 * If adding more then one effect Start and End is not set with defaults, resulting in a crash. Workaround is to set them manually first before selecting the effect
 * If there is more then one effect, deleting effects should be from last to first, otherwise unexpected behavior.
 
+## List of effects
+
+This list is not complete 🚧
+
+* Rubik's Cube Effect
+    * Simulates cube sizes from 2x2 to 8x8 on 3D fixtures.
+    * Demonstrates solving by reversing the initial scramble.
+    * Option for infinite random turns.
+
+* Game of Life Options
+    * Infinite Mode: Continuously spawns random cells, preventing the game from ending or repeating.
+    * Color By Age: Cells spawn green and gradually fade to red as they age.
+ 
+* Praxis Effect
+    * This effect has a large range of adjustability based on two oscillating functions: the Macro Mutator and the Micro Mutator.
+    * Each mutator can be adjusted, with the ability to change the frequency and range of each oscillation. Faster frequency and greater ranges will result in a more frantic effect, whereas smaller frequencies and ranges will result in a more relaxed effect.
+    * Try looking at wide range for either mutator, while setting the frequency on the other mutator to 0. Start with a low frequency to identify a range that you prefer, then try adding in the other mutator.
+
+* 1D Effect Rainbow
+    * Features speed and scale sliders.
+
+* 1D Effect Flow
+    * Features speed and scale sliders.
+
+* Live Script Effect
+    * see [Live Script Effects Module](/StarDocs/StarLight/LiveScriptsEffects)
+
+
+
 ## Effects
 
 <img width="154" alt="image" src="https://github.com/ewowi/StarDocs/assets/1737159/a7a582f8-ba4d-48af-b01b-4cd03a21befd">
