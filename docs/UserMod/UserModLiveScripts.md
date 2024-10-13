@@ -39,7 +39,7 @@ void loop() {
 
 pinMode, digitalWrite and delay are 'externally' defined functions, in other words, StarBase have implemented them. Currently these are the only defined functions and more functions will be available later, requests for new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
 
-Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLight/LiveEffects/) and Live Fixtures (Planned for Release 0.5.0).
+Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLight/LiveEffects/) (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).
 
 ## Preparing  live scripts
 * StarBase most be compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)
