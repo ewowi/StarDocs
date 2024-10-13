@@ -51,4 +51,4 @@ Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLigh
 * Navigate to the Live Scripts module and select a script in the drop down module
 * A script can be edited in the [Files Module](/StarDocs/SysMod/SysModFiles), if you save a currently running script, it will automatically be recompiled and reran.
 * To make the blink example work for the pin of the on-board LED, change the blinkPin assignment in above script
-* To see that the scripts work, change the delay and see the result on your on-board LED.
+* To see that the scripts work, edit, change the delay, save and see the result on your on-board LED.
