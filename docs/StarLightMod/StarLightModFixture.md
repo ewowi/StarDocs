@@ -1,5 +1,5 @@
 ---
-title: LedModFixture
+title: StarLightModFixture
 hide:
   # - navigation
   # - toc

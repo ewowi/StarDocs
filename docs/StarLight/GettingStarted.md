@@ -13,7 +13,7 @@ hide:
 * Select the LEDs tab in the UI
 
 * Generate a fixture
-    * [Fixture Generator](/StarDocs/LedMod/LedModFixture Generator)
+    * [Fixture Generator](/StarDocs/StarLightMod/StarLightModFixtureGenerator)
     * Select the pin the leds will be connected to (multiple pins possible)
     * The default setting is one 8x8 panel connected to pin 2:
 
@@ -22,10 +22,10 @@ hide:
 * Connect LEDs to the ESP32 GPIO pins as defined in the F_ixture.json file
 
 * A generated fixture will be selected automatically in the Fixture Module
-    * [Fixture](/StarDocs/LedMod/LedModFixture)
+    * [Fixture](/StarDocs/StarLightMod/StarLightModFixture)
 
 * Select an effect
-    * [Effect](/StarDocs/LedMod/LedModEffects)
+    * [Effect](/StarDocs/StarLightMod/StarLightModEffects)
 
 * Select Default projection
 
@@ -35,4 +35,4 @@ hide:
 
 ## Start Creating Effects
 
-See [this page](https://ewowi.github.io/StarDocs/StarLight/Effects/#CreatingNewEffects) to start creating effects for Leds.
+See [this page](StarDocs/StarLight/Effects/#CreatingNewEffects) to start creating effects for Leds.

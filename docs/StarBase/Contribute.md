@@ -32,10 +32,10 @@ StarLight
     * @WildCats Game of Life on 2D and 3D 🚧
     * Analog VU meter
     * Akemi like effect for StarLight - need to design a StarMod avatar
-    * Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLight Effects](https://ewowi.github.io/StarDocs/StarLight/Effects/) on effect and projection dimensions 
+    * Create a universal fire effect, suitable for 1D, 2D and 3D. See also [StarLight Effects](StarDocs/StarLight/Effects/) on effect and projection dimensions 
 * Create new projections - Medium
     * revisit the projection mechanism: @ewowi, planned in July, WildCats08
-    * See [theory](https://ewowi.github.io/StarDocs/StarLight/ProjectionsAndMappings/#more-theory)
+    * See [theory](StarDocs/StarLight/ProjectionsAndMappings/#more-theory)
 * Fixture generator preview - Medium
 * Generate your fixture - Medium
     * [burning man](https://3dwarehouse.sketchup.com/model/e9de47b1-02f6-4677-a2ad-e73c1af6442f/Burning-Man-Effigy) - create conversion script between 3D models and StarLight 

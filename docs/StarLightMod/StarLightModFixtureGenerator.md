@@ -23,7 +23,7 @@ See the dropdown above for all fixtures currently supported
     * custom parameters like number of leds, coordinates
  * A fixture can be made out of multiple parts. Parts can be matrices but also rings etc. each part can be specified in a table
  * In the fixtures table, each part can be give a seperate (or same) pin
- * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles) and can be selected, see [Fixtures](/StarDocs/LedMod/LedModFixture)
+ * After pressing generate, a fixture file will be generated, see [Files](/StarDocs/SysMod/SysModFiles) and can be selected, see [Fixtures](/StarDocs/StarLightMod/StarLightModFixture)
 
 ### Matrix and Cube fixtures
 

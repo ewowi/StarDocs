@@ -1,5 +1,5 @@
 ---
-title: LedModEffects
+title: StarLightModEffects
 hide:
   # - navigation
   # - toc

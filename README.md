@@ -1,8 +1,8 @@
 # StarDocs
 
-The official documentation page for the WLED MoonModules project!  
+The official documentation page for StarMod, StarBase and StarLight!  
 
-[Read StarDocs](https://ewowi.github.io/StarDocs/)
+[Read StarDocs](StarDocs/)
 
 [To the StarMod live page](https://starmod.org/)
 
