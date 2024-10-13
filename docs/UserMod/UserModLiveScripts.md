@@ -42,8 +42,8 @@ pinMode, digitalWrite and delay are 'externally' defined functions, in other wor
 Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLight/LiveEffects/) and Live Fixtures (Planned for Release 0.5.0).
 
 ## Preparing  live scripts
-* StarBase is compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)
-* Live Scripts is enabled in the [Modules Module](/StarDocs/SysMod/SysModModules) (this is not default)
+* StarBase most be compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)
+* Live Scripts must be enabled in the [Modules Module](/StarDocs/SysMod/SysModModules) (this is not default)
 
 ## Running a live script
 
