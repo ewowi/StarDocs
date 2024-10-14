@@ -9,7 +9,7 @@ hide:
 
 ## Introduction
 
-Live Effects are effects implemented by a script on the ESP32 filesystem ([Files Module](/StarDocs/SysMod/SysModFiles)), instead of precompiled in a StarLight binary flash file. Live effects are a specific application of Live Scripts (see [StarBase Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)).
+Live Effects are effects implemented by a script on the ESP32 filesystem ([Files Module](/StarDocs/SysMod/SysModFiles)). Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at very high speed (like compiled c-code!) without rebooting or flashing!!! Live effects are a specific application of Live Scripts (see [StarBase Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)).
 
 * A Life Effect can be executed by selecting Live Effect in the [Effects Module](/StarDocs/StarLightMod/StarLightModEffects/). (Currently only one Live Effect can run, more in Release 0.5.0).
 
@@ -38,7 +38,7 @@ Supported StarLight functions to be used in scrips
     void    fadeToBlackBy(uint8_t fadeBy)
 
 * plus [StarBase Live functions](/StarDocs/UserMod/UserModLiveScripts/#starbase-live-functions)
-* * more functions will be available later, new functions can be requested in [Github issues](https://github.com/MoonModules/StarLight/issues).
+* more functions will be available later, new functions can be requested in [Github issues](https://github.com/MoonModules/StarLight/issues).
 
 
 ## Preparing and running Live Effects
