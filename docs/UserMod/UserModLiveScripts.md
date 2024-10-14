@@ -48,13 +48,13 @@ Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLigh
 ## StarBase Live functions
 Supported StarBase functions to be used in scrips
 
-    void show (): Called automatically. calls driver.show() + statistics
-    void resetStat ():  Called automatically
+    void show (); //Called automatically. calls driver.show() + statistics
+    void resetStat (); // Called automatically
 
     void display (int a1)
-    void dp (float a1): display float, for debugging
-    void error (int a1, int a2, int a3): prints 3 integers
-    void print (char * a1): prints one string
+    void dp (float a1); //display float, for debugging
+    void error (int a1, int a2, int a3); //prints 3 integers
+    void print (char * a1); //prints one string
 
     float atan2 (float a1, float a2)
     float hypot (float a1, float a2)
