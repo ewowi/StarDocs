@@ -33,7 +33,7 @@ Supported StarLight functions to be used in scrips
     uint8_t random8(); //random between 0 and 255
     uint8_t sin8(uint8_t theta); //theta input angle from 0-255, results 0-255
     uint8_t cos8(uint8_t theta); //theta input angle from 0-255, results 0-255
-    void    sPC(uint16_t pixel, CRGB color); //setPixelColor: NOTE: currently directly using CRGB in sPC not possible, workaround use: CRGB cc=hsv(c,255,v); sPC(i + j   panel_width, cc);
+    void    sPC(uint16_t pixel, CRGB color); //setPixelColor
     void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness); //Set Color From Palette
     void    fadeToBlackBy(uint8_t fadeBy)
 
