@@ -47,24 +47,24 @@ Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLigh
 
 ## Supported StarBase functions to be used in scrips
 
-    addExternalFun("void", "show", "()", (void *)&show); //comment if setup/loop model works
-    addExternalFun("void", "resetStat", "()", (void *)&resetShowStats);
+    void show (): Called automatically. calls driver.show() + statistics
+    void resetStat ():  Called automatically
 
-    addExternalFun("void", "display", "(int a1)", (void *)&dispshit);
-    addExternalFun("void", "dp", "(float a1)", (void *)displayfloat);
-    addExternalFun("void", "error", "(int a1, int a2, int a3)", (void *)&showError);
-    addExternalFun("void", "print", "(char * a1)", (void *)__print);
+    void display (int a1)
+    void dp (float a1): display float, for debugging
+    void error (int a1, int a2, int a3): prints 3 integers
+    void print (char * a1): prints one string
 
-    addExternalFun("float", "atan2","(float a1, float a2)",(void*)_atan2);
-    addExternalFun("float", "hypot","(float a1, float a2)",(void*)_hypot);
-    addExternalFun("float", "sin", "(float a1)", (void *)_sin);
-    addExternalFun("float", "time", "(float a1)", (void *)_time);
-    addExternalFun("float", "triangle", "(float a1)", (void *)_triangle);
-    addExternalFun("uint32_t", "millis", "()", (void *)millis);
+    float atan2 (float a1, float a2)
+    float hypot (float a1, float a2)
+    float sin (float a1)
+    float time (float a1)
+    float triangle (float a1)
+    uint32_t millis ()
 
-    addExternalFun("void", "pinMode", "(int a1, int a2)", (void *)&pinMode);
-    addExternalFun("void", "digitalWrite", "(int a1, int a2)", (void *)&digitalWrite);
-    addExternalFun("void", "delay", "(int a1)", (void *)&delay);
+    void pinMode (int a1, int a2)
+    void digitalWrite (int a1, int a2)
+    void delay (int a1)
 
 * more functions will be available later, requests for new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
 
