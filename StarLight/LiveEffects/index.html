@@ -1911,7 +1911,7 @@
 
 <p><img width="450" alt="image" src="https://github.com/user-attachments/assets/418fb6ee-3580-456e-97e0-9344a0d13fac"></p>
 <h2 id="introduction">Introduction</h2>
-<p>Live Effects are effects implemented by a script on the ESP32 filesystem (<a href="/StarDocs/SysMod/SysModFiles">Files Module</a>), instead of precompiled in a StarLight binary flash file. Live effects are a specific application of Live Scripts (see <a href="/StarDocs/UserMod/UserModLiveScripts">StarBase Live Scripts Module</a>).</p>
+<p>Live Effects are effects implemented by a script on the ESP32 filesystem (<a href="/StarDocs/SysMod/SysModFiles">Files Module</a>). Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at very high speed (like compiled c-code!) without rebooting or flashing!!! Live effects are a specific application of Live Scripts (see <a href="/StarDocs/UserMod/UserModLiveScripts">StarBase Live Scripts Module</a>).</p>
 <ul>
 <li>
 <p>A Life Effect can be executed by selecting Live Effect in the <a href="/StarDocs/StarLightMod/StarLightModEffects/">Effects Module</a>. (Currently only one Live Effect can run, more in Release 0.5.0).</p>
@@ -1943,11 +1943,7 @@ void    fadeToBlackBy(uint8_t fadeBy)
 </code></pre></div>
 <ul>
 <li>plus <a href="/StarDocs/UserMod/UserModLiveScripts/#starbase-live-functions">StarBase Live functions</a></li>
-<li>
-<ul>
 <li>more functions will be available later, new functions can be requested in <a href="https://github.com/MoonModules/StarLight/issues">Github issues</a>.</li>
-</ul>
-</li>
 </ul>
 <h2 id="preparing-and-running-live-effects">Preparing and running Live Effects</h2>
 <ul>
