@@ -24,16 +24,16 @@ Live Effects are effects implemented by a script on the ESP32 filesystem ([Files
 ## StarLight Live functions
 Supported StarLight functions to be used in scrips
 
-* CRGB    hsv(uint8_t hue, uint8_t saturation, uint8_t value); //HSV Color
-* CRGB    rgb (uint8_t red, uint8_t green, uint8_t blue); //RGB color
-* uint8_t beatSin8 (uint8_t bpm, uint8_t lowest, uint8_t highest) Beats per minute 
-* uint8_t inoise8 (uint16_t x, uint16_t y, uint16_t z) xyz coordinate on noise map (3D)
-* uint8_t random8(); //random between 0 and 255
-* uint8_t sin8(uint8_t theta); //theta input angle from 0-255, results 0-255
-* uint8_t cos8(uint8_t theta); //theta input angle from 0-255, results 0-255
-* void    sPC(uint16_t pixel, CRGB color); //setPixelColor: NOTE: currently directly using CRGB in sPC not possible, workaround use: CRGB cc=hsv(c,255,v); sPC(i + j * panel_width, cc);
-* void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness); //Set Color From Palette
-* void    fadeToBlackBy(uint8_t fadeBy)
+    CRGB    hsv(uint8_t hue, uint8_t saturation, uint8_t value); //HSV Color
+    CRGB    rgb (uint8_t red, uint8_t green, uint8_t blue); //RGB color
+    uint8_t beatSin8 (uint8_t bpm, uint8_t lowest, uint8_t highest) Beats per minute 
+    uint8_t inoise8 (uint16_t x, uint16_t y, uint16_t z) xyz coordinate on noise map (3D)
+    uint8_t random8(); //random between 0 and 255
+    uint8_t sin8(uint8_t theta); //theta input angle from 0-255, results 0-255
+    uint8_t cos8(uint8_t theta); //theta input angle from 0-255, results 0-255
+    void    sPC(uint16_t pixel, CRGB color); //setPixelColor: NOTE: currently directly using CRGB in sPC not possible, workaround use: CRGB cc=hsv(c,255,v); sPC(i + j   panel_width, cc);
+    void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness); //Set Color From Palette
+    void    fadeToBlackBy(uint8_t fadeBy)
 
 * plus [StarBase Live functions](/StarDocs/UserMod/UserModLiveScripts/#starbase-live-functions)
 
