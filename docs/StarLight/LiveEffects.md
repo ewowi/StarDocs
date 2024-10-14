@@ -34,6 +34,8 @@ Live Effects are effects implemented by a script on the ESP32 filesystem ([Files
 * ```void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness)```: Set Color From Palette
 * ```void    fadeToBlackBy(uint8_t fadeBy)```
 
+* plus [Supported StarBase functions](https://ewowi.github.io/StarDocs/UserMod/UserModLiveScripts/#preparing-live-scripts)
+
 ## Preparing and running Live Effects
 
 * See [Preparing live scripts](StarDocs/UserMod/UserModLiveScripts/#preparing-live-scripts) and [Running live scripts](/StarDocs/UserMod/UserModLiveScripts/#running-live-scripts)
