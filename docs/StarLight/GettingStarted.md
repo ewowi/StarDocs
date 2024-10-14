@@ -14,6 +14,7 @@ hide:
 
 * Generate a fixture
     * [Fixture Generator](/StarDocs/StarLightMod/StarLightModFixtureGenerator)
+    * For 1D / Strip fixtures, Spiral can be used (and projection None, see below)
     * Select the pin the leds will be connected to (multiple pins possible)
     * IP is not implemented yet
 
