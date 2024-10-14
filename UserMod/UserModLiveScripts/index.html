@@ -1957,24 +1957,24 @@ void loop() {
 <p>Applications of Live Scripts can be 'anything' but low hanging fruit is making controllers which read data from pins connected to sensors do some processing and then write data to pins connected to motors, lights etc</p>
 <p>Note: StarLight uses Live Scripts to implement <a href="/StarDocs/StarLight/LiveEffects/">Live Effects</a> (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).</p>
 <h2 id="supported-starbase-functions-to-be-used-in-scrips">Supported StarBase functions to be used in scrips</h2>
-<div class="highlight"><pre><span></span><code>addExternalFun(&quot;void&quot;, &quot;show&quot;, &quot;()&quot;, (void *)&amp;show); //comment if setup/loop model works
-addExternalFun(&quot;void&quot;, &quot;resetStat&quot;, &quot;()&quot;, (void *)&amp;resetShowStats);
+<div class="highlight"><pre><span></span><code>void show (): Called automatically. calls driver.show() + statistics
+void resetStat ():  Called automatically
 
-addExternalFun(&quot;void&quot;, &quot;display&quot;, &quot;(int a1)&quot;, (void *)&amp;dispshit);
-addExternalFun(&quot;void&quot;, &quot;dp&quot;, &quot;(float a1)&quot;, (void *)displayfloat);
-addExternalFun(&quot;void&quot;, &quot;error&quot;, &quot;(int a1, int a2, int a3)&quot;, (void *)&amp;showError);
-addExternalFun(&quot;void&quot;, &quot;print&quot;, &quot;(char * a1)&quot;, (void *)__print);
+void display (int a1)
+void dp (float a1): display float, for debugging
+void error (int a1, int a2, int a3): prints 3 integers
+void print (char * a1): prints one string
 
-addExternalFun(&quot;float&quot;, &quot;atan2&quot;,&quot;(float a1, float a2)&quot;,(void*)_atan2);
-addExternalFun(&quot;float&quot;, &quot;hypot&quot;,&quot;(float a1, float a2)&quot;,(void*)_hypot);
-addExternalFun(&quot;float&quot;, &quot;sin&quot;, &quot;(float a1)&quot;, (void *)_sin);
-addExternalFun(&quot;float&quot;, &quot;time&quot;, &quot;(float a1)&quot;, (void *)_time);
-addExternalFun(&quot;float&quot;, &quot;triangle&quot;, &quot;(float a1)&quot;, (void *)_triangle);
-addExternalFun(&quot;uint32_t&quot;, &quot;millis&quot;, &quot;()&quot;, (void *)millis);
+float atan2 (float a1, float a2)
+float hypot (float a1, float a2)
+float sin (float a1)
+float time (float a1)
+float triangle (float a1)
+uint32_t millis ()
 
-addExternalFun(&quot;void&quot;, &quot;pinMode&quot;, &quot;(int a1, int a2)&quot;, (void *)&amp;pinMode);
-addExternalFun(&quot;void&quot;, &quot;digitalWrite&quot;, &quot;(int a1, int a2)&quot;, (void *)&amp;digitalWrite);
-addExternalFun(&quot;void&quot;, &quot;delay&quot;, &quot;(int a1)&quot;, (void *)&amp;delay);
+void pinMode (int a1, int a2)
+void digitalWrite (int a1, int a2)
+void delay (int a1)
 </code></pre></div>
 <ul>
 <li>more functions will be available later, requests for new functions can be requested in <a href="https://github.com/ewowi/StarBase/issues">Github issues</a>.</li>
