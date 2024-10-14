@@ -9,7 +9,7 @@ hide:
 
 ## Introduction
 
-Live Effects are effects implemented by a script on the ESP32 filesystem ([Files Module](/StarDocs/SysMod/SysModFiles)), instead of precompiled in a StarLight binary flash file. Live effects are a specific application of Live Scripts (see [Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)).
+Live Effects are effects implemented by a script on the ESP32 filesystem ([Files Module](/StarDocs/SysMod/SysModFiles)), instead of precompiled in a StarLight binary flash file. Live effects are a specific application of Live Scripts (see [StarBase Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)).
 
 * A Life Effect can be executed by selecting Live Effect in the [Effects Module](/StarDocs/StarLightMod/StarLightModEffects/). (Currently only one Live Effect can run, more in Release 0.5.0).
 
