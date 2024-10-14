@@ -41,8 +41,6 @@ void loop() {
 }
 ```
 
-pinMode, digitalWrite and delay are 'externally' defined functions, in other words, StarBase have implemented them. Currently these are the only defined functions and more functions will be available later, requests for new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
-
 Applications of Live Scripts can be 'anything' but low hanging fruit is making controllers which read data from pins connected to sensors do some processing and then write data to pins connected to motors, lights etc
 
 Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLight/LiveEffects/) (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).
@@ -64,10 +62,11 @@ Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLigh
     addExternalFun("float", "triangle", "(float a1)", (void *)_triangle);
     addExternalFun("uint32_t", "millis", "()", (void *)millis);
 
-    // added by StarBase
     addExternalFun("void", "pinMode", "(int a1, int a2)", (void *)&pinMode);
     addExternalFun("void", "digitalWrite", "(int a1, int a2)", (void *)&digitalWrite);
     addExternalFun("void", "delay", "(int a1)", (void *)&delay);
+
+* more functions will be available later, requests for new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
 
 ## Preparing  live scripts
 * StarBase most be compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)
