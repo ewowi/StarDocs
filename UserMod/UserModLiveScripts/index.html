@@ -1958,13 +1958,13 @@ void loop() {
 <p>Note: StarLight uses Live Scripts to implement <a href="/StarDocs/StarLight/LiveEffects/">Live Effects</a> (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).</p>
 <h2 id="starbase-live-functions">StarBase Live functions</h2>
 <p>Supported StarBase functions to be used in scrips</p>
-<div class="highlight"><pre><span></span><code>void show (): Called automatically. calls driver.show() + statistics
-void resetStat ():  Called automatically
+<div class="highlight"><pre><span></span><code>void show (); //Called automatically. calls driver.show() + statistics
+void resetStat (); // Called automatically
 
 void display (int a1)
-void dp (float a1): display float, for debugging
-void error (int a1, int a2, int a3): prints 3 integers
-void print (char * a1): prints one string
+void dp (float a1); //display float, for debugging
+void error (int a1, int a2, int a3); //prints 3 integers
+void print (char * a1); //prints one string
 
 float atan2 (float a1, float a2)
 float hypot (float a1, float a2)
