@@ -21,7 +21,8 @@ Live Effects are effects implemented by a script on the ESP32 filesystem ([Files
 
 * Example(s) of Life Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarLight/tree/main/misc/LiveScripts)
 
-## Supported StarLight functions to be used in scrips
+## StarLight Live functions
+Supported StarLight functions to be used in scrips
 
 * ```CRGB    hsv(uint8_t hue, uint8_t saturation, uint8_t value)```: HSV Color
 * ```CRGB    rgb (uint8_t red, uint8_t green, uint8_t blue)```: RGB color
@@ -34,7 +35,7 @@ Live Effects are effects implemented by a script on the ESP32 filesystem ([Files
 * ```void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness)```: Set Color From Palette
 * ```void    fadeToBlackBy(uint8_t fadeBy)```
 
-* plus [Supported StarBase functions](https://ewowi.github.io/StarDocs/UserMod/UserModLiveScripts/#preparing-live-scripts)
+* plus [StarBase Live functions](/StarDocs/UserMod/UserModLiveScripts/#starbase-live-functions)
 
 ## Preparing and running Live Effects
 
