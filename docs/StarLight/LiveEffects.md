@@ -21,6 +21,8 @@ Live Effects are effects implemented by a script on the ESP32 filesystem ([Files
 
 * Example(s) of Life Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarLight/tree/main/misc/LiveScripts)
 
+<img width="550" alt="image" src="https://github.com/user-attachments/assets/db350093-56f2-47d1-b9ed-a8c1c5f978bd">
+
 ## StarLight Live functions
 Supported StarLight functions to be used in scrips
 
