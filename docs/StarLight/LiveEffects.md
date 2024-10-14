@@ -36,6 +36,8 @@ Supported StarLight functions to be used in scrips
     void    fadeToBlackBy(uint8_t fadeBy)
 
 * plus [StarBase Live functions](/StarDocs/UserMod/UserModLiveScripts/#starbase-live-functions)
+* * more functions will be available later, new functions can be requested in [Github issues](https://github.com/MoonModules/StarLight/issues).
+
 
 ## Preparing and running Live Effects
 
