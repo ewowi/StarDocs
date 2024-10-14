@@ -1969,8 +1969,11 @@ void print (char * a1); //prints one string
 float atan2 (float a1, float a2)
 float hypot (float a1, float a2)
 float sin (float a1)
-float time (float a1)
-float triangle (float a1)
+float time (float a1); //A sawtooth waveform between 0.0 and 1.0 that loops about every 65.536*interval seconds. e.g. use .015 for an approximately 1 second.
+float triangle (float a1); //Converts a sawtooth waveform v between 0.0 and 1.0 to a triangle waveform between 0.0 to 1.0. v &quot;wraps&quot; between 0.0 and 1.0.
+wave //not implemented yet ...Converts a sawtooth waveform v between 0.0 and 1.0 to a sinusoidal waveform between 0.0 to 1.0. Same as (1+sin(v*PI2))/2 but faster. v &quot;wraps&quot; between 0.0 and 1.0.
+square // not implemented yet ...Converts a sawtooth waveform v to a square wave using the provided duty cycle where duty is a number between 0.0 and 1.0. v &quot;wraps&quot; between 0.0 and 1.0.
+clamp // not implemented yet ... see also https://github.com/atuline/PixelBlaze
 uint32_t millis ()
 
 void pinMode (int a1, int a2)
