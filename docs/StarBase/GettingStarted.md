@@ -5,7 +5,7 @@ hide:
   # - toc
 ---
 
-## Follow these steps to get StarMod and StarLight running
+## Follow these steps to get StarBase or StarLight running
 
 **1. Acquire a firmware binary (bin)**
 
