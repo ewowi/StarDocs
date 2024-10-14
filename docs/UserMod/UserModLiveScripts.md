@@ -70,7 +70,7 @@ Supported StarBase functions to be used in scrips
     void digitalWrite (int a1, int a2)
     void delay (int a1)
 
-* more functions will be available later, requests for new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
+* more functions will be available later, new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
 
 ## Preparing  live scripts
 * StarBase most be compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)
