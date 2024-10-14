@@ -1929,22 +1929,19 @@
 </ul>
 <h2 id="starlight-live-functions">StarLight Live functions</h2>
 <p>Supported StarLight functions to be used in scrips</p>
+<div class="highlight"><pre><span></span><code>CRGB    hsv(uint8_t hue, uint8_t saturation, uint8_t value); //HSV Color
+CRGB    rgb (uint8_t red, uint8_t green, uint8_t blue); //RGB color
+uint8_t beatSin8 (uint8_t bpm, uint8_t lowest, uint8_t highest) Beats per minute 
+uint8_t inoise8 (uint16_t x, uint16_t y, uint16_t z) xyz coordinate on noise map (3D)
+uint8_t random8(); //random between 0 and 255
+uint8_t sin8(uint8_t theta); //theta input angle from 0-255, results 0-255
+uint8_t cos8(uint8_t theta); //theta input angle from 0-255, results 0-255
+void    sPC(uint16_t pixel, CRGB color); //setPixelColor: NOTE: currently directly using CRGB in sPC not possible, workaround use: CRGB cc=hsv(c,255,v); sPC(i + j   panel_width, cc);
+void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness); //Set Color From Palette
+void    fadeToBlackBy(uint8_t fadeBy)
+</code></pre></div>
 <ul>
-<li>CRGB    hsv(uint8_t hue, uint8_t saturation, uint8_t value); //HSV Color</li>
-<li>CRGB    rgb (uint8_t red, uint8_t green, uint8_t blue); //RGB color</li>
-<li>uint8_t beatSin8 (uint8_t bpm, uint8_t lowest, uint8_t highest) Beats per minute </li>
-<li>uint8_t inoise8 (uint16_t x, uint16_t y, uint16_t z) xyz coordinate on noise map (3D)</li>
-<li>uint8_t random8(); //random between 0 and 255</li>
-<li>uint8_t sin8(uint8_t theta); //theta input angle from 0-255, results 0-255</li>
-<li>uint8_t cos8(uint8_t theta); //theta input angle from 0-255, results 0-255</li>
-<li>void    sPC(uint16_t pixel, CRGB color); //setPixelColor: NOTE: currently directly using CRGB in sPC not possible, workaround use: CRGB cc=hsv(c,255,v); sPC(i + j * panel_width, cc);</li>
-<li>void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness); //Set Color From Palette</li>
-<li>
-<p>void    fadeToBlackBy(uint8_t fadeBy)</p>
-</li>
-<li>
-<p>plus <a href="/StarDocs/UserMod/UserModLiveScripts/#starbase-live-functions">StarBase Live functions</a></p>
-</li>
+<li>plus <a href="/StarDocs/UserMod/UserModLiveScripts/#starbase-live-functions">StarBase Live functions</a></li>
 </ul>
 <h2 id="preparing-and-running-live-effects">Preparing and running Live Effects</h2>
 <ul>
