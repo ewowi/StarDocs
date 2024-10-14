@@ -15,6 +15,7 @@ hide:
 * Generate a fixture
     * [Fixture Generator](/StarDocs/StarLightMod/StarLightModFixtureGenerator)
     * Select the pin the leds will be connected to (multiple pins possible)
+    * IP is not implemented yet
 
 <img width="396" alt="image" src="https://github.com/user-attachments/assets/0b586052-ce0c-411e-a0b1-588b93b55839">
 
