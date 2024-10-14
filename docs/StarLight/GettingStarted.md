@@ -15,9 +15,8 @@ hide:
 * Generate a fixture
     * [Fixture Generator](/StarDocs/StarLightMod/StarLightModFixtureGenerator)
     * Select the pin the leds will be connected to (multiple pins possible)
-    * The default setting is one 8x8 panel connected to pin 2:
 
-<img width="365" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/67a4ae2c-1ad9-4e30-88a9-f70f6187f613">
+<img width="396" alt="image" src="https://github.com/user-attachments/assets/0b586052-ce0c-411e-a0b1-588b93b55839">
 
 * Connect LEDs to the ESP32 GPIO pins as defined in the F_ixture.json file
 
