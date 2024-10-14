@@ -1159,6 +1159,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#supported-starlight-functions-to-be-used-in-scrips" class="md-nav__link">
+    <span class="md-ellipsis">
+      supported StarLight functions to be used in scrips
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1848,6 +1857,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#supported-starlight-functions-to-be-used-in-scrips" class="md-nav__link">
+    <span class="md-ellipsis">
+      supported StarLight functions to be used in scrips
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1876,7 +1894,34 @@
 <p><img width="450" alt="image" src="https://github.com/user-attachments/assets/418fb6ee-3580-456e-97e0-9344a0d13fac"></p>
 <h2 id="introduction">Introduction</h2>
 <p>Live Effects are effects implemented by a script on the ESP32 filesystem (<a href="/StarDocs/SysMod/SysModFiles">Files Module</a>), instead of precompiled in a StarLight binary flash file. Live effects are a specific application of Live Scripts (see <a href="/StarDocs/UserMod/UserModLiveScripts">Live Scripts Module</a>).</p>
-<p>A Life Effect can be executed by selecting Live Effect in the Effects module. (Currently only one Live Effect can run, more in Release 0.5.0).</p>
+<ul>
+<li>
+<p>A Life Effect can be executed by selecting Live Effect in the <a href="/StarDocs/StarLightMod/StarLightModEffects/">Effects Module</a>. (Currently only one Live Effect can run, more in Release 0.5.0).</p>
+</li>
+<li>
+<p>Next a script can be selected with the .sc file extension. After selection the file will be executed directly:</p>
+<p><img width="362" alt="image" src="https://github.com/user-attachments/assets/de946239-6ad7-4df5-bbd1-92e484be57f0"></p>
+</li>
+<li>
+<p>Optionally Slider1, 2, or 3 controls can be used to change the behaviour of the effect (in future release slider types and names can be defined in the life script itself).</p>
+</li>
+<li>
+<p>Example(s) of Life Effect scripts can be found in <a href="https://github.com/MoonModules/StarBase/tree/main/misc/LiveScripts">StarLight repo/misc/LiveScripts</a></p>
+</li>
+</ul>
+<h2 id="supported-starlight-functions-to-be-used-in-scrips">supported StarLight functions to be used in scrips</h2>
+<ul>
+<li><code>CRGB    hsv(uint8_t hue, uint8_t saturation, uint8_t value)</code>: HSV Color</li>
+<li><code>CRGB    rgb (uint8_t red, uint8_t green, uint8_t blue)</code>: RGB color</li>
+<li><code>uint8_t beatSin8 (uint8_t bpm, uint8_t lowest, uint8_t highest)</code> Beats per minute </li>
+<li><code>uint8_t inoise8 (uint16_t x, uint16_t y, uint16_t z)</code> xyz coordinate on noise map (3D)</li>
+<li><code>uint8_t random8()</code>: random between 0 and 255</li>
+<li><code>uint8_t sin8(uint8_t theta)</code>: theta input angle from 0-255, results 0-255</li>
+<li><code>uint8_t cos8(uint8_t theta)</code>: theta input angle from 0-255, results 0-255</li>
+<li><code>void    sPC(uint16_t pixel, CRGB color)</code>: setPixelColor: </li>
+<li><code>void    sCFP(uint16_t pixel, uint8_t color index, uint8_t brightness)</code>: Set Color From Palette</li>
+<li><code>void    fadeToBlackBy(uint8_t fadeBy)</code></li>
+</ul>
 
 
 
