@@ -36,4 +36,4 @@ hide:
 
 * See [Effects Module](/StarDocs/StarLightMod/StarLightModEffects/) for running effects
 * See [Live Effects](/StarDocs/StarLight/LiveEffects/) to create your own scripts live!
-* See [this page](/StarDocs/StarLight/Effects/#CreatingNewEffects) to start creating pre-compiled effects for Leds.
+* See [StarLights Leds](/StarDocs/StarLight/Effects/#CreatingNewEffects) to start creating pre-compiled effects for Leds.
