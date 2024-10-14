@@ -947,6 +947,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supported-starbase-functions-to-be-used-in-scrips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported StarBase functions to be used in scrips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#preparing-live-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       Preparing live scripts
@@ -1867,6 +1876,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#supported-starbase-functions-to-be-used-in-scrips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported StarBase functions to be used in scrips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#preparing-live-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       Preparing live scripts
@@ -1939,6 +1957,27 @@ void loop() {
 <p>pinMode, digitalWrite and delay are 'externally' defined functions, in other words, StarBase have implemented them. Currently these are the only defined functions and more functions will be available later, requests for new functions can be requested in <a href="https://github.com/ewowi/StarBase/issues">Github issues</a>.</p>
 <p>Applications of Live Scripts can be 'anything' but low hanging fruit is making controllers which read data from pins connected to sensors do some processing and then write data to pins connected to motors, lights etc</p>
 <p>Note: StarLight uses Live Scripts to implement <a href="/StarDocs/StarLight/LiveEffects/">Live Effects</a> (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).</p>
+<h2 id="supported-starbase-functions-to-be-used-in-scrips">Supported StarBase functions to be used in scrips</h2>
+<div class="highlight"><pre><span></span><code>addExternalFun(&quot;void&quot;, &quot;show&quot;, &quot;()&quot;, (void *)&amp;show); //comment if setup/loop model works
+addExternalFun(&quot;void&quot;, &quot;resetStat&quot;, &quot;()&quot;, (void *)&amp;resetShowStats);
+
+addExternalFun(&quot;void&quot;, &quot;display&quot;, &quot;(int a1)&quot;, (void *)&amp;dispshit);
+addExternalFun(&quot;void&quot;, &quot;dp&quot;, &quot;(float a1)&quot;, (void *)displayfloat);
+addExternalFun(&quot;void&quot;, &quot;error&quot;, &quot;(int a1, int a2, int a3)&quot;, (void *)&amp;showError);
+addExternalFun(&quot;void&quot;, &quot;print&quot;, &quot;(char * a1)&quot;, (void *)__print);
+
+addExternalFun(&quot;float&quot;, &quot;atan2&quot;,&quot;(float a1, float a2)&quot;,(void*)_atan2);
+addExternalFun(&quot;float&quot;, &quot;hypot&quot;,&quot;(float a1, float a2)&quot;,(void*)_hypot);
+addExternalFun(&quot;float&quot;, &quot;sin&quot;, &quot;(float a1)&quot;, (void *)_sin);
+addExternalFun(&quot;float&quot;, &quot;time&quot;, &quot;(float a1)&quot;, (void *)_time);
+addExternalFun(&quot;float&quot;, &quot;triangle&quot;, &quot;(float a1)&quot;, (void *)_triangle);
+addExternalFun(&quot;uint32_t&quot;, &quot;millis&quot;, &quot;()&quot;, (void *)millis);
+
+// added by StarBase
+addExternalFun(&quot;void&quot;, &quot;pinMode&quot;, &quot;(int a1, int a2)&quot;, (void *)&amp;pinMode);
+addExternalFun(&quot;void&quot;, &quot;digitalWrite&quot;, &quot;(int a1, int a2)&quot;, (void *)&amp;digitalWrite);
+addExternalFun(&quot;void&quot;, &quot;delay&quot;, &quot;(int a1)&quot;, (void *)&amp;delay);
+</code></pre></div>
 <h2 id="preparing-live-scripts">Preparing  live scripts</h2>
 <ul>
 <li>StarBase most be compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)</li>
