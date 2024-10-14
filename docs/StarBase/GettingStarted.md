@@ -28,7 +28,7 @@ Build your own bin (Intermediate-Advanced)
 * Flash the unzipped "firmware.bin" to an ESP32 module using [ESP Flasher](https://github.com/srg74/WLED-wemos-shield/tree/master/resources/Firmware/WLED_%20ESP_Flasher)
 * Unzip/extract the "firmware.bin" from the downloaded folder, then flash it to your connected ESP32 module
       
-	<img width="450" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
+<img width="450" src="https://github.com/ewowi/StarDocs/assets/138451817/c8ab160d-bba0-4d5b-aed4-c858fea3637f">
 
 **3. Set up the StarMod instance**
     
@@ -38,7 +38,7 @@ Build your own bin (Intermediate-Advanced)
 
 * The StarMod adaptive portal will show the setup tab. Alternatively, go to [4.3.2.1](http://4.3.2.1)
   
-        <img width="450" alt="image" src="https://github.com/user-attachments/assets/040584d6-dc81-43f5-bf9b-f476ab64d6c0">
+    <img width="650" alt="image" src="https://github.com/user-attachments/assets/38d7d026-edcc-4852-8ee1-a0d87599890e">
 
 * Give the instance a name
 	* Read more: [System](/StarDocs/SysMod/SysModSystem)
