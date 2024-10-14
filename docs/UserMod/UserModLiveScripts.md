@@ -47,6 +47,28 @@ Applications of Live Scripts can be 'anything' but low hanging fruit is making c
 
 Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLight/LiveEffects/) (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).
 
+## Supported StarBase functions to be used in scrips
+
+    addExternalFun("void", "show", "()", (void *)&show); //comment if setup/loop model works
+    addExternalFun("void", "resetStat", "()", (void *)&resetShowStats);
+
+    addExternalFun("void", "display", "(int a1)", (void *)&dispshit);
+    addExternalFun("void", "dp", "(float a1)", (void *)displayfloat);
+    addExternalFun("void", "error", "(int a1, int a2, int a3)", (void *)&showError);
+    addExternalFun("void", "print", "(char * a1)", (void *)__print);
+
+    addExternalFun("float", "atan2","(float a1, float a2)",(void*)_atan2);
+    addExternalFun("float", "hypot","(float a1, float a2)",(void*)_hypot);
+    addExternalFun("float", "sin", "(float a1)", (void *)_sin);
+    addExternalFun("float", "time", "(float a1)", (void *)_time);
+    addExternalFun("float", "triangle", "(float a1)", (void *)_triangle);
+    addExternalFun("uint32_t", "millis", "()", (void *)millis);
+
+    // added by StarBase
+    addExternalFun("void", "pinMode", "(int a1, int a2)", (void *)&pinMode);
+    addExternalFun("void", "digitalWrite", "(int a1, int a2)", (void *)&digitalWrite);
+    addExternalFun("void", "delay", "(int a1)", (void *)&delay);
+
 ## Preparing  live scripts
 * StarBase most be compiled with compiler directive STARBASE_USERMOD_LIVE set (this is default)
 * Live Scripts must be enabled in the [Modules Module](/StarDocs/SysMod/SysModModules) (this is not default)
