@@ -18,7 +18,7 @@ hide:
 
 <img width="396" alt="image" src="https://github.com/user-attachments/assets/0b586052-ce0c-411e-a0b1-588b93b55839">
 
-* Connect LEDs to the ESP32 GPIO pins as defined in the F_ixture.json file
+* Connect LEDs to the ESP32 GPIO pins as defined in the F_ixture.json file (optional, although this is kind of why StarLight is build 😉, but preview only can be used when testing)
 
 * A generated fixture will be selected automatically in the Fixture Module
     * [Fixture](/StarDocs/StarLightMod/StarLightModFixture)
