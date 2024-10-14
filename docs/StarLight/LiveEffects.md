@@ -43,4 +43,4 @@ Supported StarLight functions to be used in scrips
 
 ## Preparing and running Live Effects
 
-* See [Preparing live scripts](StarDocs/UserMod/UserModLiveScripts/#preparing-live-scripts) and [Running live scripts](/StarDocs/UserMod/UserModLiveScripts/#running-live-scripts)
+* See [Preparing live scripts](/StarDocs/UserMod/UserModLiveScripts/#preparing-live-scripts) and [Running live scripts](/StarDocs/UserMod/UserModLiveScripts/#running-a-live-script)
