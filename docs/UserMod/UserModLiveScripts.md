@@ -45,7 +45,8 @@ Applications of Live Scripts can be 'anything' but low hanging fruit is making c
 
 Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLight/LiveEffects/) (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).
 
-## Supported StarBase functions to be used in scrips
+## StarBase Live functions
+Supported StarBase functions to be used in scrips
 
     void show (): Called automatically. calls driver.show() + statistics
     void resetStat ():  Called automatically
