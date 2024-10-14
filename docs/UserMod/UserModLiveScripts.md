@@ -9,11 +9,12 @@ hide:
 
 ## Introduction
 
-Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at high speed without rebooting or flashing!!! They can be used by end-users of StarBase (or one if its forks) to create custom code without the need to publish a new version with the new code in it.
+Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at very high speed (like compiled c-code!) without rebooting or flashing!!! They can be used by end-users of StarBase (or one if its forks) to create custom code without the need to publish a new version with the new code in it.
+You might need to read above section again, as this is mindblowing functionality! 🙂
 
 Live scripts are implemented using [hpwit/ESPLiveScript](https://github.com/hpwit/ESPLiveScript/tree/v2.8). Both this repo and the implementation in StarBase is in development and more functionality is expected to be released.
 
-Live scripts are stored on the filesystem and can be uploaded, edited and deleted in the [Files Module](/StarDocs/SysMod/SysModFiles), the have extension .sc.
+Live scripts are stored on the filesystem and can be uploaded, edited and deleted in the [Files Module](/StarDocs/SysMod/SysModFiles), they have extension .sc.
 
 Example(s) of scripts can be found in [StarBase repo/misc/LiveScripts](https://github.com/ewowi/StarBase/tree/main/misc/LiveScripts)
 
@@ -41,6 +42,8 @@ void loop() {
 ```
 
 pinMode, digitalWrite and delay are 'externally' defined functions, in other words, StarBase have implemented them. Currently these are the only defined functions and more functions will be available later, requests for new functions can be requested in [Github issues](https://github.com/ewowi/StarBase/issues).
+
+Applications of Live Scripts can be 'anything' but low hanging fruit is making controllers which read data from pins connected to sensors do some processing and then write data to pins connected to motors, lights etc
 
 Note: StarLight uses Live Scripts to implement [Live Effects](/StarDocs/StarLight/LiveEffects/) (since Release 0.3.0) and Live Fixtures (Planned for Release 0.5.0).
 
