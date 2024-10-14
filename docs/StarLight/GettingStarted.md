@@ -10,7 +10,7 @@ hide:
 * Follow StarBase steps using StarLight binary
     * [StarBase](/StarDocs/StarBase/GettingStarted)
 
-* Select the LEDs tab in the UI
+* Select the StarLight tab in the UI
 
 * Generate a fixture
     * [Fixture Generator](/StarDocs/StarLightMod/StarLightModFixtureGenerator)
