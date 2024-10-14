@@ -38,16 +38,15 @@ Build your own bin (Intermediate-Advanced)
 
 * The StarMod adaptive portal will show the setup tab. Alternatively, go to [4.3.2.1](http://4.3.2.1)
   
-	<img width="450" alt="image" src="https://github.com/ewowi/StarDocs/assets/138451817/cd8bd820-0a40-4ead-a0d2-14e0d0aa4ac3">
- 
+        <img width="450" alt="image" src="https://github.com/user-attachments/assets/040584d6-dc81-43f5-bf9b-f476ab64d6c0">
+
 * Give the instance a name
 	* Read more: [System](/StarDocs/SysMod/SysModSystem)
   
-* Enter your Wifi credentials (Do not hit connect yet)
+* Enter your Wifi credentials
   * Read more: [Network](/StarDocs/SysMod/SysModNetwork)
-* Save Model
+* Save Model to preserve credentials after reboot
   * Read more: [Model](/StarDocs/SysMod/SysModModel)
-* Reboot or press Connect
 
 **4. Start using Starmod**
   * Connect to the WiFi network
