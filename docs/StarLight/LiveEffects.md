@@ -19,7 +19,7 @@ Live Effects are effects implemented by a script on the ESP32 filesystem ([Files
 
 * Optionally Slider1, 2, or 3 controls can be used to change the behaviour of the effect (in future release slider types and names can be defined in the life script itself).
 
-* Example(s) of Life Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarBase/tree/main/misc/LiveScripts)
+* Example(s) of Life Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarLight/tree/main/misc/LiveScripts)
 
 ## Supported StarLight functions to be used in scrips
 
