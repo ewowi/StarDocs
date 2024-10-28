@@ -5,8 +5,6 @@ hide:
   # - toc
 ---
 
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/418fb6ee-3580-456e-97e0-9344a0d13fac">
-
 ## Introduction
 
 StarLight uses FastLED as the default driver of LEDs, FastLED is not flexible in (re)assigning pins, they need to be defined during compile time. In StarLight a workaround has been made to precompile all templates for possible pins for a specific board so you reassign by choosing another pin and another precompiled template will be used (or multiple in case you drive multiple pins). Each pin template is around 700 bytes (check) so this creates an overhead in flash / memory.
@@ -15,7 +13,9 @@ StarLight uses FastLED as the default driver of LEDs, FastLED is not flexible in
 
 Alternatively you can choose for [I2SClocklessLedDriver](https://github.com/hpwit/I2SClocklessLedDriver) if you are compiling from VSCode by uncommenting this in platformio.ini (contact us if you need a precompiled binary).
 
-image ...
+Uncomment the 2 lines for build flags and lib deps to choose on of the alternatives for the FastLED driver:
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/041713aa-1b21-4d1b-a9b0-391522f61454">
+
 
 This has the following advantages
 - See above 
@@ -33,10 +33,18 @@ For more info check the readme in the link above.
 
 Example of a board with 6 SN495 shift registers (and one 245 array to distribute to the shift registers)
 
-Image...
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/b4a34ce0-4a7c-4adc-8cab-9337287ce39c">
 
 * The shift registers also act as level shifter providing 5 volts to the LED data pins.
 * Virtual driver on S3 not yet supported ...
+* A design for a 15 panel set up is in progress:
+
+
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/71b614f9-aad6-4dfa-b664-cc9228a8f59b">
+
 
 ## Notes
 * The clockless LED drivers work totally independently from Live Scripts functionality, so you can run live effects with the FastLED driver and run normal effects using one of Clockless drivers.
+* IN the Fixture module, you can see which driver is used (FastLED show, CLD show or CLVD show)
+
+<img width="221" alt="image" src="https://github.com/user-attachments/assets/ff42bf99-935e-47d4-834e-129ba3129859">
