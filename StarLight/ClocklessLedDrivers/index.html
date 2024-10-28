@@ -1952,8 +1952,8 @@
 <p>StarLight uses FastLED as the default driver of LEDs, FastLED is not flexible in (re)assigning pins, they need to be defined during compile time. In StarLight a workaround has been made to precompile all templates for possible pins for a specific board so you reassign by choosing another pin and another precompiled template will be used (or multiple in case you drive multiple pins). Each pin template is around 700 bytes (check) so this creates an overhead in flash / memory.</p>
 <h2 id="i2s-clockless-led-driver">I2S Clockless Led Driver</h2>
 <p>Alternatively you can choose for <a href="https://github.com/hpwit/I2SClocklessLedDriver">I2SClocklessLedDriver</a> if you are compiling from VSCode by uncommenting this in platformio.ini (contact us if you need a precompiled binary).</p>
-<p>Uncomment the 2 lines for build flags and lib deps to choose on of the alternatives for the FastLED driver:
-<img width="420" alt="image" src="https://github.com/user-attachments/assets/041713aa-1b21-4d1b-a9b0-391522f61454"></p>
+<p>Uncomment the 2 lines for build flags and lib deps to choose on of the alternatives for the FastLED driver:</p>
+<p><img width="420" alt="image" src="https://github.com/user-attachments/assets/041713aa-1b21-4d1b-a9b0-391522f61454"></p>
 <p>This has the following advantages
 - See above 
 - I2S ... 
