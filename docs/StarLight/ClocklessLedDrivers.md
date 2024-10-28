@@ -18,6 +18,7 @@ Uncomment the 2 lines for build flags and lib deps to choose on of the alternati
 <img width="420" alt="image" src="https://github.com/user-attachments/assets/041713aa-1b21-4d1b-a9b0-391522f61454">
 
 This has the following advantages
+
 - See above 
 - I2S ... 
 - Clockless ...
