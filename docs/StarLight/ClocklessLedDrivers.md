@@ -14,8 +14,8 @@ StarLight uses FastLED as the default driver of LEDs, FastLED is not flexible in
 Alternatively you can choose for [I2SClocklessLedDriver](https://github.com/hpwit/I2SClocklessLedDriver) if you are compiling from VSCode by uncommenting this in platformio.ini (contact us if you need a precompiled binary).
 
 Uncomment the 2 lines for build flags and lib deps to choose on of the alternatives for the FastLED driver:
-<img width="420" alt="image" src="https://github.com/user-attachments/assets/041713aa-1b21-4d1b-a9b0-391522f61454">
 
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/041713aa-1b21-4d1b-a9b0-391522f61454">
 
 This has the following advantages
 - See above 
