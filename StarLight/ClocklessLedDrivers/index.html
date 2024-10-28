@@ -1948,12 +1948,12 @@
 
   <h1>Clockless Led Drivers</h1>
 
-<p><img width="450" alt="image" src="https://github.com/user-attachments/assets/418fb6ee-3580-456e-97e0-9344a0d13fac"></p>
 <h2 id="introduction">Introduction</h2>
 <p>StarLight uses FastLED as the default driver of LEDs, FastLED is not flexible in (re)assigning pins, they need to be defined during compile time. In StarLight a workaround has been made to precompile all templates for possible pins for a specific board so you reassign by choosing another pin and another precompiled template will be used (or multiple in case you drive multiple pins). Each pin template is around 700 bytes (check) so this creates an overhead in flash / memory.</p>
 <h2 id="i2s-clockless-led-driver">I2S Clockless Led Driver</h2>
 <p>Alternatively you can choose for <a href="https://github.com/hpwit/I2SClocklessLedDriver">I2SClocklessLedDriver</a> if you are compiling from VSCode by uncommenting this in platformio.ini (contact us if you need a precompiled binary).</p>
-<p>image ...</p>
+<p>Uncomment the 2 lines for build flags and lib deps to choose on of the alternatives for the FastLED driver:
+<img width="420" alt="image" src="https://github.com/user-attachments/assets/041713aa-1b21-4d1b-a9b0-391522f61454"></p>
 <p>This has the following advantages
 - See above 
 - I2S ... 
@@ -1964,15 +1964,19 @@
 <p>If you want to build bigger LED setups at a reasonable frame rate the pins an ESP32 board provides are not enough. <a href="https://github.com/hpwit/I2SClocklessVirtualLedDriver">I2SClocklessVirtualLedDriver</a> solves this by using I2S to send LED data to one or more SN495 shift registers ic's where each ic sends LEDS data to 8 pins. For instance, if you have 6 ic's you can drive 48 panels of size 16x16 at their max speed which is 120-130fps. This is a total of 12288 LEDs. The ESP32 is powerfull enough to run most effects with this size at speeds ranging from 60-120fps depending on the complexity of the effect.</p>
 <p>For more info check the readme in the link above.</p>
 <p>Example of a board with 6 SN495 shift registers (and one 245 array to distribute to the shift registers)</p>
-<p>Image...</p>
+<p><img width="450" alt="image" src="https://github.com/user-attachments/assets/b4a34ce0-4a7c-4adc-8cab-9337287ce39c"></p>
 <ul>
 <li>The shift registers also act as level shifter providing 5 volts to the LED data pins.</li>
 <li>Virtual driver on S3 not yet supported ...</li>
+<li>A design for a 15 panel set up is in progress:</li>
 </ul>
+<p><img width="450" alt="image" src="https://github.com/user-attachments/assets/71b614f9-aad6-4dfa-b664-cc9228a8f59b"></p>
 <h2 id="notes">Notes</h2>
 <ul>
 <li>The clockless LED drivers work totally independently from Live Scripts functionality, so you can run live effects with the FastLED driver and run normal effects using one of Clockless drivers.</li>
+<li>IN the Fixture module, you can see which driver is used (FastLED show, CLD show or CLVD show)</li>
 </ul>
+<p><img width="221" alt="image" src="https://github.com/user-attachments/assets/ff42bf99-935e-47d4-834e-129ba3129859"></p>
 
 
 
