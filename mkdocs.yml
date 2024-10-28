@@ -113,6 +113,7 @@ nav:
     - Contributors & Credits: about/contributors.md
     - Privacy Policy: about/privacy-policy.md
     - Upcoming Features: about/roadmap.md
+    - MoonModules.org: about/MoonModules.md
     - MoonModules:
       - What is MoonModules: archive/moonmodules/what-is-moonmodules.md
       - Release notes v0.14.0-b3-daily: archive/moonmodules/release-notes-v0.14.0-b3-daily.md
