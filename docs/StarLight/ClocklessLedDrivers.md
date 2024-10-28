@@ -47,5 +47,6 @@ Example of a board with 6 SN495 shift registers (and one 245 array to distribute
 ## Notes
 * The clockless LED drivers work totally independently from Live Scripts functionality, so you can run live effects with the FastLED driver and run normal effects using one of Clockless drivers.
 * IN the Fixture module, you can see which driver is used (FastLED show, CLD show or CLVD show)
+* Compare with FastLED rmt / clockless functionality, see [FastLED/releases](https://github.com/FastLED/FastLED/releases) ...
 
 <img width="221" alt="image" src="https://github.com/user-attachments/assets/ff42bf99-935e-47d4-834e-129ba3129859">
