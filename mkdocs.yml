@@ -100,6 +100,7 @@ nav:
     - Effects: StarLight/Effects.md
     - Projections and Mappings: StarLight/ProjectionsAndMappings.md
     - Live Effects: StarLight/LiveEffects.md
+    - Clockless Led Drivers: StarLight/ClocklessLedDrivers.md
     - Sound: StarLight/Sound.md
     - Gallery: StarLight/Gallery.md
   - StarLight Modules:
