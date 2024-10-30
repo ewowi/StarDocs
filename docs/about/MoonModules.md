@@ -10,7 +10,13 @@ _The MoonModules eco-system, it is a community, it is a movement, it’s a force
 
 ## Introduction
 
-MoonModules is a collective of light artist, hardware- and software developers. It's been founded in 2021 by Ewowi and Harry Baas who at the time developed audio and 2D functionality and effects for the [Atuline WLED fork](https://github.com/atuline/WLED). Effects like Akemi, Game of Live and GEQ where developed during this time as well as developing showcases for multiple layered effects.
+MoonModules is a collective of light artist, hardware- and software developers. We love creating DIY lighting solutions based on microcontrollers, mainly ESP32. Our work can be found on GitHub and we use mainly Discord for communications. We develop our products for a large community of light enthousiasts and make products we show to the world, e.g. on art-exhibitions, in venues, or at festivals.
+
+Our work is open source, so everybody can see what we do and can use it, also commercially. The only thing we ask is you make references to the products you use, and whatever you do with it, is also open source. For this reason we use GPL-V3 and EUPL-v3 licenses for our products.
+
+## History
+
+MoonModules has been founded in 2021 by Ewowi and Harry Baas who at the time developed audio and 2D functionality and effects for the [Atuline WLED fork](https://github.com/atuline/WLED). Effects like Akemi, Game of Live and GEQ where developed during this time as well as developing showcases for multiple layered effects.
 
 Since then we have worked on the first release of [Aircoookie WLED 0.14](https://github.com/Aircoookie/WLED/releases/tag/v0.14.0-b1) which introduced Sound Reactive and 2D support as created in the Atuline fork. At this time SoftHack007 joined. We also supported subsequent releases, which we do sence then.
 
@@ -18,8 +24,6 @@ At the same time we developed [WLED MM](https://github.com/MoonModules/WLED), a 
 Recent versions of WLED MM focus a lot on large LED installations, Art-Net support and Hub-75 support. Since this time, Troy, Soren and NetMindz joined MoonModules.
 
 Since 2023, we are also developing a new product, based on our experience working with WLED. We took the module concept of WLED and took that further by making everything a module, this was called StarMod. This then allowed us to split LED and non-LED functionality and StarBase and StarLight was born. StarBase containing generic functionality and StarLight to add lighting functionality on top of that. As StarBase is generic and can be used to develop any ESP32 based application. StarLight key features are 3D support, support for any fixture, projections, up to 16384 LEDs, Live coding of fixture definitions, effects and projections, artnet and dmx support.
-
-Our work is open source, so everybody can see what we do and can use it, also commercially. The only thing we ask is you make references to the products you use, and whatever you do with it, is also open source. For this reason we use GPL-V3 and EUPL-v3 licenses for our products.
 
 ## Friends of MoonModules
 
@@ -39,7 +43,7 @@ We work closely together with a number of people. Discord is our base platform t
 * Etsy
 * Venues
 * Events
-* Burning Man installations
+* Burning Man installations - Tarna
 * Human sized cube
 * ...
 
