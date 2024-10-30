@@ -64,5 +64,5 @@ Other hardware we work with
 ## Links
 
 - [Discord WLED 2D & Audio Dev](https://discord.gg/TC8NSUSCdV)
-- [https://mm.kno.wled.ge]](https://mm.kno.wled.ge)
+- [https://mm.kno.wled.ge](https://mm.kno.wled.ge)
 - [StarDocs](https://ewowi.github.io/StarDocs/).
