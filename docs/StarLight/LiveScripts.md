@@ -12,19 +12,19 @@ hide:
 StarLight supports Live Effects, Live Fixtures and Live Projections. These exists next to normal effects (coded in c++), normal fixtures (generated or manually created as F_ixture.json files) and normal projections (coded in c++). Normal effects and normal projections are part of a specific build of StarLight and are fixed within that build. Normal fixtures can be created by an end user of StarLight.
 The Live versions can all be created by an end user at any time and executed in StarLight.
 
-### Life Effects
+### Live Effects
 
 Live Effects are effects implemented by a script on the ESP32 filesystem ([Files Module](/StarDocs/SysMod/SysModFiles)). Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at very high speed (like compiled c-code!) without rebooting or flashing!!! Live effects are a specific application of Live Scripts (see [StarBase Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)).
 
-* A Life Effect can be executed by selecting Live Effect in the [Effects Module](/StarDocs/StarLightMod/StarLightModEffects/).
+* A Live Effect can be executed by selecting Live Effect in the [Effects Module](/StarDocs/StarLightMod/StarLightModEffects/).
 
 * Next a script can be selected with the .sc file extension. After selection the file will be executed directly:
 
     <img width="362" alt="image" src="https://github.com/user-attachments/assets/de946239-6ad7-4df5-bbd1-92e484be57f0">
 
-* Optionally Slider1, 2, or 3 controls can be used to change the behaviour of the effect (in future release slider types and names can be defined in the life script itself).
+* Optionally Slider1, 2, or 3 controls can be used to change the behaviour of the effect (in future release slider types and names can be defined in the live script itself).
 
-* Example(s) of Life Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarLight/tree/main/misc/LiveScripts)
+* Example(s) of Live Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarLight/tree/main/misc/LiveScripts)
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/db350093-56f2-47d1-b9ed-a8c1c5f978bd">
 
@@ -50,13 +50,13 @@ Supported StarLight functions to be used in scripts
 
 * See [Preparing live scripts](/StarDocs/UserMod/UserModLiveScripts/#preparing-live-scripts) and [Running live scripts](/StarDocs/UserMod/UserModLiveScripts/#running-a-live-script)
 
-## Life Fixtures
+## Live Fixtures
 
 Live Fixtures are fixture definitions implemented by a script on the ESP32 filesystem ([Files Module](/StarDocs/SysMod/SysModFiles)). Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at very high speed (like compiled c-code!) without rebooting or flashing!!! Live Fixtures are a specific application of Live Scripts (see [StarBase Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)).
 
-* A Life Fixture can be executed by selecting an F_ixture.sc file in the [Fixture Module](/StarDocs/StarLightMod/StarLightModFixtures/). 
+* A Live Fixture can be executed by selecting an F_ixture.sc file in the [Fixture Module](/StarDocs/StarLightMod/StarLightModFixtures/). 
 
-* Example(s) of Life Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarLight/tree/main/misc/LiveScripts)
+* Example(s) of Live Effect scripts can be found in [StarLight repo/misc/LiveScripts](https://github.com/MoonModules/StarLight/tree/main/misc/LiveScripts)
 
 
 Panel example:
@@ -118,7 +118,7 @@ external float atan2(float a1, float a2);
  16 external void addPixelsPost();
 ```
 
-## Life Projections
+## Live Projections
 
 Not implemented yet
 
