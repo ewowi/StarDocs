@@ -28,7 +28,7 @@ For more info check the readme in the link above
 
 ## I2S Virtual Clockless Led Driver
 
-If you want to build bigger LED setups at a reasonable frame rate the pins an ESP32 board provides are not enough. [I2SClocklessVirtualLedDriver](https://github.com/hpwit/I2SClocklessVirtualLedDriver) solves this by using I2S to send LED data to one or more SN495 shift registers ic's where each ic sends LEDS data to 8 pins. For instance, if you have 6 ic's you can drive 48 panels of size 16x16 at their max speed which is 120-130fps. This is a total of 12288 LEDs. The ESP32 is powerfull enough to run most effects with this size at speeds ranging from 60-120fps depending on the complexity of the effect.
+If you want to build bigger LED setups at a high frame rate the pins an ESP32 board provides are not enough. [I2SClocklessVirtualLedDriver](https://github.com/hpwit/I2SClocklessVirtualLedDriver) solves this by using I2S to send LED data to one or more SN495 shift registers ic's where each ic sends LEDS data to 8 pins. For instance, if you have 6 ic's you can drive 48 panels of size 16x16 at their max speed which is 120-130fps. This is a total of 12288 LEDs. The ESP32 is powerfull enough to run most effects with this size at speeds ranging from 60-120fps depending on the complexity of the effect.
 
 For more info check the readme in the link above.
 
@@ -40,8 +40,16 @@ Example of a board with 6 SN495 shift registers (and one 245 array to distribute
 * Virtual driver on S3 not yet supported ...
 * A design for a 15 panel set up is in progress:
 
-
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/71b614f9-aad6-4dfa-b664-cc9228a8f59b">
+
+## Clockless drivers together with Live Scripts
+
+- If both options are available in a build there is also the option to run a mapping projection directly from the F_ixture.sc file.
+- Compile with -D STARLIGHT_LIVE_MAPPING option
+- WIP
+- See [Live Fixtures](StarDocs/StarLight/LiveScripts/#live-fixtures)
+
+<img width="369" alt="image" src="https://github.com/user-attachments/assets/b8f1178e-bdce-4ef1-af2a-cdbd01ba17c4">
 
 
 ## Notes
