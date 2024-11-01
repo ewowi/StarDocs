@@ -1,5 +1,5 @@
 ---
-title: Live Effects
+title: Live Scripts
 hide:
   # - navigation
   # - toc
@@ -8,6 +8,10 @@ hide:
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/418fb6ee-3580-456e-97e0-9344a0d13fac">
 
 ## Introduction
+
+StarLight supports Live Effects, Live Fixtures and Live Projections.
+
+### Life Effects
 
 Live Effects are effects implemented by a script on the ESP32 filesystem ([Files Module](/StarDocs/SysMod/SysModFiles)). Live scripts are pseudo c-code files which are parsed and compiled into assembler and runs at very high speed (like compiled c-code!) without rebooting or flashing!!! Live effects are a specific application of Live Scripts (see [StarBase Live Scripts Module](/StarDocs/UserMod/UserModLiveScripts)).
 
@@ -23,7 +27,7 @@ Live Effects are effects implemented by a script on the ESP32 filesystem ([Files
 
 <img width="550" alt="image" src="https://github.com/user-attachments/assets/db350093-56f2-47d1-b9ed-a8c1c5f978bd">
 
-## StarLight Live functions
+### StarLight Live functions
 Supported StarLight functions to be used in scrips
 
     CRGB    hsv(uint8_t hue, uint8_t saturation, uint8_t value); //HSV Color
@@ -41,6 +45,14 @@ Supported StarLight functions to be used in scrips
 * more functions will be available later, new functions can be requested in [Github issues](https://github.com/MoonModules/StarLight/issues).
 
 
-## Preparing and running Live Effects
+### Preparing and running Live Effects
 
 * See [Preparing live scripts](/StarDocs/UserMod/UserModLiveScripts/#preparing-live-scripts) and [Running live scripts](/StarDocs/UserMod/UserModLiveScripts/#running-a-live-script)
+
+## Life Fixtures
+
+
+## Life Projections
+
+Not implemented yet
+

@@ -13,6 +13,8 @@ Live scripts are pseudo c-code files which are parsed and compiled into assemble
 
 You might need to read above section again, as this is mindblowing functionality! 🙂
 
+If you run StarLight, read more about Live Effects, Live Fixtures and Live Projections [here](/StarDocs/StarLight/LiveScripts).
+
 Live scripts are implemented using [hpwit/ESPLiveScript](https://github.com/hpwit/ESPLiveScript/tree/v2.8). Both this repo and the implementation in StarBase is in development and more functionality is expected to be released.
 
 Live scripts are stored on the filesystem and can be uploaded, edited and deleted in the [Files Module](/StarDocs/SysMod/SysModFiles), they have extension .sc.
