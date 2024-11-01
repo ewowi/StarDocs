@@ -47,7 +47,7 @@ Example of a board with 6 SN495 shift registers (and one 245 array to distribute
 - If both options are available in a build there is also the option to run a mapping projection directly from the F_ixture.sc file.
 - Compile with -D STARLIGHT_LIVE_MAPPING option
 - WIP
-- See [Live Fixtures](StarDocs/StarLight/LiveScripts/#live-fixtures)
+- See [Live Fixtures](/StarDocs/StarLight/LiveScripts/#live-fixtures)
 
 <img width="369" alt="image" src="https://github.com/user-attachments/assets/b8f1178e-bdce-4ef1-af2a-cdbd01ba17c4">
 
