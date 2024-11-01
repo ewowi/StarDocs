@@ -1199,6 +1199,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#clockless-drivers-together-with-live-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clockless drivers together with Live Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#notes" class="md-nav__link">
     <span class="md-ellipsis">
       Notes
@@ -1936,6 +1945,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#clockless-drivers-together-with-live-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clockless drivers together with Live Scripts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#notes" class="md-nav__link">
     <span class="md-ellipsis">
       Notes
@@ -1984,7 +2002,7 @@
 </ul>
 <p>For more info check the readme in the link above</p>
 <h2 id="i2s-virtual-clockless-led-driver">I2S Virtual Clockless Led Driver</h2>
-<p>If you want to build bigger LED setups at a reasonable frame rate the pins an ESP32 board provides are not enough. <a href="https://github.com/hpwit/I2SClocklessVirtualLedDriver">I2SClocklessVirtualLedDriver</a> solves this by using I2S to send LED data to one or more SN495 shift registers ic's where each ic sends LEDS data to 8 pins. For instance, if you have 6 ic's you can drive 48 panels of size 16x16 at their max speed which is 120-130fps. This is a total of 12288 LEDs. The ESP32 is powerfull enough to run most effects with this size at speeds ranging from 60-120fps depending on the complexity of the effect.</p>
+<p>If you want to build bigger LED setups at a high frame rate the pins an ESP32 board provides are not enough. <a href="https://github.com/hpwit/I2SClocklessVirtualLedDriver">I2SClocklessVirtualLedDriver</a> solves this by using I2S to send LED data to one or more SN495 shift registers ic's where each ic sends LEDS data to 8 pins. For instance, if you have 6 ic's you can drive 48 panels of size 16x16 at their max speed which is 120-130fps. This is a total of 12288 LEDs. The ESP32 is powerfull enough to run most effects with this size at speeds ranging from 60-120fps depending on the complexity of the effect.</p>
 <p>For more info check the readme in the link above.</p>
 <p>Example of a board with 6 SN495 shift registers (and one 245 array to distribute to the shift registers)</p>
 <p><img width="450" alt="image" src="https://github.com/user-attachments/assets/b4a34ce0-4a7c-4adc-8cab-9337287ce39c"></p>
@@ -1994,6 +2012,14 @@
 <li>A design for a 15 panel set up is in progress:</li>
 </ul>
 <p><img width="450" alt="image" src="https://github.com/user-attachments/assets/71b614f9-aad6-4dfa-b664-cc9228a8f59b"></p>
+<h2 id="clockless-drivers-together-with-live-scripts">Clockless drivers together with Live Scripts</h2>
+<ul>
+<li>If both options are available in a build there is also the option to run a mapping projection directly from the F_ixture.sc file.</li>
+<li>Compile with -D STARLIGHT_LIVE_MAPPING option</li>
+<li>WIP</li>
+<li>See <a href="StarDocs/StarLight/LiveScripts/#live-fixtures">Live Fixtures</a></li>
+</ul>
+<p><img width="369" alt="image" src="https://github.com/user-attachments/assets/b8f1178e-bdce-4ef1-af2a-cdbd01ba17c4"></p>
 <h2 id="notes">Notes</h2>
 <ul>
 <li>The clockless LED drivers work totally independently from Live Scripts functionality, so you can run live effects with the FastLED driver and run normal effects using one of Clockless drivers.</li>
