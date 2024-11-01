@@ -123,7 +123,7 @@ external float atan2(float a1, float a2);
 - If both options are available in a build there is also the option to run a mapping projection directly from the F_ixture.sc file.
 - Compile with -D STARLIGHT_LIVE_MAPPING option
 - WIP
-- See [Clockless LED drivers](/StarDocs/StarLight/ClocklessLedDrivers/))
+- See [Clockless LED drivers](/StarDocs/StarLight/ClocklessLedDrivers/)
 
 <img width="369" alt="image" src="https://github.com/user-attachments/assets/b8f1178e-bdce-4ef1-af2a-cdbd01ba17c4">
 
