@@ -1932,20 +1932,21 @@
 <li>JSON (powered by ArduinoJSON v7 ! and StarJson for highspeed low mem read) as the default way to store and comminicate data </li>
 <li>Model.json for variables and UI generation</li>
 <li>Minimize model json size<ul>
-<li>UiFun: send labels and comments and select options instead of storing in model</li>
+<li>onUI: send labels and comments and select options instead of storing in model</li>
 </ul>
 </li>
 <li>Variables are defined using init<Type> functions containing a function paramater for:<ul>
-<li>f_ValueFun: assigning default values</li>
-<li>f_UIFun: called by the UI to get extra info (label, comment, options)</li>
-<li>f_ChangeFun: called if the value of a variable changes, use old and new value</li>
-<li>f_LoopFun: executed in loop e.g. preview</li>
-<li>f_AddRow: called if a row is added (Variable is in table)</li>
-<li>f_DelRow: called if a row is deleted (Variable is in table)</li>
-<li>At the moment of writing, var names need to be unique along the whole project!</li>
+<li>onSetValue: assigning default values</li>
+<li>onUI: called by the UI to get extra info (label, comment, options)</li>
+<li>onChange: called if the value of a variable changes, use old and new value</li>
+<li>onLoop: executed in loop e.g. preview</li>
+<li>onLoop1a: once per second</li>
+<li>onAdd: called if a row is added (Variable is in table)</li>
+<li>onDelete: called if a row is deleted (Variable is in table)</li>
+<li><del>At the moment of writing, var names need to be unique along the whole project!</del> combination of parent id and id needs to be unique</li>
 </ul>
 </li>
-<li>UI is 100% generated from model and UIFun, only app.js can be used to implement specific functionality. UI can be single elements or tables with elements and can be hierarchical just like html is hierarchical. UI elements may only be created using init<Var> calls. If another UI construct is needed or specific node hierarchy is not implemented yet, please log a github issue.</li>
+<li>UI is 100% generated from model and onUI, only app.js can be used to implement specific functionality. UI can be single elements or tables with elements and can be hierarchical just like html is hierarchical. UI elements may only be created using init<Var> calls. If another UI construct is needed or specific node hierarchy is not implemented yet, please log a github issue.</li>
 <li>Minimize on heap and stack use<ul>
 <li>Effect class doesn't have local variables</li>
 <li>init Variable: functions, not classes</li>
@@ -1957,14 +1958,13 @@
 <li>Copy - refactor - paste: copy code from the internet -&gt; apply mvp -&gt; apply standards and guidelines - paste in StarBase</li>
 <li>Code should be as readable as possible<ul>
 <li>Minimal code lines</li>
-<li>Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain</li>
+<li><del>Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain</del>, see below</li>
 <li>No get/set like function wrappers around variables</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Strictly forbidden for frameworks like Angular Vue React and the like</li>
-<li>Other standards and guidelines yet to be written down ;-)</li>
 <li>These standards and guidelines should result in the posibility to create a complete new service by creating one module in one .h file allowing it to use all functionality available in StarBase. Including UI, pins, files, print, model persistent storage, enabling and disabling, loop injection etc. If you feel it's not possible, log a github issue.</li>
 <li>These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues</li>
 <li>A lot of good stuff is in here <a href="https://gist.github.com/victormwenda/6bb04802d65eaab11a724ac4b04dd9e6">The C++ Programming Language Bjarne Stroustrup, 3rd edition</a>. Maybe some notes on esp32 specific programming?<ul>
