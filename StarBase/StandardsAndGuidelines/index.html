@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/ui/starbase/favicon-16x16.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -1971,6 +1971,15 @@
 <li>See <a href="https://www.stroustrup.com/PPPslides/25_embedded.ppt">stroustrup Chapter25 on embedded systems</a> </li>
 <li>We prefer char * over String especially if you don't know what you are doing - which is a contradiction as strings can cause defrag and chars can cause crashes ;-)</li>
 <li>Globals useful to put them in designated memory area?</li>
+</ul>
+</li>
+<li>Heap memory changes should be as minimal as possible and processing should be done on the stack (as that is cleared after each code block has finished). So heap should be used to store more the ‘data model’, which is more or less stable data. Like leds[] or mapping tables or Executables. Any processing can modify this but should use heap only to modify the ‘data model’. This then means that any structure (struct, class, containers) other then the data model should be avoided, best example is string but also vector should be used with great care as they might be classes on itself but inside their classes they do heap allocation and free and that is the tricky part. There are several ways to do this. Next to char string use of pointers or values by reference. Eg you can loop over a vector where each element is copied in the loop but you can also make each element a pointer to the element in the ‘data model’. Eg for (auto &amp;element: executablesVector) or void function(ClassType &amp;var). The &amp; sign makes sure there is not vector or class element copy</li>
+<li>StarBase and StarLight have next to the main branch also a dev branch where all development will be done on, optionally branches from dev can be made for multi commit changes. All merging from dev to main must be done by pull requests so the release changes will automatically be propagated with the commits made into main</li>
+<li>For files which are included in other files: All definition stuff should go into cpp files.<ul>
+<li>Compiling goes faster as an include will only include the header contents</li>
+<li>not having .cpp means the whole interdependency is very fragile, changes cause ‘multiple definitions / first define here’ errors</li>
+<li>in .h files you don’t need to define all the includes as an include will also include what the includer included , which relates to 2 and is not very clean/clear</li>
+<li>A small .h file serves as documentation and gives a quick overview of what is there</li>
 </ul>
 </li>
 </ul>
