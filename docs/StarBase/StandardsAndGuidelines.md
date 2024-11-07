@@ -7,12 +7,6 @@ hide:
 
 ## Standards and Guidelines
 
-* Orthogonality: concepts are independent or irrelevant to eachother. Examples:
-    * StarBase has no notion of applications build on top of it e.g. StarLight
-    * No notion of HTML in c(++) code
-    * Effects have no notion of the type of projection or fixture it is applied to
-    * Any projection can be applied to any effect in any fixture, 1D to 3D in any combination
-    * Modules are as independent from each other as possible (but they can call each other)
 * Everything is a module, every module is a (singleton) class
 * Code of a module is in the module class
 * Minimize the use of static / global variables. Use modules classes to define variables
@@ -31,6 +25,12 @@ hide:
     * onDelete: called if a row is deleted (Variable is in table)
     * ~~At the moment of writing, var names need to be unique along the whole project!~~ combination of parent id and id needs to be unique
 * UI is 100% generated from model and onUI, only app.js can be used to implement specific functionality. UI can be single elements or tables with elements and can be hierarchical just like html is hierarchical. UI elements may only be created using init<Var> calls. If another UI construct is needed or specific node hierarchy is not implemented yet, please log a github issue.
+* Orthogonality: concepts are independent or irrelevant to eachother. Examples:
+    * StarBase has no notion of applications build on top of it e.g. StarLight
+    * No notion of HTML in c(++) code
+    * Effects have no notion of the type of projection or fixture it is applied to
+    * Any projection can be applied to any effect in any fixture, 1D to 3D in any combination
+    * Modules are as independent from each other as possible (but they can call each other)
 * Minimize on heap and stack use
     * Effect class doesn't have local variables
     * init Variable: functions, not classes
@@ -50,6 +50,7 @@ hide:
     * We prefer char * over String especially if you don't know what you are doing - which is a contradiction as strings can cause defrag and chars can cause crashes ;-)
     * Globals useful to put them in designated memory area?
 * Heap memory changes should be as minimal as possible and processing should be done on the stack (as that is cleared after each code block has finished). So heap should be used to store more the ‘data model’, which is more or less stable data. Like leds[] or mapping tables or Executables. Any processing can modify this but should use heap only to modify the ‘data model’. This then means that any structure (struct, class, containers) other then the data model should be avoided, best example is string but also vector should be used with great care as they might be classes on itself but inside their classes they do heap allocation and free and that is the tricky part. There are several ways to do this. Next to char string use of pointers or values by reference. Eg you can loop over a vector where each element is copied in the loop but you can also make each element a pointer to the element in the ‘data model’. Eg for (auto &element: executablesVector) or void function(ClassType &var). The & sign makes sure there is not vector or class element copy
+    * Recusive functions (e.g. node parsing in ESPLiveScript) cannot be done in stack as the stack will run full, this needs memory allocated in the heap to process it.
 *  An object (and also struct) takes the memory space of the variables it defines. The Variable object in StarBase is one pointer and tons of code. Effect and Projection object in StarLight are not allowed to have variables to minimize the overhead. Effect and Projection have overloaded virtual functions though, additional memory for pointers to these overloaded functions will be allocated to admin this.
 * StarBase and StarLight have next to the main branch also a dev branch where all development will be done on, optionally branches from dev can be made for multi commit changes. All merging from dev to main must be done by pull requests so the release changes will automatically be propagated with the commits made into main
 * For files which are included in other files: All definition stuff should go into cpp files.
