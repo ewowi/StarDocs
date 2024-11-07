@@ -20,16 +20,17 @@ hide:
 * JSON (powered by ArduinoJSON v7 ! and StarJson for highspeed low mem read) as the default way to store and comminicate data 
 * Model.json for variables and UI generation
 * Minimize model json size
-    * UiFun: send labels and comments and select options instead of storing in model
+    * onUI: send labels and comments and select options instead of storing in model
 * Variables are defined using init<Type> functions containing a function paramater for:
-    * f_ValueFun: assigning default values
-    * f_UIFun: called by the UI to get extra info (label, comment, options)
-    * f_ChangeFun: called if the value of a variable changes, use old and new value
-    * f_LoopFun: executed in loop e.g. preview
-    * f_AddRow: called if a row is added (Variable is in table)
-    * f_DelRow: called if a row is deleted (Variable is in table)
-    * At the moment of writing, var names need to be unique along the whole project!
-* UI is 100% generated from model and UIFun, only app.js can be used to implement specific functionality. UI can be single elements or tables with elements and can be hierarchical just like html is hierarchical. UI elements may only be created using init<Var> calls. If another UI construct is needed or specific node hierarchy is not implemented yet, please log a github issue.
+    * onSetValue: assigning default values
+    * onUI: called by the UI to get extra info (label, comment, options)
+    * onChange: called if the value of a variable changes, use old and new value
+    * onLoop: executed in loop e.g. preview
+    * onLoop1a: once per second
+    * onAdd: called if a row is added (Variable is in table)
+    * onDelete: called if a row is deleted (Variable is in table)
+    * ~~At the moment of writing, var names need to be unique along the whole project!~~ combination of parent id and id needs to be unique
+* UI is 100% generated from model and onUI, only app.js can be used to implement specific functionality. UI can be single elements or tables with elements and can be hierarchical just like html is hierarchical. UI elements may only be created using init<Var> calls. If another UI construct is needed or specific node hierarchy is not implemented yet, please log a github issue.
 * Minimize on heap and stack use
     * Effect class doesn't have local variables
     * init Variable: functions, not classes
@@ -39,10 +40,9 @@ hide:
     * Copy - refactor - paste: copy code from the internet -> apply mvp -> apply standards and guidelines - paste in StarBase
     * Code should be as readable as possible
         * Minimal code lines
-        * Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain
+        * ~~Only .h (not .cpp) if possible, as it might be a nice c practive but makes code less easier to read (less compact, defaults only in .h) and maintain~~, see below
         * No get/set like function wrappers around variables
 * Strictly forbidden for frameworks like Angular Vue React and the like
-* Other standards and guidelines yet to be written down ;-)
 * These standards and guidelines should result in the posibility to create a complete new service by creating one module in one .h file allowing it to use all functionality available in StarBase. Including UI, pins, files, print, model persistent storage, enabling and disabling, loop injection etc. If you feel it's not possible, log a github issue.
 * These standards and guidelines are not unchangeable and can be disputed, eg singletons, minimal code. but its just the way things are done now to have an initial lean and mean standard. Changes to the standards can be proposed in github issues
 * A lot of good stuff is in here [The C++ Programming Language Bjarne Stroustrup, 3rd edition](https://gist.github.com/victormwenda/6bb04802d65eaab11a724ac4b04dd9e6). Maybe some notes on esp32 specific programming?
