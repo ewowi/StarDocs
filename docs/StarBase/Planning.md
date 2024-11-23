@@ -1,11 +1,42 @@
 ---
-title: News
+title: Planning
 hide:
   # - navigation
   # - toc
 ---
 
-## News
+## Planning for production readiness
+
+As of November 2024 (v0.5.0) these are the steps which we think are needed before StarMod and StarLight can be used in real live setups.
+If you have any additions, please log an isue at [Github StarLight issues](https://github.com/MoonModules/StarLight/issues) or contact us on [Discord/StarLight](https://discord.com/channels/700041398778331156/1203994211301728296)
+
+### StarBase
+
+* Presets: Must: Settings of every module can be saved and retrieved. Should: Schdule a sequence of presets
+* New UI: Must: each module on a seperate screen (instead of multiple modules all at once). Should: variables of modules can be rerouted to certain areas of the screen (e.g. preview on every screen, save on header, uptime on footer...) - preview can be found in current builds
+* Ethernet tested (which device ?)
+
+### StarLight
+
+* Presets (see StarBase) for Effects
+* Art-Net fully tested and up to date
+* More palettes? Audio reactive 
+* More effects (which ones)
+* Sound reactive ?
+
+### General
+
+* Documentation. Not clear, missing ?
+
+### Development
+
+* onValue refactored
+* Architecture ?
+* Development process ?
+* GitHub branches ?
+* StarBase vs StarLight ?
+
+## Archive
 
 ### April 17, 2024: New test scenario: OTA Update
 
