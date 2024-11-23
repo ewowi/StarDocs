@@ -71,7 +71,7 @@ nav:
   - Welcome: index.md
   - StarBase:
     - Getting started: StarBase/GettingStarted.md
-    - News: StarBase/Planning.md
+    - Planning: StarBase/Planning.md
     - Contribute: StarBase/Contribute.md
     - Testing: StarBase/Testing.md
     - Development: StarBase/Development.md
