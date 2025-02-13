@@ -7,7 +7,7 @@ hide:
 
 StarLight is the fork of StarMod designed to control LEDs.
 
-StarLight relies on defing a ([fixture](/StarDocs/StarLightMod/StarLightModFixtureGenerator/)), which is a map between your physical LEDs and their virtual representation. This allows the user to run ([Effects](/StarDocs/StarLightMod/StarLightModEffects/)), with a selected Projection, which modifies how the Effect is displayed.
+StarLight relies on defing a ([Fixture](/StarDocs/StarLightMod/StarLightModFixtureGenerator/)), which is a map between your physical LEDs and their virtual representation. This allows the user to run ([Effects](/StarDocs/StarLightMod/StarLightModEffects/)), with a selected Projection, which modifies how the Effect is displayed.
 
 All StarLight modules support 1D, 2D, 3D effects and fixtures. Effects operate independently of fixtures it is displayed on (e.g. a 1D effect can be projected on a 3D fixture or a 3D effect on a 1D fixture (strip))
 
@@ -48,4 +48,4 @@ First star I see tonight
 Starlight (Starbright), yeah
 You must be my Lucky Star_
 
----- By Madonna
+---- Madonna
